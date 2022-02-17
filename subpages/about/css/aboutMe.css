@@ -4,7 +4,7 @@
 }
 
 .hero {
-  background-image: url("/images/projects/backdrop/aurora2.png");
+  background-image: url("../../../images/projects/backdrop/aurora2.png");
 }
 
 .eye-catcher {
@@ -14,7 +14,7 @@
 }
 
 .categories {
-  background-image: url("/images/projects/backdrop/aurora3.png");
+  background-image: url("../../../images/projects/backdrop/aurora3.png");
 }
 
 .categories-header {

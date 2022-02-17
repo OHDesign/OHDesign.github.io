@@ -31,7 +31,7 @@ body {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  background-image: url("/images/projects/backdrop/aurora2.png");
+  background-image: url("../../../images/projects/backdrop/aurora2.png");
   background-position: top;
 }
 
@@ -51,21 +51,21 @@ label {
 }
 
 #name {
-  background-image: url("/images/icons/person.svg");
+  background-image: url("../../../images/icons/person.svg");
   background-position: 10px center;
   background-repeat: no-repeat;
   text-indent: 35px;
 }
 
 #email {
-  background-image: url("/images/icons/mail.svg");
+  background-image: url("../../../images/icons/mail.svg");
   background-position: 10px center;
   background-repeat: no-repeat;
   text-indent: 35px;
 }
 
 #message {
-  background-image: url("/images/icons/edit_black_24dp.svg");
+  background-image: url("../../../images/icons/edit_black_24dp.svg");
   background-position: 10px 10px;
   background-repeat: no-repeat;
   text-indent: 35px;

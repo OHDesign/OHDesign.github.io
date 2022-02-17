@@ -5,7 +5,7 @@
 }
 
 .hero {
-  background-image: url("/images/projects/backdrop/aurora2_orange.png");
+  background-image: url("../../../images/projects/backdrop/aurora2_orange.png");
   padding-bottom: 2.25em;
 }
 
@@ -47,7 +47,7 @@
 }
 
 .categories {
-  background-image: url("/images/projects/backdrop/aurora3_orange.png");
+  background-image: url("../../../images/projects/backdrop/aurora3_orange.png");
 }
 
 .left-col {
@@ -98,7 +98,7 @@
   padding: 0.1em 1em 10vw 1em;
 }
 .left-col .schwert {
-  background-image: url("/images/thumbnails/3d/Schwert/preview2.png");
+  background-image: url("../../../images/thumbnails/3D/Schwert/preview2.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -145,7 +145,7 @@
   margin: 0;
 }
 .left-col .schwert2 {
-  background-image: url("/images/thumbnails/3D/Schwert/finishedv4.png");
+  background-image: url("../../../images/thumbnails/3D/Schwert/finishedv4.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-origin: border-box;
@@ -191,7 +191,7 @@
   padding: 15vw 2rem 15vw;
 }
 .left-col .schwert3 {
-  background-image: url("/images/thumbnails/3D/Schwert/V2.2 fertig.jpg");
+  background-image: url("../../../images/thumbnails/3D/Schwert/V2.2 fertig.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -238,7 +238,7 @@
   margin: 0;
 }
 .left-col .kürbis {
-  background-image: url("/images/thumbnails/3D/Kürbis/Kürbisse.jpg");
+  background-image: url("../../../images/thumbnails/3D/Kürbis/Kürbisse.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -285,7 +285,7 @@
   margin: 0;
 }
 .left-col .steine {
-  background-image: url("/images/thumbnails/3D/Rocks.png");
+  background-image: url("../../../images/thumbnails/3D/Rocks.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -441,10 +441,11 @@ nav {
   .left-col .kürbis {
     height: 25vw;
     width: 40vw;
+    left: 52.5%;
   }
   .left-col .kürbis .kürbis-overlay {
     height: 25vw;
-    left: 110%;
+    left: -110.5%;
   }
   .left-col .kürbis .kürbis-overlay .kürbis-cta .kürbis-text {
     font-size: 3.5vw;
