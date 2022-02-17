@@ -62,7 +62,7 @@ section {
     height: 550px;
     margin: 0;
     background-color: var(--secondary-color);
-    background-image: url("/images/projects/backdrop/aurora2.png");
+    background-image: url("../images/projects/backdrop/aurora2.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -108,7 +108,7 @@ section {
 
 .categories {
     background: rgb(255, 255, 255);
-    background-image: url("/images/projects/backdrop/aurora3.png");
+    background-image: url("../images/projects/backdrop/aurora3.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top right;
@@ -134,7 +134,7 @@ section {
     padding: 2rem;
 
     .creativ {
-        background-image: url("/images/thumbnails/Edits/Space\(web\).jpg");
+        background-image: url("../images/thumbnails/Edits/Space\(web\).jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -181,7 +181,7 @@ section {
     }
 
     .threeD {
-        background-image: url("/images/thumbnails/3D/Schwert/preview2.png");
+        background-image: url("../images/thumbnails/3D/Schwert/preview2.png");
         background-size: cover;
         background-repeat: no-repeat;
         background-origin: border-box;
@@ -226,7 +226,7 @@ section {
         }
     }
     .pixel {
-        background-image: url("/images/thumbnails/pixelart/Dark-Knight.png");
+        background-image: url("../images/thumbnails/pixelart/Dark-Knight.png");
         background-size: cover;
         background-repeat: no-repeat;
         background-origin: border-box;
@@ -271,7 +271,7 @@ section {
         }
     }
     .foto {
-        background-image: url("/images/thumbnails/Fotos/glasskugel.jpg");
+        background-image: url("../images/thumbnails/Fotos/glasskugel.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-origin: border-box;
