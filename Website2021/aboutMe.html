@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>OH Design | Über Mich</title>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/aboutMe.css">
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html"><img class="logo_white" src="/images/Logo(weiß).png" alt="logo"></a>
+                </div>
+
+                <img id="mobile-cta" class="mobile-menue" src="images/icons/menu.svg" alt="Open Navigation">
+
+                <nav>
+                    <img id="mobile-exit" class="mobile-menue-exit" src="images/icons/X.svg" alt="Close Navigation">
+                    <ul class="primary-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="galerie.html">Galerie</a></li>
+                        <li class="current"><a href="#">Über Mich</a></li>
+                        <li><a href="contact.html">Kontakt</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <section class="hero">
+            <div class="hero-color">
+                <div class="container">
+                    <div class="eye-catcher">
+                        <h1>Über Mich</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="categories">
+                <div class="categories-header">
+                    Text
+                </div>
+                <div class="left-col">
+                        <div class="aboutMe-overlay">
+                            <p class="aboutMe-text">Hallo, <br> ich bin Oli. <br><br> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                        </div>
+                </div>
+        </section>
+        <section class="impressum">
+            <div class="container">
+                <ul class="impressum">
+                    <li>Impressum:</li>
+                    <li>Oliver Herwig</li>
+                    <li>Hansteinstr. 8</li>
+                    <li>37214 Witzenhausen</li>
+                    <li>oliverherwig1@web.de</li>
+                </ul>
+                <ul class="icons">
+                    <li><img src="/images/icons/person.svg" alt=""></li>
+                    <li><img src="/images/icons/home.svg" alt=""></li>
+
+                    <li><img src="/images/icons/mail.svg" alt=""></li>
+                </ul>
+            </div>
+        </section>
+
+
+        <script>
+
+            const mobileBtn = document.getElementById('mobile-cta')
+                nav = document.querySelector('nav')
+                mobileBtnExit = document.getElementById('mobile-exit');
+
+            mobileBtn.addEventListener('click', () => {
+                nav.classList.add('menue-btn');
+            })
+            mobileBtnExit.addEventListener('click', () => {
+                nav.classList.remove('menue-btn');
+            })
+        </script>
+
+    </body>
+</html>

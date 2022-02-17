@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>OH Design</title>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <a href="#"><img class="logo_white" src="/images/Logo(weiß).png" alt="logo"></a>
+                </div>
+
+                <img id="mobile-cta" class="mobile-menue" src="images/icons/menu.svg" alt="Open Navigation">
+
+                <nav>
+                    <img id="mobile-exit" class="mobile-menue-exit" src="images/icons/X.svg" alt="Close Navigation">
+                    <ul class="primary-nav">
+                        <li class="current"><a href="#">Home</a></li>
+                        <li><a href="galerie.html">Galerie</a></li>
+                        <li><a href="aboutMe.html">Über Mich</a></li>
+                        <li><a href="contact.html">Kontakt</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <section class="hero">
+            <div class="container">
+                <div class="eye-catcher">
+                    <h1>Oliver Herwig <br/> Portfolio</h1>
+                    <a href="galerie.html" class="galerie-cta">zur Galerie</a>
+                </div>
+            </div>
+        </section>
+        <section class="categories">
+            <div class="overlay">
+                <div class="categories-header">
+                    Kategorien
+                </div>
+                <div class="left-col">
+                    <div class="creativ">
+                        <div class="creativ-overlay">
+                            <div class="creativ-cta">
+                                <a href="galerie.html" class="creativ-text">Creativ Edits</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="threeD">
+                        <div class="threeD-overlay">
+                            <div class="threeD-cta">
+                                <a href="3d.html" class="threeD-text">3D<br/>Modellierung/Rendering</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pixel">
+                        <div class="pixel-overlay">
+                            <div class="pixel-cta">
+                                <a href="#" class="pixel-text">Pixelart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="foto">
+                        <div class="foto-overlay">
+                            <div class="foto-cta">
+                                <a href="#" class="foto-text">Fotografie/Bildbearbeitung</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="impressum">
+            <div class="container">
+                <ul class="impressum">
+                    <li>Impressum:</li>
+                    <li>Oliver Herwig</li>
+                    <li>Hansteinstr. 8</li>
+                    <li>37214 Witzenhausen</li>
+                    <li>oliverherwig1@web.de</li>
+                </ul>
+                <ul class="icons">
+                    <li><img src="/images/icons/person.svg" alt=""></li>
+                    <li><img src="/images/icons/home.svg" alt=""></li>
+
+                    <li><img src="/images/icons/mail.svg" alt=""></li>
+                </ul>
+            </div>
+        </section>
+
+
+        <script>
+
+            const mobileBtn = document.getElementById('mobile-cta')
+                nav = document.querySelector('nav')
+                mobileBtnExit = document.getElementById('mobile-exit');
+
+            mobileBtn.addEventListener('click', () => {
+                nav.classList.add('menue-btn');
+            })
+            mobileBtnExit.addEventListener('click', () => {
+                nav.classList.remove('menue-btn');
+            })
+        </script>
+
+    </body>
+</html>

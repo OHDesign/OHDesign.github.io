@@ -1,0 +1,499 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+:root {
+  --primary-color: #23c8db;
+  --secondary-color: #200830;
+}
+
+body {
+  background: white;
+  margin: 0;
+  font-family: "Poppins";
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.navbar {
+  height: 40px;
+  background: white;
+  padding: 0.5em;
+}
+.navbar .logo {
+  width: 100px;
+}
+.navbar .logo_white {
+  width: 100%;
+  position: relative;
+  left: 10px;
+  top: 5px;
+}
+.navbar nav {
+  position: fixed;
+  left: 100%;
+  transition: left 0.5s ease-in-out;
+}
+.navbar .container {
+  display: flex;
+  place-content: space-between;
+}
+.navbar .mobile-menue {
+  position: relative;
+  right: 8px;
+  bottom: 25px;
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  padding: 5em 2em;
+}
+
+.hero {
+  text-align: center;
+  height: 550px;
+  margin: 0;
+  background-color: var(--secondary-color);
+  background-image: url("/images/projects/backdrop/aurora2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  padding-bottom: 6em;
+}
+
+.eye-catcher {
+  position: relative;
+  top: 3em;
+  color: white;
+  font-size: 1.5em;
+}
+.eye-catcher .galerie-cta {
+  background-color: var(--primary-color);
+  color: white;
+  text-decoration: none;
+  padding: 0.27em 1em;
+  font-weight: bold;
+  font-size: 0.7em;
+  border-radius: 0.75em;
+  transition: color 0.5s, background-color 1s;
+}
+.eye-catcher .galerie-cta:hover {
+  background-color: white;
+  color: var(--primary-color);
+}
+
+.categories-header {
+  background: var(--primary-color);
+  color: white;
+  text-align: center;
+  width: 6em;
+  padding: 0.5em 1em;
+  font-weight: bold;
+  font-size: 1.1em;
+  margin-left: 1.5em;
+  border-radius: 0.25em;
+  position: relative;
+  bottom: 4em;
+  left: 2em;
+}
+
+.categories {
+  background: white;
+  background-image: url("/images/projects/backdrop/aurora3.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top right;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  bottom: 1em;
+}
+
+.overlay {
+  background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
+  background-size: cover;
+  padding: 0;
+  position: relative;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.left-col {
+  position: relative;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 2rem;
+}
+.left-col .creativ {
+  background-image: url("/images/thumbnails/Edits/Space(web).jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-origin: border-box;
+  padding: 0;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: relative;
+  border-radius: 0.1em;
+  outline: 3px solid white;
+  box-shadow: 2px 2px 10px gray;
+  margin-top: 0;
+  transition: transform 1s;
+}
+.left-col .creativ:hover {
+  transform: scale(1.05);
+  z-index: 999;
+  box-shadow: 1px 1px 20px gray;
+}
+.left-col .creativ .creativ-overlay {
+  background: linear-gradient(rgba(150, 150, 150, 0.5), rgba(150, 150, 150, 0.5));
+  background-size: cover;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  border-radius: 0.1em;
+  text-decoration: none;
+}
+.left-col .creativ .creativ-overlay .creativ-cta {
+  padding: 0;
+  height: 100%;
+}
+.left-col .creativ .creativ-overlay .creativ-cta .creativ-text {
+  position: relative;
+  text-align: center;
+  font-size: 1.25em;
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 15vw 2rem 15vw;
+}
+.left-col .threeD {
+  background-image: url("/images/thumbnails/3D/Schwert/preview2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-origin: border-box;
+  background-position: center top;
+  padding: 0;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: relative;
+  border-radius: 0.1em;
+  outline: 3px solid white;
+  box-shadow: 1px 1px 10px gray;
+  margin-top: 4em;
+  transition: transform 1s;
+}
+.left-col .threeD:hover {
+  transform: scale(1.05);
+  z-index: 999;
+  box-shadow: 1px 1px 20px gray;
+}
+.left-col .threeD .threeD-overlay {
+  background: linear-gradient(rgba(150, 150, 150, 0.5), rgba(150, 150, 150, 0.5));
+  background-size: cover;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  border-radius: 0.1em;
+}
+.left-col .threeD .threeD-overlay .threeD-cta {
+  height: 100%;
+  padding: 0;
+}
+.left-col .threeD .threeD-overlay .threeD-cta .threeD-text {
+  position: relative;
+  text-align: center;
+  font-size: 1.25em;
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 15vw 2rem 15vw;
+}
+.left-col .pixel {
+  background-image: url("/images/thumbnails/pixelart/Dark-Knight.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-origin: border-box;
+  background-position: center;
+  padding: 0;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: relative;
+  border-radius: 0.1em;
+  outline: 3px solid white;
+  box-shadow: 1px 1px 10px gray;
+  margin-top: 4em;
+  transition: transform 1s;
+}
+.left-col .pixel:hover {
+  transform: scale(1.05);
+  z-index: 999;
+  box-shadow: 1px 1px 20px gray;
+}
+.left-col .pixel .pixel-overlay {
+  background: linear-gradient(rgba(150, 150, 150, 0.5), rgba(150, 150, 150, 0.5));
+  background-size: cover;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  border-radius: 0.1em;
+}
+.left-col .pixel .pixel-overlay .pixel-cta {
+  height: 100%;
+  padding: 0;
+}
+.left-col .pixel .pixel-overlay .pixel-cta .pixel-text {
+  position: relative;
+  text-align: center;
+  font-size: 1.25em;
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 15vw 2rem 15vw;
+}
+.left-col .foto {
+  background-image: url("/images/thumbnails/Fotos/glasskugel.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-origin: border-box;
+  background-position: center;
+  padding: 0;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: relative;
+  border-radius: 0.1em;
+  outline: 3px solid white;
+  box-shadow: 1px 1px 10px gray;
+  margin-top: 4em;
+  transition: transform 1s;
+}
+.left-col .foto:hover {
+  transform: scale(1.05);
+  z-index: 999;
+  box-shadow: 1px 1px 20px gray;
+}
+.left-col .foto .foto-overlay {
+  background: linear-gradient(rgba(150, 150, 150, 0.5), rgba(150, 150, 150, 0.5));
+  background-size: cover;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  border-radius: 0.1em;
+}
+.left-col .foto .foto-overlay .foto-cta {
+  height: 100%;
+  padding: 0;
+}
+.left-col .foto .foto-overlay .foto-cta .foto-text {
+  position: relative;
+  text-align: center;
+  font-size: 1.25em;
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 15vw 0 15vw;
+}
+
+section.impressum {
+  background: white;
+  position: relative;
+  margin: 0;
+  padding: 1em 2em;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+section.impressum ul.impressum {
+  margin: 0;
+  padding-left: 2em;
+}
+section.impressum ul.impressum li {
+  font-size: 1em;
+  margin-bottom: 0.25em;
+}
+section.impressum .icons {
+  margin: 0;
+  position: relative;
+  bottom: 7.1em;
+  height: 0;
+}
+section.impressum .icons li {
+  margin-bottom: 0.8em;
+}
+
+nav.menue-btn {
+  display: block;
+  left: 45%;
+  transition: left 0.5s ease-in-out;
+}
+
+nav {
+  position: fixed;
+  z-index: 999;
+  width: 50vw;
+  height: 50vh;
+  right: 0;
+  top: -0.75em;
+  background: rgba(36, 36, 36, 0.95);
+  padding: 1em 1em;
+  margin: 0;
+  border-radius: 1em;
+}
+nav ul.primary-nav {
+  margin-top: 5em;
+}
+nav ul.primary-nav .current a {
+  background: var(--primary-color);
+}
+nav li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  margin: 0.5em 2em;
+  padding: 0.5em;
+  font-size: 1.3em;
+  text-align: center;
+  transition: background-color 1s linear;
+}
+nav li a:hover {
+  font-weight: bold;
+  background-color: var(--secondary-color);
+}
+
+.mobile-menue-exit {
+  width: 1.5em;
+  float: right;
+  margin: 0.5em;
+  padding-top: 0.5em;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 975px) {
+  .mobile-menue, .mobile-menue-exit {
+    display: none;
+  }
+
+  .navbar .container {
+    display: grid;
+    grid-template-columns: 312px auto;
+  }
+
+  .navbar nav {
+    display: flex;
+    justify-content: space-between;
+    background: none;
+    position: unset;
+    height: 2.8em;
+    width: 100%;
+    padding: 0;
+  }
+  .navbar nav ul {
+    display: flex;
+  }
+  .navbar nav ul.primary-nav {
+    margin: 0;
+  }
+  .navbar nav li.current a {
+    font-weight: bold;
+    background-color: unset;
+  }
+  .navbar nav li.current a:hover {
+    background-color: #b6b6b6;
+    color: white;
+  }
+  .navbar nav a {
+    color: black;
+    font-size: 1em;
+    margin: 0.5em 0.3vw;
+    padding: 0.3em 1vw;
+  }
+  .navbar nav a:hover {
+    background: #b6b6b6;
+    color: white;
+  }
+
+  .hero {
+    margin: 0;
+    background-size: 150% 110%;
+  }
+
+  .eye-catcher {
+    top: 4.5em;
+    font-size: 2em;
+  }
+
+  section.categories {
+    height: auto;
+  }
+  section.categories .overlay {
+    height: auto;
+  }
+
+  .left-col {
+    padding: 4rem 7.5vw;
+  }
+  .left-col .creativ {
+    width: 100%;
+  }
+  .left-col .creativ .creativ-overlay .creativ-cta .creativ-text {
+    font-size: 2em;
+  }
+  .left-col .creativ:hover {
+    transform: scale(1.1);
+    z-index: 999;
+    box-shadow: 1px 1px 20px gray;
+  }
+  .left-col .threeD {
+    width: 100%;
+  }
+  .left-col .threeD .threeD-overlay .threeD-cta .threeD-text {
+    font-size: 2em;
+  }
+  .left-col .threeD:hover {
+    transform: scale(1.1);
+    z-index: 999;
+  }
+  .left-col .pixel {
+    width: 100%;
+  }
+  .left-col .pixel .pixel-overlay .pixel-cta .pixel-text {
+    font-size: 2em;
+  }
+  .left-col .pixel:hover {
+    transform: scale(1.1);
+    z-index: 999;
+  }
+  .left-col .foto {
+    width: 100%;
+  }
+  .left-col .foto .foto-overlay .foto-cta .foto-text {
+    font-size: 2em;
+  }
+  .left-col .foto:hover {
+    transform: scale(1.1);
+    z-index: 999;
+  }
+
+  section.impressum {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+}/*# sourceMappingURL=main.css.map */

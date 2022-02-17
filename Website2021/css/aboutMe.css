@@ -1,0 +1,51 @@
+:root {
+  --primary-color: #23c8db;
+  --secondary-color: #200830;
+}
+
+.hero {
+  background-image: url("/images/projects/backdrop/aurora2.png");
+}
+
+.eye-catcher {
+  position: relative;
+  top: 5em;
+  color: white;
+}
+
+.categories {
+  background-image: url("/images/projects/backdrop/aurora3.png");
+}
+
+.categories-header {
+  color: rgba(255, 255, 255, 0);
+}
+
+.left-col {
+  position: relative;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 1em;
+}
+.left-col .aboutMe-text {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: rgba(128, 128, 128, 0.5);
+  color: white;
+  font-size: 1.5em;
+  padding: 1em;
+}
+
+nav {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+@media only screen and (min-width: 975px) {
+  .hero {
+    height: 34.4em;
+  }
+}/*# sourceMappingURL=aboutMe.css.map */

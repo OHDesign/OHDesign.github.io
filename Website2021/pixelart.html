@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>OH Design | Pixelart</title>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/pixelart.css">
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html"><img class="logo_white" src="/images/Logo(weiß).png" alt="logo"></a>
+                </div>
+
+                <img id="mobile-cta" class="mobile-menue" src="images/icons/menu.svg" alt="Open Navigation">
+
+                <nav>
+                    <img id="mobile-exit" class="mobile-menue-exit" src="images/icons/X.svg" alt="Close Navigation">
+                    <ul class="primary-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="galerie.html">Creativ Edits</a></li>
+                        <li><a href="3d.html">3D</a></li>
+                        <li class="current"><a href="#">Pixelart</a></li>
+                        <li><a href="fotografie.html">Fotografie</a></li>
+                        <li><a href="aboutMe.html">Über Mich</a></li>
+                        <li><a href="contact.html">Kontakt</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <section class="hero">
+            <div class="hero-color">
+                <div class="container">
+                    <div class="eye-catcher">
+                        <h1>Pixelart</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="categories">
+            <div class="overlay">
+                <div id="select" class="categories-list">
+                    <ul class="c-list">
+                        <li><a href="galerie.html#select">Creativ Edits</a></li>
+                        <li><a href="3d.html#select">3D</a></li>
+                        <li class="current"><a href="#select">Pixelart</a></li>
+                        <li><a href="fotografie.html#select">Fotografie</a></li>
+                    </ul>
+                </div>
+                <div class="left-col">
+                    <div class="bat">
+                        <div class="bat-overlay" >
+                            <div class="bat-cta">
+                                <h1 class="bat-text">Dark Knight</h1>
+                                <div>
+                                    <p id="bat-open" class="big-img" onclick="openbat()">img</p>
+                                </div>
+                                <p class="subtext">Was dieser Ritter wohl bewacht?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="bat-close" class="background" onclick="closebat()">
+                        <img class="big-view" src="/images/projects/pixelart/Dark-Knight.png" alt="space">
+                    </div>
+                    
+                    <div class="knight">
+                        <div class="knight-overlay">
+                            <div class="knight-cta">
+                                <h1 class="knight-text">Silver Knight</a></h1>
+                                <div>
+                                    <p id="knight-open" class="big-img" onclick="openknight()">img</p>
+                                </div>
+                                <p class="subtext">Was diesen Ritter wohl in einen düsteren Wald verschlagen hat?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="knight-close" class="background" onclick="closeknight()">
+                        <img class="big-view" src="/images/projects/pixelart/Knight2.0.png" alt="space">
+                    </div>
+                    <div class="wizard">
+                        <div class="wizard-overlay">
+                            <div class="wizard-cta">
+                                <h1 class="wizard-text">Mage</h1>
+                                <div>
+                                    <p id="wizard-open" class="big-img" onclick="openwizard()">img</p>
+                                </div>
+                                <p class="subtext">Ein reisender Magier bei der Erkundung eines alten Verlieses</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="wizard-close" class="background" onclick="closewizard()">
+                        <img class="big-view" src="/images/projects/pixelart/Wizard2.0.png" alt="space">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="impressum">
+            <div class="container">
+                <ul class="impressum">
+                    <li>Impressum:</li>
+                    <li>Oliver Herwig</li>
+                    <li>Hansteinstr. 8</li>
+                    <li>37214 Witzenhausen</li>
+                    <li>oliverherwig1@web.de</li>
+                </ul>
+                <ul class="icons">
+                    <li><img src="/images/icons/person.svg" alt=""></li>
+                    <li><img src="/images/icons/home.svg" alt=""></li>
+
+                    <li><img src="/images/icons/mail.svg" alt=""></li>
+                </ul>
+            </div>
+        </section>
+
+
+        <script>
+
+            const mobileBtn = document.getElementById('mobile-cta')
+                nav = document.querySelector('nav')
+                mobileBtnExit = document.getElementById('mobile-exit');
+
+            mobileBtn.addEventListener('click', () => {
+                nav.classList.add('menue-btn');
+            })
+            mobileBtnExit.addEventListener('click', () => {
+                nav.classList.remove('menue-btn');
+            })
+
+            //bat funktionen
+            function openbat() {
+                document.getElementById("bat-close").style.display = "block";
+            }
+
+            function closebat() {
+                document.getElementById("bat-close").style.display = "none";
+            }
+            //knight funktionen
+            function openknight() {
+                document.getElementById("knight-close").style.display = "block";
+            }
+
+            function closeknight() {
+                document.getElementById("knight-close").style.display = "none";
+            }
+            //wizard funktionen
+            function openwizard() {
+                document.getElementById("wizard-close").style.display = "block";
+            }
+
+            function closewizard() {
+                document.getElementById("wizard-close").style.display = "none";
+            }
+        </script>
+
+    </body>
+</html>

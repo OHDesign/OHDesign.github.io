@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>OH Design | 3D</title>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/3d.css">
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html"><img class="logo_white" src="/images/Logo(weiß).png" alt="logo"></a>
+                </div>
+
+                <img id="mobile-cta" class="mobile-menue" src="images/icons/menu.svg" alt="Open Navigation">
+
+                <nav>
+                    <img id="mobile-exit" class="mobile-menue-exit" src="images/icons/X.svg" alt="Close Navigation">
+                    <ul class="primary-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="galerie.html">Creativ Edits</a></li>
+                        <li class="current"><a href="#">3D</a></li>
+                        <li><a href="pixelart.html">Pixelart</a></li>
+                        <li><a href="fotografie.html">Fotografie</a></li>
+                        <li><a href="aboutMe.html">Über Mich</a></li>
+                        <li><a href="contact.html">Kontakt</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <section class="hero">
+            <div class="hero-color">
+                <div class="container">
+                    <div class="eye-catcher">
+                        <h1>3D</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="categories">
+            <div class="overlay">
+                <div id="select" class="categories-list">
+                    <ul class="c-list">
+                        <li><a href="galerie.html#select">Creativ Edits</a></li>
+                        <li class="current"><a href="#select">3D</a></li>
+                        <li><a href="pixelart.html#select">Pixelart</a></li>
+                        <li><a href="fotografie.html">Fotografie</a></li>
+                    </ul>
+                </div>
+                <div class="left-col">
+                    <div class="schwert">
+                        <div class="schwert-overlay" >
+                            <div class="schwert-cta">
+                                <h1 class="schwert-text">Schwert</h1>
+                                <div>
+                                    <p id="schwert-open" class="big-img" onclick="openschwert()">img</p>
+                                </div>
+                                <p class="subtext">Ein einfaches Rendering eines Schwertes.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="schwert-close" class="background" onclick="closeschwert()">
+                        <img class="big-view" src="/images/projects/3D/Schwert/preview2.png" alt="space">
+                    </div>
+                    
+                    <div class="schwert2">
+                        <div class="schwert2-overlay">
+                            <div class="schwert2-cta">
+                                <h1 class="schwert2-text">Excalibur</a></h1>
+                                <div>
+                                    <p id="schwert2-open" class="big-img" onclick="openschwert2()">img</p>
+                                </div>
+                                <p class="subtext">Ein Schwert im Stein.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="schwert2-close" class="background" onclick="closeschwert2()">
+                        <img class="big-view" src="/images/projects/3D/Schwert/finishedv4.png" alt="space">
+                    </div>
+                    <div class="schwert3">
+                        <div class="schwert3-overlay">
+                            <div class="schwert3-cta">
+                                <h1 class="schwert3-text">Excalibur V2</h1>
+                                <div>
+                                    <p id="schwert3-open" class="big-img" onclick="openschwert3()">img</p>
+                                </div>
+                                <p class="subtext">Gleiches Set, anderer Blickwinkel.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="schwert3-close" class="background" onclick="closeschwert3()">
+                        <img class="big-view" src="/images/projects/3D/Schwert/V2.2 fertig.jpg" alt="space">
+                    </div>
+                    <div class="kürbis">
+                        <div class="kürbis-overlay">
+                            <div class="kürbis-cta">
+                                <h1 class="kürbis-text">Kürbis</h1>
+                                <div>
+                                    <p id="kürbis-open" class="big-img" onclick="openkürbis()">img</p>
+                                </div>
+                                <p class="subtext">Happy Halloween.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="kürbis-close" class="background" onclick="closekürbis()">
+                        <img class="big-view" src="/images/projects/3D/Kürbis/Kürbisse.jpg" alt="space">
+                    </div>
+                    <div class="steine">
+                        <div class="steine-overlay">
+                            <div class="steine-cta">
+                                <h1 class="steine-text">Steine</h1>
+                                <div>
+                                    <p id="steine-open" class="big-img" onclick="opensteine()">img</p>
+                                </div>
+                                <p class="subtext">Ein paar Assets für das Excalibur Set.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="steine-close" class="background" onclick="closesteine()">
+                        <img class="big-view" src="/images/3D/projects/Rocks.png" alt="space">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="impressum">
+            <div class="container">
+                <ul class="impressum">
+                    <li>Impressum:</li>
+                    <li>Oliver Herwig</li>
+                    <li>Hansteinstr. 8</li>
+                    <li>37214 Witzenhausen</li>
+                    <li>oliverherwig1@web.de</li>
+                </ul>
+                <ul class="icons">
+                    <li><img src="/images/icons/person.svg" alt=""></li>
+                    <li><img src="/images/icons/home.svg" alt=""></li>
+
+                    <li><img src="/images/icons/mail.svg" alt=""></li>
+                </ul>
+            </div>
+        </section>
+
+
+        <script>
+
+            const mobileBtn = document.getElementById('mobile-cta')
+                nav = document.querySelector('nav')
+                mobileBtnExit = document.getElementById('mobile-exit');
+
+            mobileBtn.addEventListener('click', () => {
+                nav.classList.add('menue-btn');
+            })
+            mobileBtnExit.addEventListener('click', () => {
+                nav.classList.remove('menue-btn');
+            })
+
+            //schwert funktionen
+            function openschwert() {
+                document.getElementById("schwert-close").style.display = "block";
+            }
+
+            function closeschwert() {
+                document.getElementById("schwert-close").style.display = "none";
+            }
+            //schwert2 funktionen
+            function openschwert2() {
+                document.getElementById("schwert2-close").style.display = "block";
+            }
+
+            function closeschwert2() {
+                document.getElementById("schwert2-close").style.display = "none";
+            }
+            //schwert3 funktionen
+            function openschwert3() {
+                document.getElementById("schwert3-close").style.display = "block";
+            }
+
+            function closeschwert3() {
+                document.getElementById("schwert3-close").style.display = "none";
+            }
+            //kürbis funktionen
+            function openkürbis() {
+                document.getElementById("kürbis-close").style.display = "block";
+            }
+
+            function closekürbis() {
+                document.getElementById("kürbis-close").style.display = "none";
+            }
+            //steine funktionen
+            function opensteine() {
+                document.getElementById("steine-close").style.display = "block";
+            }
+
+            function closesteine() {
+                document.getElementById("steine-close").style.display = "none";
+            }
+        </script>
+
+    </body>
+</html>

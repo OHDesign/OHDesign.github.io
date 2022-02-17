@@ -1,0 +1,424 @@
+:root {
+  --primary-color: #23c8db;
+  --secondary-color: #200830;
+}
+
+.hero {
+  background-image: url("/images/projects/backdrop/aurora2_green.png");
+  padding-bottom: 2.25em;
+}
+
+.eye-catcher {
+  position: relative;
+  top: 5em;
+  color: white;
+}
+
+.categories-list {
+  justify-content: space-between;
+  text-align: center;
+  background: none;
+  position: unset;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 92vw;
+  margin: 0;
+  padding: 0 0 0 1em;
+}
+.categories-list ul {
+  display: inline-flex;
+  margin: 0;
+}
+.categories-list li.current a {
+  font-weight: bold;
+  color: white;
+  outline: unset;
+  background-color: var(--primary-color);
+}
+.categories-list a {
+  color: var(--primary-color);
+  font-size: 1em;
+  text-decoration: none;
+  background-color: white;
+  margin-right: 2vw;
+  padding: 0.75em 1em;
+  border-radius: 0.5em;
+  outline: 2px solid var(--primary-color);
+}
+.categories-list a:hover {
+  background: var(--secondary-color);
+  color: white;
+}
+
+.categories {
+  background-image: url("/images/projects/backdrop/aurora3_green.png");
+}
+
+.left-col {
+  position: relative;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 7vw;
+}
+.left-col .background {
+  display: none;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.75);
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 101;
+  cursor: pointer;
+}
+.left-col .big-view {
+  position: relative;
+  width: auto;
+  height: auto;
+  max-width: 90%;
+  max-height: 85%;
+  z-index: 100;
+  padding: 7vh 4vw;
+}
+.left-col .big-img {
+  text-align: center;
+  background-color: rgba(128, 128, 128, 0);
+  color: rgba(0, 0, 0, 0);
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 86vw;
+  height: 100%;
+  padding: auto;
+  cursor: pointer;
+}
+.left-col .subtext {
+  color: white;
+  font-size: 3.5vw;
+  text-align: center;
+  margin: 0;
+  padding: 0.1em 1em 10vw 1em;
+}
+.left-col .glasssphere {
+  background-image: url("/images/thumbnails/Fotos/glasskugel.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-origin: border-box;
+  margin: 2em 0 3em 0;
+  padding: 0;
+  height: 50vw;
+  width: 86vw;
+  position: relative;
+  border-radius: 0.1em;
+  outline: 3px solid white;
+  box-shadow: 1px 1px 10px gray;
+  transition: transform 1s;
+}
+.left-col .glasssphere:hover {
+  transform: scale(1.05);
+  z-index: 99;
+  box-shadow: 1px 1px 20px gray;
+}
+.left-col .glasssphere .glasssphere-overlay {
+  background: linear-gradient(rgba(150, 150, 150, 0.5), rgba(150, 150, 150, 0.5));
+  background-size: cover;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  border-radius: 0.1em;
+  text-decoration: none;
+}
+.left-col .glasssphere .glasssphere-overlay .glasssphere-cta {
+  padding: 0;
+  height: 100%;
+}
+.left-col .glasssphere .glasssphere-overlay .glasssphere-cta .glasssphere-text {
+  position: relative;
+  text-align: center;
+  font-size: 5vw;
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 15vw 2rem 5vw;
+  margin: 0;
+}
+.left-col .magicsphere {
+  background-image: url("/images/thumbnails/Fotos/13.2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-origin: border-box;
+  background-position: center top;
+  margin: 3em 0 3em 0;
+  padding: 0;
+  height: 50vw;
+  width: 86vw;
+  position: relative;
+  border-radius: 0.1em;
+  outline: 3px solid white;
+  box-shadow: 1px 1px 10px gray;
+  transition: transform 1s;
+}
+.left-col .magicsphere:hover {
+  transform: scale(1.05);
+  z-index: 99;
+  box-shadow: 1px 1px 20px gray;
+}
+.left-col .magicsphere .magicsphere-overlay {
+  background: linear-gradient(rgba(150, 150, 150, 0.5), rgba(150, 150, 150, 0.5));
+  background-size: cover;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  border-radius: 0.1em;
+}
+.left-col .magicsphere .magicsphere-overlay .magicsphere-cta {
+  height: 100%;
+  padding: 0;
+}
+.left-col .magicsphere .magicsphere-overlay .magicsphere-cta .magicsphere-text {
+  position: relative;
+  text-align: center;
+  font-size: 5vw;
+  color: white;
+  text-decoration: none;
+  display: block;
+  margin: 0;
+  padding: 15vw 2rem 5vw;
+}
+.left-col .chicken {
+  background-image: url("/images/thumbnails/Fotos/_DSC0252.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-origin: border-box;
+  margin: 3em 0 0 0;
+  padding: 0;
+  height: 50vw;
+  width: 86vw;
+  position: relative;
+  border-radius: 0.1em;
+  outline: 3px solid white;
+  box-shadow: 1px 1px 10px gray;
+  transition: transform 1s;
+}
+.left-col .chicken:hover {
+  transform: scale(1.05);
+  z-index: 99;
+  box-shadow: 1px 1px 20px gray;
+}
+.left-col .chicken .chicken-overlay {
+  background: linear-gradient(rgba(150, 150, 150, 0.5), rgba(150, 150, 150, 0.5));
+  background-size: cover;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  border-radius: 0.1em;
+  text-decoration: none;
+}
+.left-col .chicken .chicken-overlay .chicken-cta {
+  padding: 0;
+  height: 100%;
+}
+.left-col .chicken .chicken-overlay .chicken-cta .chicken-text {
+  position: relative;
+  text-align: center;
+  font-size: 5vw;
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 15vw 2rem 5vw;
+  margin: 0;
+}
+.left-col .portrait {
+  background-image: url("/images/thumbnails/Fotos/_DSC0097neu.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-origin: border-box;
+  margin: 3em 0 0 0;
+  padding: 0;
+  height: 86vw;
+  width: 86vw;
+  position: relative;
+  border-radius: 0.1em;
+  outline: 3px solid white;
+  box-shadow: 1px 1px 10px gray;
+  transition: transform 1s;
+}
+.left-col .portrait:hover {
+  transform: scale(1.05);
+  z-index: 99;
+  box-shadow: 1px 1px 20px gray;
+}
+.left-col .portrait .portrait-overlay {
+  background: linear-gradient(rgba(150, 150, 150, 0.5), rgba(150, 150, 150, 0.5));
+  background-size: cover;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  border-radius: 0.1em;
+  text-decoration: none;
+}
+.left-col .portrait .portrait-overlay .portrait-cta {
+  padding: 0;
+  height: 100%;
+}
+.left-col .portrait .portrait-overlay .portrait-cta .portrait-text {
+  position: relative;
+  text-align: center;
+  font-size: 5vw;
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 30vw 2rem 5vw;
+  margin: 0;
+}
+
+nav {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+@media only screen and (min-width: 975px) {
+  .left-col {
+    padding: 7.5vw;
+  }
+  .left-col .glasssphere {
+    height: 25vw;
+    width: 40vw;
+  }
+  .left-col .glasssphere .glasssphere-overlay {
+    height: 25vw;
+    left: 110%;
+  }
+  .left-col .glasssphere .glasssphere-overlay .glasssphere-cta .glasssphere-text {
+    font-size: 3.5vw;
+    padding: 2em 1em 2.5em 1em;
+    z-index: 10;
+  }
+  .left-col .glasssphere .glasssphere-overlay .subtext {
+    font-size: 1.5vw;
+    position: relative;
+    top: -4.5em;
+    padding: 0 2em 1em 1em;
+    z-index: 10;
+  }
+  .left-col .glasssphere .glasssphere-overlay .big-img {
+    background-color: rgba(0, 0, 255, 0);
+    color: rgba(0, 0, 0, 0);
+    left: -110%;
+    width: 84vw;
+    z-index: 11;
+  }
+  .left-col .glasssphere:hover {
+    transform: unset;
+    z-index: unset;
+    box-shadow: 1px 1px 10px gray;
+  }
+  .left-col .magicsphere {
+    height: 25vw;
+    width: 40vw;
+    left: 52.5%;
+  }
+  .left-col .magicsphere .magicsphere-overlay {
+    height: 25vw;
+    left: -110.5%;
+  }
+  .left-col .magicsphere .magicsphere-overlay .magicsphere-cta .magicsphere-text {
+    font-size: 3.5vw;
+    padding: 2em 1em 2.5em 1em;
+    z-index: 10;
+  }
+  .left-col .magicsphere .magicsphere-overlay .subtext {
+    font-size: 1.5vw;
+    position: relative;
+    top: -6em;
+    padding: 0.5em 2em 1em 1em;
+    z-index: 10;
+  }
+  .left-col .magicsphere .magicsphere-overlay .big-img {
+    background-color: rgba(0, 0, 255, 0);
+    color: rgba(0, 0, 0, 0);
+    width: 84vw;
+    z-index: 11;
+  }
+  .left-col .magicsphere:hover {
+    transform: unset;
+    z-index: unset;
+    box-shadow: 1px 1px 10px gray;
+  }
+  .left-col .chicken {
+    height: 25vw;
+    width: 40vw;
+  }
+  .left-col .chicken .chicken-overlay {
+    height: 25vw;
+    left: 110%;
+  }
+  .left-col .chicken .chicken-overlay .chicken-cta .chicken-text {
+    font-size: 3.5vw;
+    padding: 2em 1em 2.5em 1em;
+    z-index: 10;
+  }
+  .left-col .chicken .chicken-overlay .subtext {
+    font-size: 1.5vw;
+    position: relative;
+    top: -4.5em;
+    padding: 0 2em 1em 1em;
+    z-index: 10;
+  }
+  .left-col .chicken .chicken-overlay .big-img {
+    background-color: rgba(0, 0, 255, 0);
+    color: rgba(0, 0, 0, 0);
+    left: -110%;
+    width: 84vw;
+    z-index: 11;
+  }
+  .left-col .chicken:hover {
+    transform: unset;
+    z-index: unset;
+    box-shadow: 1px 1px 10px gray;
+  }
+  .left-col .portrait {
+    height: 25vw;
+    width: 25vw;
+    left: 62%;
+  }
+  .left-col .portrait .portrait-overlay {
+    width: 40vw;
+    height: 25vw;
+    left: -207%;
+  }
+  .left-col .portrait .portrait-overlay .portrait-cta .portrait-text {
+    font-size: 3.5vw;
+    padding: 2em 1em 2.5em 1em;
+    z-index: 10;
+  }
+  .left-col .portrait .portrait-overlay .subtext {
+    font-size: 1.5vw;
+    position: relative;
+    top: -4.5em;
+    padding: 0 2em 1em 1em;
+    z-index: 10;
+  }
+  .left-col .portrait .portrait-overlay .big-img {
+    background-color: rgba(0, 0, 255, 0);
+    color: rgba(0, 0, 0, 0);
+    width: 84vw;
+    z-index: 11;
+  }
+  .left-col .portrait:hover {
+    transform: unset;
+    z-index: unset;
+    box-shadow: 1px 1px 10px gray;
+  }
+}/*# sourceMappingURL=fotografie.css.map */
