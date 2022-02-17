@@ -192,7 +192,7 @@
   padding: 15vw 2rem 5vw;
 }
 .left-col .chicken {
-  background-image: url("../../../images/thumbnails/Fotos/_DSC0252.jpg");
+  background-image: url("../../../images/projects/Fotos/chicken.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -237,7 +237,7 @@
   margin: 0;
 }
 .left-col .portrait {
-  background-image: url("../../../images/thumbnails/Fotos/_DSC0097neu.png");
+  background-image: url("../../../images/projects/Fotos/portrait.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
