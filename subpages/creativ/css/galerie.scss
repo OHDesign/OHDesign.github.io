@@ -3,6 +3,9 @@
     --secondary-color : #200830;
 }
 
+.hero {
+    padding-bottom: 2.25em;
+}
 
 .categories-list {
     justify-content: space-between;
@@ -251,6 +254,12 @@ nav {
 }
 
 @media only screen and (min-width: 975px) {
+
+    .categories-list {
+        a{
+            padding: .75em 1em;
+        }
+    }
 
     .left-col {
         padding: 7.5vw;

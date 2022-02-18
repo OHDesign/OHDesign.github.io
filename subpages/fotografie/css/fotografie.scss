@@ -10,7 +10,6 @@
 
 .eye-catcher {
     position: relative;
-    top: 5em;
     color: white;
 }
 
@@ -308,6 +307,11 @@ nav {
 
 @media only screen and (min-width: 975px) {
 
+    .categories-list {
+        a{
+            padding: .75em 1em;
+        }
+    }
 
     .left-col {
         padding: 7.5vw;

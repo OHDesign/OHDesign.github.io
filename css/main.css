@@ -62,7 +62,7 @@ section {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
-  padding-bottom: 6em;
+  padding-bottom: 2.25em;
 }
 
 .eye-catcher {
@@ -97,7 +97,7 @@ section {
   margin-left: 1.5em;
   border-radius: 0.25em;
   position: relative;
-  bottom: 4em;
+  bottom: 0.5em;
   left: 2em;
 }
 
