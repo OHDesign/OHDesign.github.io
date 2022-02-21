@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>OH Design | Galerie</title>
+        <title>OH Design | Designs</title>
         <link rel="stylesheet" href="../../css/main.css">
         <link rel="stylesheet" href="css/galerie.css">
     </head>
@@ -21,7 +21,7 @@
                     <img id="mobile-exit" class="mobile-menue-exit" src="../../images/icons/X.svg" alt="Close Navigation">
                     <ul class="primary-nav">
                         <li><a href="../../index.html">Home</a></li>
-                        <li class="current"><a href="#">Creativ Edits</a></li>
+                        <li class="current"><a href="#">Designs</a></li>
                         <li><a href="../3d/3d.html">3D</a></li>
                         <li><a href="../pixelart/pixelart.html">Pixelart</a></li>
                         <li><a href="../fotografie/fotografie.html">Fotografie</a></li>
@@ -35,7 +35,7 @@
         <section class="hero">
             <div class="container">
                 <div class="eye-catcher">
-                    <h1>Creativ Edits</h1>
+                    <h1>Designs</h1>
                 </div>
             </div>
         </section>
@@ -43,7 +43,7 @@
             <div class="overlay">
                 <div id="select" class="categories-list">
                     <ul class="c-list">
-                        <li class="current"><a href="#select">Creativ Edits</a></li>
+                        <li class="current"><a href="#select">Designs</a></li>
                         <li><a href="../3d/3d.html#select">3D</a></li>
                         <li><a href="../pixelart/pixelart.html#select">Pixelart</a></li>
                         <li><a href="../fotografie/fotografie.html#select">Fotografie</a></li>
@@ -92,6 +92,20 @@
                     </div>
                     <div id="aurora-close" class="background" onclick="closeaurora()">
                         <img class="big-view" src="../../images/projects/Edits/aurora2.png" alt="space">
+                    </div>
+                    <div class="shrine">
+                        <div class="shrine-overlay">
+                            <div class="shrine-cta">
+                                <h1 class="shrine-text">Visit Firelink Shrine</a></h1>
+                                <div>
+                                    <p id="shrine-open" class="big-img" onclick="openshrine()">img</p>
+                                </div>
+                                <p class="subtext">Ein Werbeposter im Retrostyle</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="shrine-close" class="background" onclick="closeshrine()">
+                        <img class="big-view" src="../../images/projects/Edits/Firelink-Shrine.png" alt="space">
                     </div>
                 </div>
             </div>
@@ -151,6 +165,14 @@
 
             function closeaurora() {
                 document.getElementById("aurora-close").style.display = "none";
+            }
+            //shrine funktionen
+            function openshrine() {
+                document.getElementById("shrine-close").style.display = "block";
+            }
+
+            function closeshrine() {
+                document.getElementById("shrine-close").style.display = "none";
             }
         </script>
 
