@@ -7,6 +7,7 @@
         <title>OH Design | 3D</title>
         <link rel="stylesheet" href="../../css/main.css">
         <link rel="stylesheet" href="css/3d.css">
+        <link rel="icon" href="../../images/Logo(weiß_tab).svg">
     </head>
     <body>
         <div class="navbar">
@@ -81,19 +82,19 @@
                     <div id="schwert2-close" class="background" onclick="closeschwert2()">
                         <img class="big-view" src="../../images/projects/3D/Schwert/finishedv4.png" alt="space">
                     </div>
-                    <div class="schwert3">
-                        <div class="schwert3-overlay">
-                            <div class="schwert3-cta">
-                                <h1 class="schwert3-text">Excalibur V2</h1>
+                    <div class="Kristall">
+                        <div class="Kristall-overlay">
+                            <div class="Kristall-cta">
+                                <h1 class="Kristall-text">Kristall</h1>
                                 <div>
-                                    <p id="schwert3-open" class="big-img" onclick="openschwert3()">img</p>
+                                    <p id="Kristall-open" class="big-img" onclick="openKristall()">img</p>
                                 </div>
-                                <p class="subtext">Gleiches Set, anderer Blickwinkel.</p>
+                                <p class="subtext">Ein Fantasy Kristall-Erz</p>
                             </div>
                         </div>
                     </div>
-                    <div id="schwert3-close" class="background" onclick="closeschwert3()">
-                        <img class="big-view" src="../../images/projects/3D/Schwert/V2.2 fertig.jpg" alt="space">
+                    <div id="Kristall-close" class="background" onclick="closeKristall()">
+                        <img class="big-view" src="../../images/projects/3D/cristall/kristalle7.png" alt="space">
                     </div>
                     <div class="kürbis">
                         <div class="kürbis-overlay">
@@ -122,6 +123,20 @@
                     </div>
                     <div id="steine-close" class="background" onclick="closesteine()">
                         <img class="big-view" src="../../images/projects/3D/Rocks.png" alt="space">
+                    </div>
+                    <div class="planet">
+                        <div class="planet-overlay">
+                            <div class="planet-cta">
+                                <h1 class="planet-text">Fantasy Planet</h1>
+                                <div>
+                                    <p id="planet-open" class="big-img" onclick="openplanet()">img</p>
+                                </div>
+                                <p class="subtext">Ein fremder Planet mit eigenartiger Vegetation und interessanten Erz-Vorkommen</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="planet-close" class="background" onclick="closeplanet()">
+                        <img class="big-view" src="../../images/projects/3D/cristall/planet2.png" alt="space">
                     </div>
                 </div>
             </div>
@@ -174,13 +189,21 @@
             function closeschwert2() {
                 document.getElementById("schwert2-close").style.display = "none";
             }
-            //schwert3 funktionen
-            function openschwert3() {
-                document.getElementById("schwert3-close").style.display = "block";
+            //Kristall funktionen
+            function openKristall() {
+                document.getElementById("Kristall-close").style.display = "block";
             }
 
-            function closeschwert3() {
-                document.getElementById("schwert3-close").style.display = "none";
+            function closeKristall() {
+                document.getElementById("Kristall-close").style.display = "none";
+            }
+            //planet funktionen
+            function openplanet() {
+                document.getElementById("planet-close").style.display = "block";
+            }
+
+            function closeplanet() {
+                document.getElementById("planet-close").style.display = "none";
             }
             //kürbis funktionen
             function openkürbis() {
@@ -197,6 +220,14 @@
 
             function closesteine() {
                 document.getElementById("steine-close").style.display = "none";
+            }
+            //planet funktionen
+            function openplanet() {
+                document.getElementById("planet-close").style.display = "block";
+            }
+
+            function closeplanet() {
+                document.getElementById("planet-close").style.display = "none";
             }
         </script>
 
