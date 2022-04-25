@@ -65,7 +65,7 @@ section {
     background-image: url("../images/projects/backdrop/aurora2.png");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: top;
     padding-bottom: 2.25em;
 }
 
@@ -111,7 +111,7 @@ section {
     background-image: url("../images/projects/backdrop/aurora3.png");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: top right;
+    background-position: top;
     margin: 0;
     padding: 0;
     position: relative;
@@ -121,7 +121,7 @@ section {
 }
 
 .overlay {
-    background: linear-gradient(rgba(255, 255, 255, 0.3),rgba(255, 255, 255, 0.3));
+    background: linear-gradient(rgba(255, 255, 255, 0.1),rgba(255, 255, 255, 0.1));
     background-size: cover;
     padding: 0;
     position: relative;
