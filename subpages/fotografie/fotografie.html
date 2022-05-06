@@ -68,19 +68,19 @@
                         <img class="big-view" src="../../images/projects/Fotos/glasskugel.jpg" alt="space">
                     </div>
                     
-                    <div class="magicsphere">
-                        <div class="magicsphere-overlay">
-                            <div class="magicsphere-cta">
-                                <h1 class="magicsphere-text">Magic Orb</a></h1>
+                    <div class="glass">
+                        <div class="glass-overlay">
+                            <div class="glass-cta">
+                                <h1 class="glass-text">Cola Glas</a></h1>
                                 <div>
-                                    <p id="magicsphere-open" class="big-img" onclick="openmagicsphere()">img</p>
+                                    <p id="glass-open" class="big-img" onclick="openglass()">img</p>
                                 </div>
-                                <p class="subtext">Eine Magiekugel. Was man damit wohl so alles machen kann?</p>
+                                <p class="subtext">Möchte jemand etwas trinken?</p>
                             </div>
                         </div>
                     </div>
-                    <div id="magicsphere-close" class="background" onclick="closemagicsphere()">
-                        <img class="big-view" src="../../images/projects/Fotos/13.2.jpg" alt="space">
+                    <div id="glass-close" class="background" onclick="closeglass()">
+                        <img class="big-view" src="../../images/projects/Fotos/colaglas.jpg" alt="space">
                     </div>
                     <div class="chicken">
                         <div class="chicken-overlay">
@@ -109,6 +109,48 @@
                     </div>
                     <div id="portrait-close" class="background" onclick="closeportrait()">
                         <img class="big-view" src="../../images/projects/Fotos/portrait.png" alt="space">
+                    </div>
+                    <div class="deco">
+                        <div class="deco-overlay">
+                            <div class="deco-cta">
+                                <h1 class="deco-text">LED Decoglas</h1>
+                                <div>
+                                    <p id="deco-open" class="big-img" onclick="opendeco()">img</p>
+                                </div>
+                                <p class="subtext">Ist das Deco oder kann das weg?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="deco-close" class="background" onclick="closedeco()">
+                        <img class="big-view" src="../../images/projects/Fotos/decoglas.jpg" alt="space">
+                    </div>
+                    <div class="ds3cinematic">
+                        <div class="ds3cinematic-overlay">
+                            <div class="ds3cinematic-cta">
+                                <h1 class="ds3cinematic-text">Dark Souls III Cinematic</h1>
+                                <div>
+                                    <p id="ds3cinematic-open" class="big-img" onclick="opends3cinematic()">img</p>
+                                </div>
+                                <p class="subtext">Ein bearbeiteter Screenshot aus Dark Souls III.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="ds3cinematic-close" class="background" onclick="closeds3cinematic()">
+                        <img class="big-view" src="../../images/projects/Fotos/ds3 Vollnir cinematic-4.png" alt="space">
+                    </div>
+                    <div class="ds3montage">
+                        <div class="ds3montage-overlay">
+                            <div class="ds3montage-cta">
+                                <h1 class="ds3montage-text">Dark Souls III Bildmontage</h1>
+                                <div>
+                                    <p id="ds3montage-open" class="big-img" onclick="opends3montage()">img</p>
+                                </div>
+                                <p class="subtext">Eine Bildmontage mit Screenshots aus Dark Souls III.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="ds3montage-close" class="background" onclick="closeds3montage()">
+                        <img class="big-view" src="../../images/projects/Fotos/Irithil_x_ringedcity.png" alt="space">
                     </div>
                 </div>
             </div>
@@ -153,13 +195,13 @@
             function closeglasssphere() {
                 document.getElementById("glasssphere-close").style.display = "none";
             }
-            //magicsphere funktionen
-            function openmagicsphere() {
-                document.getElementById("magicsphere-close").style.display = "block";
+            //glass funktionen
+            function openglass() {
+                document.getElementById("glass-close").style.display = "block";
             }
 
-            function closemagicsphere() {
-                document.getElementById("magicsphere-close").style.display = "none";
+            function closeglass() {
+                document.getElementById("glass-close").style.display = "none";
             }
             //chicken funktionen
             function openchicken() {
@@ -176,6 +218,30 @@
 
             function closeportrait() {
                 document.getElementById("portrait-close").style.display = "none";
+            }
+            //deco funktionen
+            function opendeco() {
+                document.getElementById("deco-close").style.display = "block";
+            }
+
+            function closedeco() {
+                document.getElementById("deco-close").style.display = "none";
+            }
+            //deco funktionen
+            function opends3cinematic() {
+                document.getElementById("ds3cinematic-close").style.display = "block";
+            }
+
+            function closeds3cinematic() {
+                document.getElementById("ds3cinematic-close").style.display = "none";
+            }
+            //ds3montage funktionen
+            function opends3montage() {
+                document.getElementById("ds3montage-close").style.display = "block";
+            }
+
+            function closeds3montage() {
+                document.getElementById("ds3montage-close").style.display = "none";
             }
         </script>
 
