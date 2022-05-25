@@ -5,7 +5,7 @@
 }
 
 body {
-  background: white;
+  background: rgb(255, 255, 255);
   margin: 0;
   font-family: "Poppins";
   height: -webkit-fit-content;
@@ -61,7 +61,7 @@ section {
   background-image: url("../images/projects/backdrop/aurora2.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-position: top;
   padding-bottom: 2.25em;
 }
 
@@ -102,11 +102,11 @@ section {
 }
 
 .categories {
-  background: white;
+  background: rgb(255, 255, 255);
   background-image: url("../images/projects/backdrop/aurora3.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: top right;
+  background-position: top;
   margin: 0;
   padding: 0;
   position: relative;
@@ -117,7 +117,7 @@ section {
 }
 
 .overlay {
-  background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
+  background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
   background-size: cover;
   padding: 0;
   position: relative;
@@ -415,7 +415,7 @@ nav li a:hover {
     background-color: unset;
   }
   .navbar nav li.current a:hover {
-    background-color: #b6b6b6;
+    background-color: rgb(182, 182, 182);
     color: white;
   }
   .navbar nav a {
@@ -425,7 +425,7 @@ nav li a:hover {
     padding: 0.3em 1vw;
   }
   .navbar nav a:hover {
-    background: #b6b6b6;
+    background: rgb(182, 182, 182);
     color: white;
   }
 
