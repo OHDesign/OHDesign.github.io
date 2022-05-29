@@ -73,10 +73,50 @@
         position: relative;
         width: auto;
         height: auto;
-        max-width: 90%;
+        max-width: 30%;
         max-height: 85%;
         z-index: 100;
-        padding: 7vh 4vw;
+        padding: 7vh 2% 7vh 2%;
+    }
+
+    .big-view2 {
+        position: relative;
+        width: auto;
+        height: auto;
+        max-width: 30%;
+        max-height: 85%;
+        z-index: 100;
+        padding: 7vh 2% 7vh 0;
+    }
+    
+    .description-header {
+        position: absolute;
+        background-color: #969696a2;
+        width: 30%;
+        height: auto;
+        max-width: 30%;
+        color: white;
+        font-size: 3.5em;
+        text-align: left;
+        top: 7vh;
+        right: 2%;
+        margin: 0;
+        padding: 1vh 1vw 1vh 1vw;
+    }
+
+    .description {
+        position: absolute;
+        background-color: #969696a2;
+        width: 30%;
+        height: auto;
+        max-width: 30%;
+        color: white;
+        font-size: 2em;
+        text-align: left;
+        top: 16.8vh;
+        right: 2%;
+        margin: 0;
+        padding: 1vh 1vw 1vh 1vw;
     }
 
     .big-img {
@@ -151,8 +191,8 @@
         }
     }
 
-    .offline {
-        background-image: url("../../../images/thumbnails/Edits/offline-banner.png");
+    .bockwurst {
+        background-image: url("../../../images/thumbnails/Edits/Bockwurst\ Merch.png");
         background-size: cover;
         background-repeat: no-repeat;
         background-origin: border-box;
@@ -173,7 +213,7 @@
             box-shadow: 1px 1px 20px gray;
         }
 
-        .offline-overlay {
+        .bockwurst-overlay {
             background: linear-gradient(rgba(150, 150, 150, 0.5),rgba(150, 150, 150, 0.5));
             background-size: cover;
             position: relative;
@@ -182,10 +222,10 @@
             height: 100%;
             border-radius: 0.1em;
 
-            .offline-cta{
+            .bockwurst-cta{
                 height: 100%;
                 padding: 0;
-                .offline-text {
+                .bockwurst-text {
                     position: relative;
                     text-align: center;
                     font-size: 5vw;
@@ -343,15 +383,16 @@ nav {
                 box-shadow: 1px 1px 10px gray;
             }
         }
-        .offline {
+        .bockwurst {
             height: 25vw;
-            width: 40vw;
-            left: 52.5%;
-            .offline-overlay {
+            width: 18vw;
+            left: 65%;
+            .bockwurst-overlay {
                 height: 25vw;
-                left: -110.5%;
-                .offline-cta {
-                    .offline-text {
+                width: 40vw;
+                left: -302.5%;
+                .bockwurst-cta {
+                    .bockwurst-text {
                         font-size: 3.5vw;
                         padding: 2em 1em 2.5em 1em;
                         z-index: 10;
@@ -414,11 +455,11 @@ nav {
         .shrine {
             height: 25vw;
             width: 18vw;
-            left: 62%;
+            left: 65%;
             .shrine-overlay {
                 height: 25vw;
                 width: 40vw;
-                left: -288%;
+                left: -302.5%;
                 .shrine-cta {
                     .shrine-text {
                         font-size: 3.5vw;
