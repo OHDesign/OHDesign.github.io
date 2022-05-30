@@ -73,50 +73,46 @@
         position: relative;
         width: auto;
         height: auto;
-        max-width: 30%;
-        max-height: 85%;
+        top: 7vh;
+        left: 2%;
+        max-height: 40vh;
+        max-width: 50%;
         z-index: 100;
-        padding: 7vh 2% 7vh 2%;
     }
 
     .big-view2 {
+        display: block;
         position: relative;
         width: auto;
         height: auto;
-        max-width: 30%;
-        max-height: 85%;
+        top: 8vh;
+        left: 2%;
+        max-height: 40vh;
+        max-width: 50%;
         z-index: 100;
-        padding: 7vh 2% 7vh 0;
     }
-    
-    .description-header {
-        position: absolute;
+
+    .textbox {
         background-color: #969696a2;
-        width: 30%;
-        height: auto;
-        max-width: 30%;
+        position: absolute;
+        width: auto;
+        height: fit-content;
+        max-width: 40vw;
+        max-height: 90vh;
         color: white;
-        font-size: 3.5em;
         text-align: left;
         top: 7vh;
         right: 2%;
-        margin: 0;
+        margin: 0 2% 0 0;
         padding: 1vh 1vw 1vh 1vw;
+    }
+    
+    .description-header {
+        font-size: 3.5vw;
     }
 
     .description {
-        position: absolute;
-        background-color: #969696a2;
-        width: 30%;
-        height: auto;
-        max-width: 30%;
-        color: white;
-        font-size: 2em;
-        text-align: left;
-        top: 16.8vh;
-        right: 2%;
-        margin: 0;
-        padding: 1vh 1vw 1vh 1vw;
+        font-size: 2vw;
     }
 
     .big-img {
@@ -339,6 +335,16 @@ nav {
     height: fit-content;
 }
 
+
+@media only screen and (min-width: 660px) and (max-width: 975px) {
+
+    .left-col .textbox {
+        max-width: calc(100vw - 40vh);
+    }
+    
+
+}
+
 @media only screen and (min-width: 975px) {
 
     .categories-list {
@@ -349,6 +355,46 @@ nav {
 
     .left-col {
         padding: 7.5vw;
+
+        .big-view {
+            position: relative;
+            width: auto;
+            height: auto;
+            top: 7vh;
+            left: 2%;
+            max-height: 50vh;
+            max-width: 45vw;
+            z-index: 100;
+        }
+    
+        .big-view2 {
+            display: inline;
+            position: relative;
+            width: auto;
+            height: auto;
+            top: 7vh;
+            left: 4%;
+            max-height: 50vh;
+            max-width: 45vw;
+            z-index: 100;
+        }
+
+        .textbox {
+            display: block;
+            position: relative;
+            max-width: 90vw;
+            left: 2%;
+            top: 8%;
+        }
+        
+        .description-header {
+            font-size: 3.5vh;
+        }
+    
+        .description {
+            font-size: 2vh;
+        }
+
         .creativ {
             height: 25vw;
             width: 40vw;

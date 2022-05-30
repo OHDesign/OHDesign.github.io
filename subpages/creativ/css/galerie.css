@@ -70,47 +70,44 @@
   position: relative;
   width: auto;
   height: auto;
-  max-width: 30%;
-  max-height: 85%;
+  top: 7vh;
+  left: 2%;
+  max-height: 40vh;
+  max-width: 50%;
   z-index: 100;
-  padding: 7vh 2% 7vh 2%;
 }
 .left-col .big-view2 {
+  display: block;
   position: relative;
   width: auto;
   height: auto;
-  max-width: 30%;
-  max-height: 85%;
+  top: 8vh;
+  left: 2%;
+  max-height: 40vh;
+  max-width: 50%;
   z-index: 100;
-  padding: 7vh 2% 7vh 0;
 }
-.left-col .description-header {
-  position: absolute;
+.left-col .textbox {
   background-color: rgba(150, 150, 150, 0.6352941176);
-  width: 30%;
-  height: auto;
-  max-width: 30%;
+  position: absolute;
+  width: auto;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  max-width: 40vw;
+  max-height: 90vh;
   color: white;
-  font-size: 3.5em;
   text-align: left;
   top: 7vh;
   right: 2%;
-  margin: 0;
+  margin: 0 2% 0 0;
   padding: 1vh 1vw 1vh 1vw;
 }
+.left-col .description-header {
+  font-size: 3.5vw;
+}
 .left-col .description {
-  position: absolute;
-  background-color: rgba(150, 150, 150, 0.6352941176);
-  width: 30%;
-  height: auto;
-  max-width: 30%;
-  color: white;
-  font-size: 2em;
-  text-align: left;
-  top: 16.8vh;
-  right: 2%;
-  margin: 0;
-  padding: 1vh 1vw 1vh 1vw;
+  font-size: 2vw;
 }
 .left-col .big-img {
   text-align: center;
@@ -319,6 +316,11 @@ nav {
   height: fit-content;
 }
 
+@media only screen and (min-width: 660px) and (max-width: 975px) {
+  .left-col .textbox {
+    max-width: calc(100vw - 40vh);
+  }
+}
 @media only screen and (min-width: 975px) {
   .categories-list a {
     padding: 0.75em 1em;
@@ -326,6 +328,40 @@ nav {
 
   .left-col {
     padding: 7.5vw;
+  }
+  .left-col .big-view {
+    position: relative;
+    width: auto;
+    height: auto;
+    top: 7vh;
+    left: 2%;
+    max-height: 50vh;
+    max-width: 45vw;
+    z-index: 100;
+  }
+  .left-col .big-view2 {
+    display: inline;
+    position: relative;
+    width: auto;
+    height: auto;
+    top: 7vh;
+    left: 4%;
+    max-height: 50vh;
+    max-width: 45vw;
+    z-index: 100;
+  }
+  .left-col .textbox {
+    display: block;
+    position: relative;
+    max-width: 90vw;
+    left: 2%;
+    top: 8%;
+  }
+  .left-col .description-header {
+    font-size: 3.5vh;
+  }
+  .left-col .description {
+    font-size: 2vh;
   }
   .left-col .creativ {
     height: 25vw;
