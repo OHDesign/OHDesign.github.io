@@ -12,6 +12,7 @@ body {
     height: fit-content;
 }
 
+
 .navbar {
     height: 40px;
     background: white;
@@ -133,6 +134,98 @@ section {
     height: fit-content;
     padding: 2rem;
 
+    .nonclick {
+        text-align: center;
+        background-color: rgba(128, 128, 128, 0);
+        color: rgba(0, 0, 0, 0);
+    }
+
+    .background {
+        display: none;
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.25);
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 101;
+        cursor: zoom-out;
+        backdrop-filter: blur(10px);
+    }
+
+    .big-view {
+        position: relative;
+        width: auto;
+        height: auto;
+        top: 7vh;
+        left: 2%;
+        max-height: 40vh;
+        max-width: 50%;
+        z-index: 100;
+    }
+
+    .big-view-16-9 {
+        display: block;
+        position: relative;
+        width: auto;
+        height: auto;
+        top: 7vh;
+        max-height: 50vh;
+        max-width: 92vw;
+        z-index: 100;
+        padding-left: 2%;
+    }
+
+    .big-view2 {
+        display: block;
+        position: relative;
+        width: auto;
+        height: auto;
+        top: 7vh;
+        max-height: 45vh;
+        max-width: 50%;
+        z-index: 100;
+        padding: 0 0 2% 2%;
+    }
+
+    .textbox {
+        background-color: #969696a2;
+        position: absolute;
+        width: auto;
+        height: fit-content;
+        max-width: 40vw;
+        max-height: 90vh;
+        color: white;
+        text-align: left;
+        top: 7vh;
+        right: 2%;
+        margin: 0 2% 0 0;
+        padding: 1vh 1vw 1vh 1vw;
+    }
+
+    .textbox-16-9 {
+        background-color: #969696a2;
+        position: relative;
+        width: auto;
+        height: fit-content;
+        max-width: 90vw;
+        max-height: 90vh;
+        color: white;
+        text-align: left;
+        top: 7vh;
+        left: 2%;
+        margin: 2% 0 0 0;
+        padding: 1% 1% 1% 1%;
+    }
+    
+    .description-header {
+        font-size: 6vw;
+    }
+
+    .description {
+        font-size: 3vw;
+    }
+
     .creativ {
         background-image: url("../images/thumbnails/Edits/Space\(web\).jpg");
         background-size: cover;
@@ -155,7 +248,7 @@ section {
         }
 
         .creativ-overlay {
-            background: linear-gradient(rgba(150, 150, 150, 0.5),rgba(150, 150, 150, 0.5));
+            background: linear-gradient(rgba(150, 150, 150, 0.25),rgba(150, 150, 150, 0.25));
             background-size: cover;
             position: relative;
             margin: 0;
@@ -202,7 +295,7 @@ section {
         }
 
         .threeD-overlay {
-            background: linear-gradient(rgba(150, 150, 150, 0.5),rgba(150, 150, 150, 0.5));
+            background: linear-gradient(rgba(150, 150, 150, 0.25),rgba(150, 150, 150, 0.25));
             background-size: cover;
             position: relative;
             margin: 0;
@@ -247,7 +340,7 @@ section {
         }
 
         .pixel-overlay {
-            background: linear-gradient(rgba(150, 150, 150, 0.5),rgba(150, 150, 150, 0.5));
+            background: linear-gradient(rgba(150, 150, 150, 0.25),rgba(150, 150, 150, 0.25));
             background-size: cover;
             position: relative;
             margin: 0;
@@ -292,7 +385,7 @@ section {
         }
 
         .foto-overlay {
-            background: linear-gradient(rgba(150, 150, 150, 0.5),rgba(150, 150, 150, 0.5));
+            background: linear-gradient(rgba(150, 150, 150, 0.25),rgba(150, 150, 150, 0.25));
             background-size: cover;
             position: relative;
             margin: 0;
@@ -404,7 +497,42 @@ nav {
         cursor: pointer;
 }
 
-@media only screen and (min-width: 975px) {
+
+
+@media only screen and (min-width: 975px){
+
+    @media only screen and (min-aspect-ratio: 16/9) {
+        .left-col {
+
+            .textbox-16-9 {
+                display: inline-block;
+                position: relative;
+                width: auto;
+                height: fit-content;
+                max-height: 90vh;
+                max-width: 20vw;
+                color: white;
+                text-align: left;
+                top: 3vh;
+                left: 2%;
+                padding: 1% 1% 1% 1%;
+                vertical-align: top;
+            }
+
+            .big-view-16-9 {
+                display: inline;
+                position: relative;
+                width: auto;
+                height: auto;
+                top: 7vh;
+                max-height: 90vh;
+                max-width: 70vw;
+                z-index: 100;
+                padding-left: 2%;
+            }
+        }
+    }
+
     .mobile-menue, .mobile-menue-exit {
         display: none;
     }
@@ -473,6 +601,45 @@ nav {
 
     .left-col {
         padding: 4rem 7.5vw;
+
+        .big-view {
+            position: relative;
+            width: auto;
+            height: auto;
+            top: 7vh;
+            left: 2%;
+            max-height: 50vh;
+            max-width: 90vw;
+            z-index: 100;
+        }
+    
+        .big-view2 {
+            display: inline;
+            position: relative;
+            width: auto;
+            height: auto;
+            top: 7vh;
+            max-height: 50vh;
+            max-width: 45vw;
+            z-index: 100;
+        }
+
+        .textbox {
+            display: block;
+            position: relative;
+            max-width: 90vw;
+            left: 2%;
+            top: 8%;
+        }
+        
+        .description-header {
+            font-size: 3.5vh;
+        }
+    
+        .description {
+            font-size: 2vh;
+        }
+
         .creativ {
             width: 100%;
              .creativ-overlay .creativ-cta .creativ-text {

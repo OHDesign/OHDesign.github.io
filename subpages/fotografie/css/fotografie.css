@@ -92,7 +92,7 @@
   width: 86vw;
   height: 100%;
   padding: auto;
-  cursor: pointer;
+  cursor: zoom-in;
 }
 .left-col .subtext {
   color: white;
@@ -457,6 +457,19 @@ nav {
     width: 84vw;
     z-index: 11;
   }
+  .left-col .glasssphere .glasssphere-overlay .nonclick {
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0);
+    color: rgba(0, 0, 0, 0);
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: -4vw;
+    width: 4vw;
+    height: 100%;
+    z-index: 101;
+    padding: auto;
+  }
   .left-col .glasssphere:hover {
     transform: unset;
     z-index: unset;
@@ -490,6 +503,19 @@ nav {
     width: 84vw;
     z-index: 11;
   }
+  .left-col .glass .glass-overlay .nonclick {
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0);
+    color: rgba(0, 0, 0, 0);
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 40vw;
+    width: 11.7vw;
+    height: 100%;
+    z-index: 101;
+    padding: auto;
+  }
   .left-col .glass:hover {
     transform: unset;
     z-index: unset;
@@ -521,6 +547,19 @@ nav {
     left: -110%;
     width: 84vw;
     z-index: 11;
+  }
+  .left-col .chicken .chicken-overlay .nonclick {
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0);
+    color: rgba(0, 0, 0, 0);
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: -4vw;
+    width: 4vw;
+    height: 100%;
+    z-index: 101;
+    padding: auto;
   }
   .left-col .chicken:hover {
     transform: unset;
@@ -555,6 +594,19 @@ nav {
     width: 84vw;
     z-index: 11;
   }
+  .left-col .portrait .portrait-overlay .nonclick {
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0);
+    color: rgba(0, 0, 0, 0);
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 40vw;
+    width: 11.7vw;
+    height: 100%;
+    z-index: 101;
+    padding: auto;
+  }
   .left-col .portrait:hover {
     transform: unset;
     z-index: unset;
@@ -586,6 +638,19 @@ nav {
     left: -110%;
     width: 84vw;
     z-index: 11;
+  }
+  .left-col .deco .deco-overlay .nonclick {
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0);
+    color: rgba(0, 0, 0, 0);
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: -4vw;
+    width: 4vw;
+    height: 100%;
+    z-index: 101;
+    padding: auto;
   }
   .left-col .deco:hover {
     transform: unset;
@@ -619,6 +684,19 @@ nav {
     width: 84vw;
     z-index: 11;
   }
+  .left-col .ds3cinematic .ds3cinematic-overlay .nonclick {
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0);
+    color: rgba(0, 0, 0, 0);
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 40vw;
+    width: 4vw;
+    height: 100%;
+    z-index: 101;
+    padding: auto;
+  }
   .left-col .ds3cinematic:hover {
     transform: unset;
     z-index: unset;
@@ -650,6 +728,19 @@ nav {
     left: -110%;
     width: 84vw;
     z-index: 11;
+  }
+  .left-col .ds3montage .ds3montage-overlay .nonclick {
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0);
+    color: rgba(0, 0, 0, 0);
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: -4vw;
+    width: 4vw;
+    height: 100%;
+    z-index: 101;
+    padding: auto;
   }
   .left-col .ds3montage:hover {
     transform: unset;

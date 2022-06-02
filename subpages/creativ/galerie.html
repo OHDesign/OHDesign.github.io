@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="css/galerie.css">
         <link rel="icon" href="../../images/Logo(weiß).svg">
     </head>
-    <body>
+    <body id="disable-scroll">
         <div class="navbar">
             <div class="container">
                 <div class="logo">
@@ -56,14 +56,21 @@
                             <div class="creativ-cta">
                                 <h1 class="creativ-text">Planet mit<br>Solarstrudel</h1>
                                 <div>
-                                    <p id="creativ-open" class="big-img" onclick="opencreativ()">img</p>
+                                    <p id="creativ-open" class="big-img" onclick="opencreativ();disable()">img</p>
+                                    <div class="nonclick">space</div>
                                 </div>
                                 <p class="subtext">Ein Eis-Planet? Oder einfach nur eine Murmel.</p>
                             </div>
                         </div>
                     </div>
-                    <div id="creativ-close" class="background" onclick="closecreativ()">
-                        <img class="big-view" src="../../images/projects/Edits/Space(web).jpg" alt="space">
+                    <div id="creativ-close" class="background" onclick="closecreativ();enable()">
+                        <img class="big-view-16-9" src="../../images/projects/Edits/Space(web).jpg" alt="space">
+                        <div class="textbox-16-9">
+                            <h1 class="description-header">Planet mit Solarstrudel</h1>
+                            <p class="description">Dieses Bild wurde vom Spiel "Destiny 2" inspiriert. Dafür habe ich mir ein paar meiner Fotos
+                             von einer Murmel und von ein paar Wolken verwendet. Diese habe ich dann mit Photoshop entsprechend
+                             angeordnet, die Farben angepasst und dann mit verschiedenen Filtern herum experimentiert. </p>
+                        </div>
                     </div>
                     
                     <div class="bockwurst">
@@ -71,21 +78,22 @@
                             <div class="bockwurst-cta">
                                 <h1 class="bockwurst-text">Bockwurst</a></h1>
                                 <div>
-                                    <p id="bockwurst-open" class="big-img" onclick="openbockwurst()">img</p>
+                                    <p id="bockwurst-open" class="big-img" onclick="openbockwurst();disable()">img</p>
+                                    <div class="nonclick">space</div>
                                 </div>
                                 <p class="subtext">Bock auf Wurst.</p>
                             </div>
                         </div>
                     </div>
-                    <div id="bockwurst-close" class="background" onclick="closebockwurst()">
-                        <img class="big-view" src="../../images/projects/Edits/Bockwurst Merch.png" alt="Bockwurst">
+                    <div id="bockwurst-close" class="background" onclick="closebockwurst();enable()">
+                        <img class="big-view2" src="../../images/projects/Edits/Bockwurst Merch.png" alt="Bockwurst">
                         <img class="big-view2" src="../../images/projects/Edits/Bockwurst Merch veggie.png" alt="Bockvurst">
                         <div class="textbox">
                                 <h1 class="description-header">Bockwurst</h1>
-                                <p class="description">Hier habe ich mich einmal an einem Mockup versucht. Dafür habe ich zuerst das Design, mit dem Affinity Designer, erstellt. Anschließend habe 
+                                <p class="description">Hier habe ich mich einmal an einem Mockup versucht. Dafür habe ich zuerst das Design
+                                 mit dem Affinity Designer erstellt. Anschließend habe 
                                 ich mit Photoshop und einer kostenlosen Mockup-Vorlage das Design auf das Shirt gebracht. </br> Da das 
-                                erste Design natürlich nicht jeden Menschen anspricht, habe ich mir ein alternatives Design überlegt und
-                                umgesetzt. </p>
+                                erste Design natürlich nicht jeden Menschen anspricht, habe ich es als Alternative etwas abgewandelt umgesetzt.</p>
                         </div>
                     </div>
                     <div class="aurora">
@@ -93,28 +101,44 @@
                             <div class="aurora-cta">
                                 <h1 class="aurora-text">Aurora</h1>
                                 <div>
-                                    <p id="aurora-open" class="big-img" onclick="openaurora()">img</p>
+                                    <p id="aurora-open" class="big-img" onclick="openaurora();disable()">img</p>
+                                    <div class="nonclick">space</div>
                                 </div>
                                 <p class="subtext">Der Hintergrund dieser Seite</p>
                             </div>
                         </div>
                     </div>
-                    <div id="aurora-close" class="background" onclick="closeaurora()">
-                        <img class="big-view" src="../../images/projects/Edits/aurora2.png" alt="space">
+                    <div id="aurora-close" class="background" onclick="closeaurora();enable()">
+                        <img class="big-view-16-9" src="../../images/projects/Edits/aurora2.png" alt="space">
+                        <div class="textbox-16-9">
+                            <h1 class="description-header">Aurora</h1>
+                            <p class="description">Unter meinen von Youtube vorgeschlagenen Videos war ein Tutorial wie man mit Photoshop einen Aurora Effekt
+                            erzeugt. Und da ich zu dem Zeitpunkt dabei war meine Seite zu designen und mir das dynamische daran gefallen hat entschied ich, dass
+                            dies der Hintergrund für meine Seite werden soll.
+                            </p>
+                        </div>
                     </div>
                     <div class="shrine">
                         <div class="shrine-overlay">
                             <div class="shrine-cta">
                                 <h1 class="shrine-text">Visit Firelink Shrine</a></h1>
                                 <div>
-                                    <p id="shrine-open" class="big-img" onclick="openshrine()">img</p>
+                                    <p id="shrine-open" class="big-img" onclick="openshrine();disable()">img</p>
+                                    <div class="nonclick">space</div>
                                 </div>
                                 <p class="subtext">Ein Werbeposter im Retrostyle</p>
                             </div>
                         </div>
                     </div>
-                    <div id="shrine-close" class="background" onclick="closeshrine()">
-                        <img class="big-view" src="../../images/projects/Edits/Firelink-Shrine.svg" alt="space">
+                    <div id="shrine-close" class="background" onclick="closeshrine();enable()">
+                        <img class="big-view-16-9" src="../../images/projects/Edits/Firelink-Shrine.svg" alt="space">
+                        <div class="textbox-16-9">
+                            <h1 class="description-header">Visit Firelink Shrine</h1>
+                            <p class="description">Die Inspiration hierfür kam aus einem Youtube Video. Es ging darum ein Retro Werbeposter von einem
+                            fiktiven Ort, zum Beispiel aus einem Buch oder Videospiel, zu erstellen. Hierfür habe ich einen Screenshot aus dem Spiel
+                            "Dark Souls III" genommen. Umgestzt habe ich es mit dem Affinity Designer, da dieser Stil ja förmlich nach "Vektorgrafik" schreit.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -182,6 +206,14 @@
 
             function closeshrine() {
                 document.getElementById("shrine-close").style.display = "none";
+            }
+
+            function disable() {
+                document.getElementById("disable-scroll").style.overflow = "hidden";
+            }
+
+            function enable() {
+                document.getElementById("disable-scroll").style.overflow = "unset";
             }
         </script>
 

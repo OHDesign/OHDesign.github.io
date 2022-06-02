@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="css/3d.css">
         <link rel="icon" href="../../images/Logo(weiß).svg">
     </head>
-    <body>
+    <body id="disable-scroll">
         <div class="navbar">
             <div class="container">
                 <div class="logo">
@@ -58,14 +58,22 @@
                             <div class="schwert-cta">
                                 <h1 class="schwert-text">Schwert</h1>
                                 <div>
-                                    <p id="schwert-open" class="big-img" onclick="openschwert()">img</p>
+                                    <p id="schwert-open" class="big-img" onclick="openschwert();disable()">img</p>
+                                    <div class="nonclick">space</div>
                                 </div>
                                 <p class="subtext">Ein einfaches Rendering eines Schwertes.</p>
                             </div>
                         </div>
                     </div>
-                    <div id="schwert-close" class="background" onclick="closeschwert()">
-                        <img class="big-view" src="../../images/projects/3D/Schwert/preview2.png" alt="space">
+                    <div id="schwert-close" class="background" onclick="closeschwert();enable()">
+                        <img class="big-view-16-9" src="../../images/projects/3D/Schwert/preview2.png" alt="space">
+                        <div class="textbox-16-9">
+                            <h1 class="description-header">Schwert</h1>
+                            <p class="description">Dieses Schwert ist Teil des "Excalibur" Renders. Da man darauf jedoch garnicht die ganzen Details des Schwertes
+                            sehen kann, habe ich nochmal ein Render nur vom Schwert erstellt. Wie alle Bilder in der Kategorie "3D" ist auch dieses
+                            in Blender modelliert und gerendert.
+                            </p>
+                        </div>
                     </div>
                     
                     <div class="schwert2">
@@ -73,70 +81,102 @@
                             <div class="schwert2-cta">
                                 <h1 class="schwert2-text">Excalibur</a></h1>
                                 <div>
-                                    <p id="schwert2-open" class="big-img" onclick="openschwert2()">img</p>
+                                    <p id="schwert2-open" class="big-img" onclick="openschwert2();disable()">img</p>
+                                    <div class="nonclick">space</div>
                                 </div>
                                 <p class="subtext">Ein Schwert im Stein.</p>
                             </div>
                         </div>
                     </div>
-                    <div id="schwert2-close" class="background" onclick="closeschwert2()">
-                        <img class="big-view" src="../../images/projects/3D/Schwert/finishedv4.png" alt="space">
+                    <div id="schwert2-close" class="background" onclick="closeschwert2();enable()">
+                        <img class="big-view2" src="../../images/projects/3D/Schwert/version1.jpg" alt="space">
+                        <img class="big-view2" src="../../images/projects/3D/Schwert/finishedv4.png" alt="space">
+                        <div class="textbox">
+                            <h1 class="description-header">Excalibur</h1>
+                            <p class="description">Mit diesem Projekt wollte ich zum Üben einmal eine komplette Szene modellieren und rendern.
+                                Das linke Bild ist der erste Versuch, der mir zwar gefallen hat, ich aber überzeugt davon war, dass ich das noch besser hin bekomme.
+                                Deshalb habe ich das ganze noch zweimal jeweils komplett neu gemacht. Das rechte Bild ist der dritte Versuch, 
+                                mit dem ich dann wirklich zufrieden war. Den zweiten Versuch habe ich an dieser Stelle weg gelassen,
+                                da er mir von den drei am wenigsten gefällt, und ich hier natürlich nichts zeige, mit dem ich nich zufrieden bin.
+                                Wie alle Bilder in der Kategorie "3D" ist auch dieses in Blender modelliert und gerendert.
+                            </p>
+                        </div>
                     </div>
                     <div class="Kristall">
                         <div class="Kristall-overlay">
                             <div class="Kristall-cta">
                                 <h1 class="Kristall-text">Kristall</h1>
                                 <div>
-                                    <p id="Kristall-open" class="big-img" onclick="openKristall()">img</p>
+                                    <p id="Kristall-open" class="big-img" onclick="openKristall();disable()">img</p>
+                                    <div class="nonclick">space</div>
                                 </div>
                                 <p class="subtext">Ein Fantasy Kristall-Erz</p>
                             </div>
                         </div>
                     </div>
-                    <div id="Kristall-close" class="background" onclick="closeKristall()">
-                        <img class="big-view" src="../../images/projects/3D/cristall/kristalle7.png" alt="space">
+                    <div id="Kristall-close" class="background" onclick="closeKristall();enable()">
+                        <img class="big-view-16-9" src="../../images/projects/3D/cristall/kristalle7.png" alt="space">
+                        <div class="textbox-16-9">
+                            <h1 class="description-header">Aurora</h1>
+                            <p class="description">Lorem ipsum ich hab keine Ahnung was ich hier hin schreiben soll.</p>
+                        </div>
                     </div>
                     <div class="kürbis">
                         <div class="kürbis-overlay">
                             <div class="kürbis-cta">
                                 <h1 class="kürbis-text">Kürbis</h1>
                                 <div>
-                                    <p id="kürbis-open" class="big-img" onclick="openkürbis()">img</p>
+                                    <p id="kürbis-open" class="big-img" onclick="openkürbis();disable()">img</p>
+                                    <div class="nonclick">space</div>
                                 </div>
                                 <p class="subtext">Happy Halloween.</p>
                             </div>
                         </div>
                     </div>
-                    <div id="kürbis-close" class="background" onclick="closekürbis()">
-                        <img class="big-view" src="../../images/projects/3D/pumpkin/pumpkin.jpg" alt="space">
+                    <div id="kürbis-close" class="background" onclick="closekürbis();enable()">
+                        <img class="big-view-16-9" src="../../images/projects/3D/pumpkin/pumpkin.jpg" alt="space">
+                        <div class="textbox-16-9">
+                            <h1 class="description-header">Aurora</h1>
+                            <p class="description">Lorem ipsum ich hab keine Ahnung was ich hier hin schreiben soll.</p>
+                        </div>
                     </div>
                     <div class="steine">
                         <div class="steine-overlay">
                             <div class="steine-cta">
                                 <h1 class="steine-text">Steine</h1>
                                 <div>
-                                    <p id="steine-open" class="big-img" onclick="opensteine()">img</p>
+                                    <p id="steine-open" class="big-img" onclick="opensteine();disable()">img</p>
+                                    <div class="nonclick">space</div>
                                 </div>
                                 <p class="subtext">Ein paar Assets für das Excalibur Set.</p>
                             </div>
                         </div>
                     </div>
-                    <div id="steine-close" class="background" onclick="closesteine()">
-                        <img class="big-view" src="../../images/projects/3D/Rocks.png" alt="space">
+                    <div id="steine-close" class="background" onclick="closesteine();enable()">
+                        <img class="big-view-16-9" src="../../images/projects/3D/Rocks.png" alt="space">
+                        <div class="textbox-16-9">
+                            <h1 class="description-header">Aurora</h1>
+                            <p class="description">Lorem ipsum ich hab keine Ahnung was ich hier hin schreiben soll.</p>
+                        </div>
                     </div>
                     <div class="planet">
                         <div class="planet-overlay">
                             <div class="planet-cta">
                                 <h1 class="planet-text">Fantasy Planet</h1>
                                 <div>
-                                    <p id="planet-open" class="big-img" onclick="openplanet()">img</p>
+                                    <p id="planet-open" class="big-img" onclick="openplanet();disable()">img</p>
+                                    <div class="nonclick">space</div>
                                 </div>
                                 <p class="subtext">Ein fremder Planet mit eigenartiger Vegetation und interessanten Erz-Vorkommen</p>
                             </div>
                         </div>
                     </div>
-                    <div id="planet-close" class="background" onclick="closeplanet()">
-                        <img class="big-view" src="../../images/projects/3D/cristall/planet2.png" alt="space">
+                    <div id="planet-close" class="background" onclick="closeplanet();enable()">
+                        <img class="big-view-16-9" src="../../images/projects/3D/cristall/planet2.png" alt="space">
+                        <div class="textbox-16-9">
+                            <h1 class="description-header">Aurora</h1>
+                            <p class="description">Lorem ipsum ich hab keine Ahnung was ich hier hin schreiben soll.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -228,6 +268,14 @@
 
             function closeplanet() {
                 document.getElementById("planet-close").style.display = "none";
+            }
+
+            function disable() {
+                document.getElementById("disable-scroll").style.overflow = "hidden";
+            }
+
+            function enable() {
+                document.getElementById("disable-scroll").style.overflow = "unset";
             }
         </script>
 

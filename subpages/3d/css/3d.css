@@ -57,17 +57,6 @@
   height: fit-content;
   padding: 7vw;
 }
-.left-col .background {
-  display: none;
-  position: fixed;
-  background-color: rgba(0, 0, 0, 0.75);
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: 101;
-  cursor: pointer;
-}
 .left-col .big-view {
   position: relative;
   width: auto;
@@ -88,7 +77,7 @@
   width: 86vw;
   height: 100%;
   padding: auto;
-  cursor: pointer;
+  cursor: zoom-in;
 }
 .left-col .subtext {
   color: white;
@@ -420,6 +409,19 @@ nav {
     width: 84vw;
     z-index: 11;
   }
+  .left-col .schwert .schwert-overlay .nonclick {
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0);
+    color: rgba(0, 0, 0, 0);
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: -4vw;
+    width: 4vw;
+    height: 100%;
+    z-index: 101;
+    padding: auto;
+  }
   .left-col .schwert:hover {
     transform: unset;
     z-index: unset;
@@ -451,6 +453,19 @@ nav {
     color: rgba(0, 0, 0, 0);
     width: 84vw;
     z-index: 11;
+  }
+  .left-col .schwert2 .schwert2-overlay .nonclick {
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0);
+    color: rgba(0, 0, 0, 0);
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 40vw;
+    width: 4vw;
+    height: 100%;
+    z-index: 101;
+    padding: auto;
   }
   .left-col .schwert2:hover {
     transform: unset;
@@ -484,6 +499,19 @@ nav {
     width: 84vw;
     z-index: 11;
   }
+  .left-col .Kristall .Kristall-overlay .nonclick {
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0);
+    color: rgba(0, 0, 0, 0);
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: -4vw;
+    width: 4vw;
+    height: 100%;
+    z-index: 101;
+    padding: auto;
+  }
   .left-col .Kristall:hover {
     transform: unset;
     z-index: unset;
@@ -515,6 +543,19 @@ nav {
     color: rgba(0, 0, 0, 0);
     width: 84vw;
     z-index: 11;
+  }
+  .left-col .kürbis .kürbis-overlay .nonclick {
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0);
+    color: rgba(0, 0, 0, 0);
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 40vw;
+    width: 4vw;
+    height: 100%;
+    z-index: 101;
+    padding: auto;
   }
   .left-col .kürbis:hover {
     transform: unset;
@@ -548,6 +589,19 @@ nav {
     width: 84vw;
     z-index: 11;
   }
+  .left-col .steine .steine-overlay .nonclick {
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0);
+    color: rgba(0, 0, 0, 0);
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: -4vw;
+    width: 4vw;
+    height: 100%;
+    z-index: 101;
+    padding: auto;
+  }
   .left-col .steine:hover {
     transform: unset;
     z-index: unset;
@@ -579,6 +633,19 @@ nav {
     color: rgba(0, 0, 0, 0);
     width: 84vw;
     z-index: 11;
+  }
+  .left-col .planet .planet-overlay .nonclick {
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0);
+    color: rgba(0, 0, 0, 0);
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 40vw;
+    width: 4vw;
+    height: 100%;
+    z-index: 101;
+    padding: auto;
   }
   .left-col .planet:hover {
     transform: unset;

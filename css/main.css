@@ -133,6 +133,94 @@ section {
   height: fit-content;
   padding: 2rem;
 }
+.left-col .nonclick {
+  text-align: center;
+  background-color: rgba(128, 128, 128, 0);
+  color: rgba(0, 0, 0, 0);
+}
+.left-col .background {
+  display: none;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.25);
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 101;
+  cursor: zoom-out;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+.left-col .big-view {
+  position: relative;
+  width: auto;
+  height: auto;
+  top: 7vh;
+  left: 2%;
+  max-height: 40vh;
+  max-width: 50%;
+  z-index: 100;
+}
+.left-col .big-view-16-9 {
+  display: block;
+  position: relative;
+  width: auto;
+  height: auto;
+  top: 7vh;
+  max-height: 50vh;
+  max-width: 92vw;
+  z-index: 100;
+  padding-left: 2%;
+}
+.left-col .big-view2 {
+  display: block;
+  position: relative;
+  width: auto;
+  height: auto;
+  top: 7vh;
+  max-height: 45vh;
+  max-width: 50%;
+  z-index: 100;
+  padding: 0 0 2% 2%;
+}
+.left-col .textbox {
+  background-color: rgba(150, 150, 150, 0.6352941176);
+  position: absolute;
+  width: auto;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  max-width: 40vw;
+  max-height: 90vh;
+  color: white;
+  text-align: left;
+  top: 7vh;
+  right: 2%;
+  margin: 0 2% 0 0;
+  padding: 1vh 1vw 1vh 1vw;
+}
+.left-col .textbox-16-9 {
+  background-color: rgba(150, 150, 150, 0.6352941176);
+  position: relative;
+  width: auto;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  max-width: 90vw;
+  max-height: 90vh;
+  color: white;
+  text-align: left;
+  top: 7vh;
+  left: 2%;
+  margin: 2% 0 0 0;
+  padding: 1% 1% 1% 1%;
+}
+.left-col .description-header {
+  font-size: 6vw;
+}
+.left-col .description {
+  font-size: 3vw;
+}
 .left-col .creativ {
   background-image: url("../images/thumbnails/Edits/Space(web).jpg");
   background-size: cover;
@@ -156,7 +244,7 @@ section {
   box-shadow: 1px 1px 20px gray;
 }
 .left-col .creativ .creativ-overlay {
-  background: linear-gradient(rgba(150, 150, 150, 0.5), rgba(150, 150, 150, 0.5));
+  background: linear-gradient(rgba(150, 150, 150, 0.25), rgba(150, 150, 150, 0.25));
   background-size: cover;
   position: relative;
   margin: 0;
@@ -201,7 +289,7 @@ section {
   box-shadow: 1px 1px 20px gray;
 }
 .left-col .threeD .threeD-overlay {
-  background: linear-gradient(rgba(150, 150, 150, 0.5), rgba(150, 150, 150, 0.5));
+  background: linear-gradient(rgba(150, 150, 150, 0.25), rgba(150, 150, 150, 0.25));
   background-size: cover;
   position: relative;
   margin: 0;
@@ -245,7 +333,7 @@ section {
   box-shadow: 1px 1px 20px gray;
 }
 .left-col .pixel .pixel-overlay {
-  background: linear-gradient(rgba(150, 150, 150, 0.5), rgba(150, 150, 150, 0.5));
+  background: linear-gradient(rgba(150, 150, 150, 0.25), rgba(150, 150, 150, 0.25));
   background-size: cover;
   position: relative;
   margin: 0;
@@ -289,7 +377,7 @@ section {
   box-shadow: 1px 1px 20px gray;
 }
 .left-col .foto .foto-overlay {
-  background: linear-gradient(rgba(150, 150, 150, 0.5), rgba(150, 150, 150, 0.5));
+  background: linear-gradient(rgba(150, 150, 150, 0.25), rgba(150, 150, 150, 0.25));
   background-size: cover;
   position: relative;
   margin: 0;
@@ -385,16 +473,47 @@ nav li a:hover {
   cursor: pointer;
 }
 
+@media only screen and (min-width: 975px) and (min-aspect-ratio: 16/9) {
+  .left-col .textbox-16-9 {
+    display: inline-block;
+    position: relative;
+    width: auto;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    max-height: 90vh;
+    max-width: 20vw;
+    color: white;
+    text-align: left;
+    top: 3vh;
+    left: 2%;
+    padding: 1% 1% 1% 1%;
+    vertical-align: top;
+  }
+  .left-col .big-view-16-9 {
+    display: inline;
+    position: relative;
+    width: auto;
+    height: auto;
+    top: 7vh;
+    max-height: 90vh;
+    max-width: 70vw;
+    z-index: 100;
+    padding-left: 2%;
+  }
+}
 @media only screen and (min-width: 975px) {
   .mobile-menue, .mobile-menue-exit {
     display: none;
   }
-
+}
+@media only screen and (min-width: 975px) {
   .navbar .container {
     display: grid;
     grid-template-columns: 312px auto;
   }
-
+}
+@media only screen and (min-width: 975px) {
   .navbar nav {
     display: flex;
     justify-content: space-between;
@@ -428,26 +547,63 @@ nav li a:hover {
     background: rgb(182, 182, 182);
     color: white;
   }
-
+}
+@media only screen and (min-width: 975px) {
   .hero {
     margin: 0;
     background-size: 150% 110%;
   }
-
+}
+@media only screen and (min-width: 975px) {
   .eye-catcher {
     top: 4.5em;
     font-size: 2em;
   }
-
+}
+@media only screen and (min-width: 975px) {
   section.categories {
     height: auto;
   }
   section.categories .overlay {
     height: auto;
   }
-
+}
+@media only screen and (min-width: 975px) {
   .left-col {
     padding: 4rem 7.5vw;
+  }
+  .left-col .big-view {
+    position: relative;
+    width: auto;
+    height: auto;
+    top: 7vh;
+    left: 2%;
+    max-height: 50vh;
+    max-width: 90vw;
+    z-index: 100;
+  }
+  .left-col .big-view2 {
+    display: inline;
+    position: relative;
+    width: auto;
+    height: auto;
+    top: 7vh;
+    max-height: 50vh;
+    max-width: 45vw;
+    z-index: 100;
+  }
+  .left-col .textbox {
+    display: block;
+    position: relative;
+    max-width: 90vw;
+    left: 2%;
+    top: 8%;
+  }
+  .left-col .description-header {
+    font-size: 3.5vh;
+  }
+  .left-col .description {
+    font-size: 2vh;
   }
   .left-col .creativ {
     width: 100%;
@@ -490,7 +646,8 @@ nav li a:hover {
     transform: scale(1.1);
     z-index: 999;
   }
-
+}
+@media only screen and (min-width: 975px) {
   section.impressum {
     height: -webkit-fit-content;
     height: -moz-fit-content;

@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="css/pixelart.css">
         <link rel="icon" href="../../images/Logo(weiß).svg">
     </head>
-    <body>
+    <body id="disable-scroll">
         <div class="navbar">
             <div class="container">
                 <div class="logo">
@@ -58,14 +58,19 @@
                             <div class="bat-cta">
                                 <h1 class="bat-text">Dark Knight</h1>
                                 <div>
-                                    <p id="bat-open" class="big-img" onclick="openbat()">img</p>
+                                    <p id="bat-open" class="big-img" onclick="openbat();disable()">img</p>
+                                    <div class="nonclick">space</div>
                                 </div>
                                 <p class="subtext">Was dieser Ritter wohl bewacht?</p>
                             </div>
                         </div>
                     </div>
-                    <div id="bat-close" class="background" onclick="closebat()">
-                        <img class="big-view" src="../../images/projects/pixelart/Dark-Knight.png" alt="space">
+                    <div id="bat-close" class="background" onclick="closebat();enable()">
+                        <img class="big-view-16-9" src="../../images/projects/pixelart/Dark-Knight.png" alt="space">
+                        <div class="textbox-16-9">
+                            <h1 class="description-header">Aurora</h1>
+                            <p class="description">Lorem ipsum ich hab keine Ahnung was ich hier hin schreiben soll.</p>
+                        </div>
                     </div>
                     
                     <div class="knight">
@@ -73,28 +78,38 @@
                             <div class="knight-cta">
                                 <h1 class="knight-text">Silver Knight</a></h1>
                                 <div>
-                                    <p id="knight-open" class="big-img" onclick="openknight()">img</p>
+                                    <p id="knight-open" class="big-img" onclick="openknight();disable()">img</p>
+                                    <div class="nonclick">space</div>
                                 </div>
                                 <p class="subtext">Was diesen Ritter wohl in einen düsteren Wald verschlagen hat?</p>
                             </div>
                         </div>
                     </div>
-                    <div id="knight-close" class="background" onclick="closeknight()">
-                        <img class="big-view" src="../../images/projects/pixelart/Knight2.0.png" alt="space">
+                    <div id="knight-close" class="background" onclick="closeknight();enable()">
+                        <img class="big-view-16-9" src="../../images/projects/pixelart/Knight2.0.png" alt="space">
+                        <div class="textbox-16-9">
+                            <h1 class="description-header">Aurora</h1>
+                            <p class="description">Lorem ipsum ich hab keine Ahnung was ich hier hin schreiben soll.</p>
+                        </div>
                     </div>
                     <div class="wizard">
                         <div class="wizard-overlay">
                             <div class="wizard-cta">
                                 <h1 class="wizard-text">Mage</h1>
                                 <div>
-                                    <p id="wizard-open" class="big-img" onclick="openwizard()">img</p>
+                                    <p id="wizard-open" class="big-img" onclick="openwizard();disable()">img</p>
+                                    <div class="nonclick">space</div>
                                 </div>
                                 <p class="subtext">Ein reisender Magier bei der Erkundung eines alten Verlieses</p>
                             </div>
                         </div>
                     </div>
-                    <div id="wizard-close" class="background" onclick="closewizard()">
-                        <img class="big-view" src="../../images/projects/pixelart/Wizard2.0.png" alt="space">
+                    <div id="wizard-close" class="background" onclick="closewizard();enable()">
+                        <img class="big-view-16-9" src="../../images/projects/pixelart/Wizard2.0.png" alt="space">
+                        <div class="textbox-16-9">
+                            <h1 class="description-header">Aurora</h1>
+                            <p class="description">Lorem ipsum ich hab keine Ahnung was ich hier hin schreiben soll.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -154,6 +169,14 @@
 
             function closewizard() {
                 document.getElementById("wizard-close").style.display = "none";
+            }
+
+            function disable() {
+                document.getElementById("disable-scroll").style.overflow = "hidden";
+            }
+
+            function enable() {
+                document.getElementById("disable-scroll").style.overflow = "unset";
             }
         </script>
 
