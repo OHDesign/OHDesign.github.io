@@ -133,6 +133,12 @@ section {
   height: fit-content;
   padding: 2rem;
 }
+.left-col .bigview-exit {
+  display: none;
+}
+.left-col .more {
+  display: none;
+}
 .left-col .nonclick {
   text-align: center;
   background-color: rgba(128, 128, 128, 0);
@@ -146,8 +152,7 @@ section {
   left: 0;
   width: 100vw;
   height: 100vh;
-  z-index: 101;
-  cursor: zoom-out;
+  z-index: 13;
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
 }
@@ -159,7 +164,6 @@ section {
   left: 2%;
   max-height: 40vh;
   max-width: 50%;
-  z-index: 100;
 }
 .left-col .big-view-16-9 {
   display: block;
@@ -169,7 +173,6 @@ section {
   top: 7vh;
   max-height: 50vh;
   max-width: 92vw;
-  z-index: 100;
   padding-left: 2%;
 }
 .left-col .big-view2 {
@@ -180,7 +183,6 @@ section {
   top: 7vh;
   max-height: 45vh;
   max-width: 50%;
-  z-index: 100;
   padding: 0 0 2% 2%;
 }
 .left-col .textbox {
@@ -198,6 +200,7 @@ section {
   right: 2%;
   margin: 0 2% 0 0;
   padding: 1vh 1vw 1vh 1vw;
+  z-index: 101;
 }
 .left-col .textbox-16-9 {
   background-color: rgba(150, 150, 150, 0.6352941176);
@@ -214,6 +217,7 @@ section {
   left: 2%;
   margin: 2% 0 0 0;
   padding: 1% 1% 1% 1%;
+  z-index: 101;
 }
 .left-col .description-header {
   font-size: 6vw;
@@ -489,6 +493,7 @@ nav li a:hover {
     left: 2%;
     padding: 1% 1% 1% 1%;
     vertical-align: top;
+    z-index: 13;
   }
   .left-col .big-view-16-9 {
     display: inline;
@@ -500,6 +505,7 @@ nav li a:hover {
     max-width: 70vw;
     z-index: 100;
     padding-left: 2%;
+    z-index: 13;
   }
 }
 @media only screen and (min-width: 975px) {
@@ -572,6 +578,27 @@ nav li a:hover {
   .left-col {
     padding: 4rem 7.5vw;
   }
+  .left-col .bigview-exit {
+    display: block;
+    position: fixed;
+    top: 1em;
+    right: 1em;
+    z-index: 14;
+    cursor: pointer;
+  }
+  .left-col .background {
+    z-index: 13;
+  }
+  .left-col .more {
+    display: inline;
+    position: absolute;
+    padding: 0.5em;
+    bottom: 0;
+    left: 1em;
+    color: white;
+    cursor: pointer;
+    z-index: 11;
+  }
   .left-col .big-view {
     position: relative;
     width: auto;
@@ -580,7 +607,7 @@ nav li a:hover {
     left: 2%;
     max-height: 50vh;
     max-width: 90vw;
-    z-index: 100;
+    z-index: 14;
   }
   .left-col .big-view2 {
     display: inline;
@@ -590,7 +617,7 @@ nav li a:hover {
     top: 7vh;
     max-height: 50vh;
     max-width: 45vw;
-    z-index: 100;
+    z-index: 14;
   }
   .left-col .textbox {
     display: block;
@@ -598,6 +625,7 @@ nav li a:hover {
     max-width: 90vw;
     left: 2%;
     top: 8%;
+    z-index: 14;
   }
   .left-col .description-header {
     font-size: 3.5vh;
@@ -606,18 +634,12 @@ nav li a:hover {
     font-size: 2vh;
   }
   .left-col .creativ {
-    width: 100%;
-  }
-  .left-col .creativ .creativ-overlay .creativ-cta .creativ-text {
-    font-size: 2em;
-  }
-  .left-col .creativ:hover {
-    transform: scale(1.1);
-    z-index: 999;
-    box-shadow: 1px 1px 20px gray;
+    width: 75%;
+    margin-left: 12%;
   }
   .left-col .threeD {
-    width: 100%;
+    width: 75%;
+    margin-left: 12%;
   }
   .left-col .threeD .threeD-overlay .threeD-cta .threeD-text {
     font-size: 2em;
@@ -627,7 +649,8 @@ nav li a:hover {
     z-index: 999;
   }
   .left-col .pixel {
-    width: 100%;
+    width: 75%;
+    margin-left: 12%;
   }
   .left-col .pixel .pixel-overlay .pixel-cta .pixel-text {
     font-size: 2em;
@@ -637,7 +660,8 @@ nav li a:hover {
     z-index: 999;
   }
   .left-col .foto {
-    width: 100%;
+    width: 75%;
+    margin-left: 12%;
   }
   .left-col .foto .foto-overlay .foto-cta .foto-text {
     font-size: 2em;

@@ -61,17 +61,6 @@
   height: fit-content;
   padding: 7vw;
 }
-.left-col .background {
-  display: none;
-  position: fixed;
-  background-color: rgba(0, 0, 0, 0.75);
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: 101;
-  cursor: pointer;
-}
 .left-col .big-view {
   position: relative;
   width: auto;
@@ -92,7 +81,6 @@
   width: 86vw;
   height: 100%;
   padding: auto;
-  cursor: zoom-in;
 }
 .left-col .subtext {
   color: white;
@@ -467,7 +455,7 @@ nav {
     left: -4vw;
     width: 4vw;
     height: 100%;
-    z-index: 101;
+    z-index: 12;
     padding: auto;
   }
   .left-col .glasssphere:hover {
@@ -513,7 +501,7 @@ nav {
     left: 40vw;
     width: 11.7vw;
     height: 100%;
-    z-index: 101;
+    z-index: 12;
     padding: auto;
   }
   .left-col .glass:hover {
@@ -558,7 +546,7 @@ nav {
     left: -4vw;
     width: 4vw;
     height: 100%;
-    z-index: 101;
+    z-index: 12;
     padding: auto;
   }
   .left-col .chicken:hover {
@@ -604,7 +592,7 @@ nav {
     left: 40vw;
     width: 11.7vw;
     height: 100%;
-    z-index: 101;
+    z-index: 12;
     padding: auto;
   }
   .left-col .portrait:hover {
@@ -649,7 +637,7 @@ nav {
     left: -4vw;
     width: 4vw;
     height: 100%;
-    z-index: 101;
+    z-index: 12;
     padding: auto;
   }
   .left-col .deco:hover {
@@ -694,7 +682,7 @@ nav {
     left: 40vw;
     width: 4vw;
     height: 100%;
-    z-index: 101;
+    z-index: 12;
     padding: auto;
   }
   .left-col .ds3cinematic:hover {
@@ -739,7 +727,7 @@ nav {
     left: -4vw;
     width: 4vw;
     height: 100%;
-    z-index: 101;
+    z-index: 12;
     padding: auto;
   }
   .left-col .ds3montage:hover {

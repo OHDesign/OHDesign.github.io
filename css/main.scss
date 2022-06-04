@@ -134,6 +134,14 @@ section {
     height: fit-content;
     padding: 2rem;
 
+    .bigview-exit {
+        display: none;
+    }
+
+    .more{
+        display: none;
+    }
+
     .nonclick {
         text-align: center;
         background-color: rgba(128, 128, 128, 0);
@@ -148,8 +156,7 @@ section {
         left: 0;
         width: 100vw;
         height: 100vh;
-        z-index: 101;
-        cursor: zoom-out;
+        z-index: 13;
         backdrop-filter: blur(10px);
     }
 
@@ -161,7 +168,6 @@ section {
         left: 2%;
         max-height: 40vh;
         max-width: 50%;
-        z-index: 100;
     }
 
     .big-view-16-9 {
@@ -172,7 +178,6 @@ section {
         top: 7vh;
         max-height: 50vh;
         max-width: 92vw;
-        z-index: 100;
         padding-left: 2%;
     }
 
@@ -184,7 +189,6 @@ section {
         top: 7vh;
         max-height: 45vh;
         max-width: 50%;
-        z-index: 100;
         padding: 0 0 2% 2%;
     }
 
@@ -201,6 +205,7 @@ section {
         right: 2%;
         margin: 0 2% 0 0;
         padding: 1vh 1vw 1vh 1vw;
+        z-index: 101;
     }
 
     .textbox-16-9 {
@@ -216,6 +221,7 @@ section {
         left: 2%;
         margin: 2% 0 0 0;
         padding: 1% 1% 1% 1%;
+        z-index: 101;
     }
     
     .description-header {
@@ -517,6 +523,7 @@ nav {
                 left: 2%;
                 padding: 1% 1% 1% 1%;
                 vertical-align: top;
+                z-index: 13;
             }
 
             .big-view-16-9 {
@@ -529,6 +536,7 @@ nav {
                 max-width: 70vw;
                 z-index: 100;
                 padding-left: 2%;
+                z-index: 13;
             }
         }
     }
@@ -602,6 +610,30 @@ nav {
     .left-col {
         padding: 4rem 7.5vw;
 
+        .bigview-exit {
+            display: block;
+            position: fixed;
+            top: 1em;
+            right: 1em;
+            z-index: 14;
+            cursor: pointer;
+        }
+        
+        .background {
+            z-index: 13;
+        }
+
+        .more{
+            display: inline;
+            position: absolute;
+            padding: .5em;
+            bottom: 0;
+            left: 1em;
+            color: white;
+            cursor: pointer;
+            z-index: 11;
+        }
+
         .big-view {
             position: relative;
             width: auto;
@@ -610,7 +642,7 @@ nav {
             left: 2%;
             max-height: 50vh;
             max-width: 90vw;
-            z-index: 100;
+            z-index: 14;
         }
     
         .big-view2 {
@@ -621,7 +653,7 @@ nav {
             top: 7vh;
             max-height: 50vh;
             max-width: 45vw;
-            z-index: 100;
+            z-index: 14;
         }
 
         .textbox {
@@ -630,6 +662,7 @@ nav {
             max-width: 90vw;
             left: 2%;
             top: 8%;
+            z-index: 14;
         }
         
         .description-header {
@@ -641,18 +674,13 @@ nav {
         }
 
         .creativ {
-            width: 100%;
-             .creativ-overlay .creativ-cta .creativ-text {
-                font-size: 2em;
-            }
-            &:hover {
-                transform: scale(1.1);
-                z-index: 999;
-                box-shadow: 1px 1px 20px gray;
-            }
+            width: 75%;
+            margin-left: 12%;
+            
         }
         .threeD {
-            width: 100%;
+            width: 75%;
+            margin-left: 12%;
             .threeD-overlay .threeD-cta .threeD-text {
                 font-size: 2em;
             }
@@ -662,7 +690,8 @@ nav {
             }
         }
         .pixel {
-            width: 100%;
+            width: 75%;
+            margin-left: 12%;
             .pixel-overlay .pixel-cta .pixel-text {
             font-size: 2em;
             }
@@ -672,7 +701,8 @@ nav {
             }
         }
         .foto {
-            width: 100%;
+            width: 75%;
+            margin-left: 12%;
             .foto-overlay .foto-cta .foto-text {
             font-size: 2em;
             }

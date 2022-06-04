@@ -69,7 +69,6 @@
         width: 86vw;
         height: 100%;
         padding: auto;
-        cursor: zoom-in;
     }
 
 
@@ -78,7 +77,7 @@
         font-size: 3.5vw;
         text-align: center;
         margin: 0;
-        padding: 0 1em 10vw 1em;
+        padding: 0 1em 1em 1em;
     }
 
     .creativ {
@@ -89,8 +88,9 @@
         background-origin: border-box;
         margin: 2em 0 3em 0;
         padding: 0;
-        height: fit-content;
-        width: 86vw;
+        height: auto;
+        width: 75%;
+        left: 12%;
         position: relative;
         border-radius: 0.1em;
         outline: 3px solid white;
@@ -136,11 +136,12 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-origin: border-box;
-        background-position: center top;
+        background-position: center;
         margin: 3em 0 3em 0;
         padding: 0;
-        height: 55vw;
-        width: 86vw;
+        height: auto;
+        width: 75%;
+        left: 12%;
         position: relative;
         border-radius: 0.1em;
         outline: 3px solid white;
@@ -173,7 +174,7 @@
                     text-decoration: none;
                     display: block;
                     margin: 0;
-                    padding: 20vw 2rem 5vw;
+                    padding: 15vw 2rem 5vw;
                 }
             }
         }
@@ -186,8 +187,9 @@
         background-origin: border-box;
         margin: 3em 0 0 0;
         padding: 0;
-        height: 86vw;
-        width: 86vw;
+        height: auto;
+        width: 75%;
+        left: 12%;
         position: relative;
         border-radius: 0.1em;
         outline: 3px solid white;
@@ -220,7 +222,7 @@
                     color: white;
                     text-decoration: none;
                     display: block;
-                    padding: 35vw 2rem 5vw;
+                    padding: 15vw 2rem 5vw;
                     margin: 0;
                 }
             }
@@ -231,11 +233,12 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-origin: border-box;
-        background-position: center top;
+        background-position: center;
         margin: 3em 0 3em 0;
         padding: 0;
-        height: 115vw;
-        width: 86vw;
+        height: auto;
+        width: 75%;
+        left: 12%;
         position: relative;
         border-radius: 0.1em;
         outline: 3px solid white;
@@ -268,7 +271,7 @@
                     text-decoration: none;
                     display: block;
                     margin: 0;
-                    padding: 50vw 2rem 5vw;
+                    padding: 15vw 2rem 5vw;
                 }
             }
         }
@@ -297,20 +300,20 @@ nav {
         .creativ {
             height: 25vw;
             width: 40vw;
+            left: 0;
             .creativ-overlay {
                 height: 25vw;
                 left: 110%;
                 .creativ-cta {
                     .creativ-text{
                         font-size: 3.5vw;
-                        padding: 1em 1em 2.5em 1em;
+                        padding: 1em 1em .5em 1em;
                         z-index: 10;
                     }
                 }
                 .subtext {
                     font-size: 1.5vw;
                     position: relative;
-                    top: -4.5em;
                     padding: 0 2em 1em 1em;
                     z-index: 10;
                 }
@@ -331,7 +334,7 @@ nav {
                     left: -4vw;
                     width: 4vw;
                     height: 100%;
-                    z-index: 101;
+                    z-index: 12;
                     padding: auto;
                 }
             }
@@ -379,7 +382,7 @@ nav {
                     left: 40vw;
                     width: 14.25vw;
                     height: 100%;
-                    z-index: 101;
+                    z-index: 12;
                     padding: auto;
                 }
             }
@@ -392,6 +395,7 @@ nav {
         .aurora {
             height: 25vw;
             width: 40vw;
+            left: 0;
             .aurora-overlay {
                 height: 25vw;
                 left: 110%;
@@ -427,7 +431,7 @@ nav {
                     left: -4vw;
                     width: 4vw;
                     height: 100%;
-                    z-index: 101;
+                    z-index: 12;
                     padding: auto;
                 }
             }
@@ -475,7 +479,7 @@ nav {
                     left: 40vw;
                     width: 14.25vw;
                     height: 100%;
-                    z-index: 101;
+                    z-index: 12;
                     padding: auto;
                 }
             }
