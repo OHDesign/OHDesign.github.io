@@ -61,15 +61,6 @@
   height: fit-content;
   padding: 7vw;
 }
-.left-col .big-view {
-  position: relative;
-  width: auto;
-  height: auto;
-  max-width: 90%;
-  max-height: 85%;
-  z-index: 100;
-  padding: 7vh 4vw;
-}
 .left-col .big-img {
   text-align: center;
   background-color: rgba(128, 128, 128, 0);
@@ -107,7 +98,7 @@
 }
 .left-col .glasssphere:hover {
   transform: scale(1.05);
-  z-index: 99;
+  z-index: 12;
   box-shadow: 1px 1px 20px gray;
 }
 .left-col .glasssphere .glasssphere-overlay {
@@ -152,7 +143,7 @@
 }
 .left-col .glass:hover {
   transform: scale(1.05);
-  z-index: 99;
+  z-index: 12;
   box-shadow: 1px 1px 20px gray;
 }
 .left-col .glass .glass-overlay {
@@ -196,7 +187,7 @@
 }
 .left-col .chicken:hover {
   transform: scale(1.05);
-  z-index: 99;
+  z-index: 12;
   box-shadow: 1px 1px 20px gray;
 }
 .left-col .chicken .chicken-overlay {
@@ -241,7 +232,7 @@
 }
 .left-col .portrait:hover {
   transform: scale(1.05);
-  z-index: 99;
+  z-index: 12;
   box-shadow: 1px 1px 20px gray;
 }
 .left-col .portrait .portrait-overlay {
@@ -286,7 +277,7 @@
 }
 .left-col .deco:hover {
   transform: scale(1.05);
-  z-index: 99;
+  z-index: 12;
   box-shadow: 1px 1px 20px gray;
 }
 .left-col .deco .deco-overlay {
@@ -331,7 +322,7 @@
 }
 .left-col .ds3cinematic:hover {
   transform: scale(1.05);
-  z-index: 99;
+  z-index: 12;
   box-shadow: 1px 1px 20px gray;
 }
 .left-col .ds3cinematic .ds3cinematic-overlay {
@@ -376,7 +367,7 @@
 }
 .left-col .ds3montage:hover {
   transform: scale(1.05);
-  z-index: 99;
+  z-index: 12;
   box-shadow: 1px 1px 20px gray;
 }
 .left-col .ds3montage .ds3montage-overlay {
@@ -410,7 +401,7 @@ nav {
   height: fit-content;
 }
 
-@media only screen and (min-width: 975px) {
+@media only screen and (min-width: 915px) {
   .categories-list a {
     padding: 0.75em 1em;
   }
@@ -446,6 +437,7 @@ nav {
     z-index: 11;
   }
   .left-col .glasssphere .glasssphere-overlay .nonclick {
+    display: block;
     text-align: center;
     background-color: rgba(128, 128, 128, 0);
     color: rgba(0, 0, 0, 0);
@@ -492,6 +484,7 @@ nav {
     z-index: 11;
   }
   .left-col .glass .glass-overlay .nonclick {
+    display: block;
     text-align: center;
     background-color: rgba(128, 128, 128, 0);
     color: rgba(0, 0, 0, 0);
@@ -537,6 +530,7 @@ nav {
     z-index: 11;
   }
   .left-col .chicken .chicken-overlay .nonclick {
+    display: block;
     text-align: center;
     background-color: rgba(128, 128, 128, 0);
     color: rgba(0, 0, 0, 0);
@@ -583,6 +577,7 @@ nav {
     z-index: 11;
   }
   .left-col .portrait .portrait-overlay .nonclick {
+    display: block;
     text-align: center;
     background-color: rgba(128, 128, 128, 0);
     color: rgba(0, 0, 0, 0);
@@ -628,6 +623,7 @@ nav {
     z-index: 11;
   }
   .left-col .deco .deco-overlay .nonclick {
+    display: block;
     text-align: center;
     background-color: rgba(128, 128, 128, 0);
     color: rgba(0, 0, 0, 0);
@@ -673,6 +669,7 @@ nav {
     z-index: 11;
   }
   .left-col .ds3cinematic .ds3cinematic-overlay .nonclick {
+    display: block;
     text-align: center;
     background-color: rgba(128, 128, 128, 0);
     color: rgba(0, 0, 0, 0);
@@ -718,6 +715,7 @@ nav {
     z-index: 11;
   }
   .left-col .ds3montage .ds3montage-overlay .nonclick {
+    display: block;
     text-align: center;
     background-color: rgba(128, 128, 128, 0);
     color: rgba(0, 0, 0, 0);

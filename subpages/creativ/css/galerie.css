@@ -63,7 +63,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 86vw;
+  width: 100%;
   height: 100%;
   padding: auto;
 }
@@ -93,7 +93,7 @@
 }
 .left-col .creativ:hover {
   transform: scale(1.05);
-  z-index: 99;
+  z-index: 12;
   box-shadow: 1px 1px 20px gray;
 }
 .left-col .creativ .creativ-overlay {
@@ -139,7 +139,7 @@
 }
 .left-col .bockwurst:hover {
   transform: scale(1.05);
-  z-index: 99;
+  z-index: 12;
   box-shadow: 1px 1px 20px gray;
 }
 .left-col .bockwurst .bockwurst-overlay {
@@ -184,7 +184,7 @@
 }
 .left-col .aurora:hover {
   transform: scale(1.05);
-  z-index: 99;
+  z-index: 12;
   box-shadow: 1px 1px 20px gray;
 }
 .left-col .aurora .aurora-overlay {
@@ -230,7 +230,7 @@
 }
 .left-col .shrine:hover {
   transform: scale(1.05);
-  z-index: 99;
+  z-index: 12;
   box-shadow: 1px 1px 20px gray;
 }
 .left-col .shrine .shrine-overlay {
@@ -263,7 +263,7 @@ nav {
   height: fit-content;
 }
 
-@media only screen and (min-width: 975px) {
+@media only screen and (min-width: 915px) {
   .categories-list a {
     padding: 0.75em 1em;
   }
@@ -299,6 +299,7 @@ nav {
     z-index: 11;
   }
   .left-col .creativ .creativ-overlay .nonclick {
+    display: block;
     text-align: center;
     background-color: rgba(128, 128, 128, 0);
     color: rgba(0, 0, 0, 0);
@@ -345,6 +346,7 @@ nav {
     z-index: 11;
   }
   .left-col .bockwurst .bockwurst-overlay .nonclick {
+    display: block;
     text-align: center;
     background-color: rgba(128, 128, 128, 0);
     color: rgba(0, 0, 0, 0);
@@ -391,6 +393,7 @@ nav {
     z-index: 11;
   }
   .left-col .aurora .aurora-overlay .nonclick {
+    display: block;
     text-align: center;
     background-color: rgba(128, 128, 128, 0);
     color: rgba(0, 0, 0, 0);
@@ -437,6 +440,7 @@ nav {
     z-index: 11;
   }
   .left-col .shrine .shrine-overlay .nonclick {
+    display: block;
     text-align: center;
     background-color: rgba(128, 128, 128, 0);
     color: rgba(0, 0, 0, 0);

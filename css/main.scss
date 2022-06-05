@@ -4,6 +4,8 @@
     --primary-color : #23c8db;
     --secondary-color : #200830;
 }
+/* outline all for debugging */
+/* * { outline: 3px solid rgb(0, 0, 0);} */
 
 body {
     background: rgb(255, 255, 255);
@@ -135,7 +137,12 @@ section {
     padding: 2rem;
 
     .bigview-exit {
-        display: none;
+        position: fixed;
+        top: 1vh;
+        right: 2vw;
+        float: right;
+        z-index: 14;
+        padding: 1%;
     }
 
     .more{
@@ -143,6 +150,7 @@ section {
     }
 
     .nonclick {
+        display: none;
         text-align: center;
         background-color: rgba(128, 128, 128, 0);
         color: rgba(0, 0, 0, 0);
@@ -166,62 +174,54 @@ section {
         height: auto;
         top: 7vh;
         left: 2%;
-        max-height: 40vh;
-        max-width: 50%;
     }
 
     .big-view-16-9 {
-        display: block;
+
         position: relative;
         width: auto;
         height: auto;
         top: 7vh;
-        max-height: 50vh;
-        max-width: 92vw;
         padding-left: 2%;
     }
 
     .big-view2 {
-        display: block;
+
         position: relative;
         width: auto;
         height: auto;
         top: 7vh;
-        max-height: 45vh;
-        max-width: 50%;
         padding: 0 0 2% 2%;
     }
 
     .textbox {
+
         background-color: #969696a2;
         position: absolute;
         width: auto;
         height: fit-content;
-        max-width: 40vw;
-        max-height: 90vh;
         color: white;
         text-align: left;
         top: 7vh;
         right: 2%;
         margin: 0 2% 0 0;
         padding: 1vh 1vw 1vh 1vw;
-        z-index: 101;
+        z-index: 13;
     }
 
     .textbox-16-9 {
+
         background-color: #969696a2;
         position: relative;
         width: auto;
         height: fit-content;
-        max-width: 90vw;
-        max-height: 90vh;
         color: white;
         text-align: left;
         top: 7vh;
         left: 2%;
         margin: 2% 0 0 0;
         padding: 1% 1% 1% 1%;
-        z-index: 101;
+        z-index: 13;
     }
     
     .description-header {
@@ -504,21 +504,120 @@ nav {
 }
 
 
-@media only screen and (max-width: 975px) {
+@media only screen and (max-width: 915px) and (max-aspect-ratio: 9/16) {
+
+        .left-col {
+
+            .description-header {
+                font-size: 4.5vh;
+                margin: 1%;
+            }
+        
+            .description {
+                font-size: 3vh;
+                margin: 1%;
+            }
+
+            .textbox-16-9::-webkit-scrollbar {
+                display: none;
+            }
+
+            .textbox::-webkit-scrollbar {
+                display: none;
+            }
+
+            .background {
+                flex-direction: column;
+                height: 100vh;
+                overflow-y: auto;
+            }
+
+            .textbox-16-9 {
+                -ms-overflow-style: none;
+                scrollbar-width: none; 
+
+                position: relative;
+                width: auto;
+                height: fit-content;
+                max-width: 90vw;
+                color: white;
+                text-align: left;
+                top: 7vh;
+                left: 2%;
+                padding: 2%;
+                margin-bottom: 5em;
+                z-index: 13;
+            }
+
+            .textbox {
+                -ms-overflow-style: none;
+                scrollbar-width: none; 
+
+                
+                position: relative;
+                width: auto;
+                height: fit-content;
+                max-width: 90vw;
+                color: white;
+                text-align: left;
+                top: 7vh;
+                left: 2%;
+                padding: 1% 2%;
+                margin-bottom: 5em;
+                vertical-align: top;
+                z-index: 13;
+            }
+
+            .big-view2 {
+
+                max-width: 45vw;
+            }
+
+            .big-view-16-9 {
+                position: relative;
+                width: auto;
+                height: auto;
+                top: 7vh;
+                max-height: 90vh;
+                max-width: 95vw;
+                z-index: 100;
+                padding-left: 2%;
+                z-index: 13;
+            }
+        }
+}
+
+@media only screen and (min-width: 915px){
 
     @media only screen and (min-aspect-ratio: 16/9) {
         .left-col {
 
             .description-header {
-                font-size: 6vh;
+                font-size: 5vh;
             }
         
             .description {
                 font-size: 3vh;
             }
 
+            .textbox{
+
+                position: relative;
+                width: auto;
+                height: fit-content;
+                max-height: 90vh;
+                max-width: 30vw;
+                color: white;
+                text-align: left;
+                top: 3vh;
+                left: 2%;
+                padding: 1% 1% 1% 1%;
+                vertical-align: top;
+                z-index: 13;
+            }
+
             .textbox-16-9 {
-                display: inline-block;
+
                 position: relative;
                 width: auto;
                 height: fit-content;
@@ -534,7 +633,7 @@ nav {
             }
 
             .big-view-16-9 {
-                display: inline;
+
                 position: relative;
                 width: auto;
                 height: auto;
@@ -545,48 +644,15 @@ nav {
                 padding-left: 2%;
                 z-index: 13;
             }
-        }
-    }
-}
 
-@media only screen and (min-width: 975px){
+            .big-view2 {
 
-    @media only screen and (min-aspect-ratio: 16/9) {
-        .left-col {
-
-            .description-header {
-                font-size: 6vh;
-            }
-        
-            .description {
-                font-size: 3vh;
-            }
-
-
-            .textbox-16-9 {
-                display: inline-block;
-                position: relative;
-                width: auto;
-                height: fit-content;
-                max-height: 90vh;
-                max-width: 20vw;
-                color: white;
-                text-align: left;
-                top: 3vh;
-                left: 2%;
-                padding: 1% 1% 1% 1%;
-                vertical-align: top;
-                z-index: 13;
-            }
-
-            .big-view-16-9 {
-                display: inline;
                 position: relative;
                 width: auto;
                 height: auto;
                 top: 7vh;
-                max-height: 90vh;
-                max-width: 70vw;
+                max-height: 95vh;
+                max-width: 40vw;
                 z-index: 100;
                 padding-left: 2%;
                 z-index: 13;
@@ -611,6 +677,7 @@ nav {
         height: 2.8em;
         width: 100%;
         padding: 0;
+        z-index: 12;
 
         ul {
             display: flex;
@@ -668,7 +735,7 @@ nav {
             position: fixed;
             top: 1em;
             right: 1em;
-            z-index: 14;
+            z-index: 15;
             cursor: pointer;
         }
         
@@ -704,15 +771,13 @@ nav {
             width: auto;
             height: auto;
             top: 7vh;
-            max-height: 50vh;
+            max-height: 85vh;
             max-width: 45vw;
             z-index: 14;
         }
 
         .textbox {
-            display: block;
             position: relative;
-            max-width: 90vw;
             left: 2%;
             top: 8%;
             z-index: 14;
@@ -737,10 +802,6 @@ nav {
             .threeD-overlay .threeD-cta .threeD-text {
                 font-size: 2em;
             }
-            &:hover {
-                transform: scale(1.1);
-                z-index: 999;
-            }
         }
         .pixel {
             width: 75%;
@@ -748,20 +809,12 @@ nav {
             .pixel-overlay .pixel-cta .pixel-text {
             font-size: 2em;
             }
-            &:hover {
-                transform: scale(1.1);
-                z-index: 999;
-            }
         }
         .foto {
             width: 75%;
             margin-left: 12%;
             .foto-overlay .foto-cta .foto-text {
             font-size: 2em;
-            }
-            &:hover {
-                transform: scale(1.1);
-                z-index: 999;
             }
         }
     }

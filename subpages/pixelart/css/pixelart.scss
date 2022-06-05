@@ -60,18 +60,6 @@
     height: fit-content;
     padding: 7vw;
 
-    
-
-    .big-view {
-        position: relative;
-        width: auto;
-        height: auto;
-        max-width: 90%;
-        max-height: 85%;
-        z-index: 100;
-        padding: 7vh 4vw;
-    }
-
     .big-img {
         text-align: center;
         background-color: rgba(128, 128, 128, 0);
@@ -80,7 +68,7 @@
         position: absolute;
         top: 0;
         left: 0;
-        width: 86vw;
+        width: 100%;
         height: 100%;
         padding: auto;
     }
@@ -111,7 +99,7 @@
         
         &:hover {
             transform: scale(1.05);
-            z-index: 99;
+            z-index: 12;
             box-shadow: 1px 1px 20px gray;
         }
 
@@ -161,7 +149,7 @@
 
         &:hover {
             transform: scale(1.05);
-            z-index: 99;
+            z-index: 12;
             box-shadow: 1px 1px 20px gray;
         }
 
@@ -209,7 +197,7 @@
         
         &:hover {
             transform: scale(1.05);
-            z-index: 99;
+            z-index: 12;
             box-shadow: 1px 1px 20px gray;
         }
 
@@ -247,7 +235,7 @@ nav {
 }
 
 
-@media only screen and (min-width: 975px) {
+@media only screen and (min-width: 915px) {
 
     .categories-list {
         a{
@@ -287,6 +275,7 @@ nav {
                     z-index: 11;
                 }
                 .nonclick {
+                    display: block;
                     text-align: center;
                     background-color: rgba(128, 128, 128, 0);
                     color: rgba(0, 0, 0, 0);
@@ -335,6 +324,7 @@ nav {
                     z-index: 11;
                 }
                 .nonclick {
+                    display: block;
                     text-align: center;
                     background-color: rgba(128, 128, 128, 0);
                     color: rgba(0, 0, 0, 0);
@@ -384,6 +374,7 @@ nav {
                     z-index: 11;
                 }
                 .nonclick {
+                    display: block;
                     text-align: center;
                     background-color: rgba(128, 128, 128, 0);
                     color: rgba(0, 0, 0, 0);
