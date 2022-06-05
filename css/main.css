@@ -477,7 +477,50 @@ nav li a:hover {
   cursor: pointer;
 }
 
+@media only screen and (max-width: 975px) and (min-aspect-ratio: 16/9) {
+  .left-col .description-header {
+    font-size: 6vh;
+  }
+  .left-col .description {
+    font-size: 3vh;
+  }
+  .left-col .textbox-16-9 {
+    display: inline-block;
+    position: relative;
+    width: auto;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    max-height: 90vh;
+    max-width: 20vw;
+    color: white;
+    text-align: left;
+    top: 3vh;
+    left: 2%;
+    padding: 1% 1% 1% 1%;
+    vertical-align: top;
+    z-index: 13;
+  }
+  .left-col .big-view-16-9 {
+    display: inline;
+    position: relative;
+    width: auto;
+    height: auto;
+    top: 7vh;
+    max-height: 90vh;
+    max-width: 70vw;
+    z-index: 100;
+    padding-left: 2%;
+    z-index: 13;
+  }
+}
 @media only screen and (min-width: 975px) and (min-aspect-ratio: 16/9) {
+  .left-col .description-header {
+    font-size: 6vh;
+  }
+  .left-col .description {
+    font-size: 3vh;
+  }
   .left-col .textbox-16-9 {
     display: inline-block;
     position: relative;
@@ -628,10 +671,10 @@ nav li a:hover {
     z-index: 14;
   }
   .left-col .description-header {
-    font-size: 3.5vh;
+    font-size: 6vh;
   }
   .left-col .description {
-    font-size: 2vh;
+    font-size: 3vh;
   }
   .left-col .creativ {
     width: 75%;
