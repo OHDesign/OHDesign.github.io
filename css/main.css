@@ -186,6 +186,7 @@ section {
   height: auto;
   top: 7vh;
   left: 2%;
+  margin-bottom: 2%;
 }
 .left-col .big-view-16-9 {
   position: relative;
@@ -194,6 +195,7 @@ section {
   max-height: 50vh;
   top: 7vh;
   padding-left: 2%;
+  margin-bottom: 2%;
 }
 .left-col .big-view2 {
   position: relative;
@@ -201,6 +203,7 @@ section {
   height: auto;
   top: 7vh;
   padding: 0 0 2% 2%;
+  margin-bottom: 2%;
 }
 .left-col .textbox {
   background-color: rgba(150, 150, 150, 0.6352941176);
