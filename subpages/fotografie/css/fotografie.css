@@ -401,7 +401,7 @@ nav {
   height: fit-content;
 }
 
-@media only screen and (min-width: 915px) {
+@media only screen and (min-width: 650px) {
   .categories-list a {
     padding: 0.75em 1em;
   }
@@ -458,7 +458,7 @@ nav {
   .left-col .glass {
     height: 25vw;
     width: 25vw;
-    left: 62%;
+    left: 61%;
   }
   .left-col .glass .glass-overlay {
     width: 40vw;
@@ -551,7 +551,7 @@ nav {
   .left-col .portrait {
     height: 25vw;
     width: 25vw;
-    left: 62%;
+    left: 61%;
   }
   .left-col .portrait .portrait-overlay {
     width: 40vw;
@@ -644,7 +644,7 @@ nav {
   .left-col .ds3cinematic {
     height: 25vw;
     width: 40vw;
-    left: 52.5%;
+    left: 52%;
   }
   .left-col .ds3cinematic .ds3cinematic-overlay {
     height: 25vw;

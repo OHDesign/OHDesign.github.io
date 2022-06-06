@@ -162,8 +162,8 @@ section {
         background-color: rgba(0, 0, 0, 0.25);
         top: 0;
         left: 0;
-        width: 100vw;
-        height: 100vh;
+        height: 100%;
+        width: 100%;
         z-index: 13;
         backdrop-filter: blur(10px);
     }
@@ -199,7 +199,7 @@ section {
         background-color: #969696a2;
         position: absolute;
         width: auto;
-        height: fit-content;
+        height: 100%;
         color: white;
         text-align: left;
         top: 7vh;
@@ -214,7 +214,7 @@ section {
         background-color: #969696a2;
         position: relative;
         width: auto;
-        height: fit-content;
+        height: 100%;
         color: white;
         text-align: left;
         top: 7vh;
@@ -504,7 +504,7 @@ nav {
 }
 
 
-@media only screen and (max-width: 915px) and (max-aspect-ratio: 9/16) {
+@media only screen and (max-width: 650px) and (max-aspect-ratio: 9/16) {
 
         .left-col {
 
@@ -528,7 +528,7 @@ nav {
 
             .background {
                 flex-direction: column;
-                height: 100vh;
+                width: 100vw;
                 overflow-y: auto;
             }
 
@@ -569,8 +569,7 @@ nav {
             }
 
             .big-view2 {
-
-                max-width: 45vw;
+                 max-width: 95vw;
             }
 
             .big-view-16-9 {
@@ -578,16 +577,29 @@ nav {
                 width: auto;
                 height: auto;
                 top: 7vh;
-                max-height: 90vh;
                 max-width: 95vw;
-                z-index: 100;
+                z-index: 13;
                 padding-left: 2%;
+                z-index: 13;
+            }
+
+            .big-view2-9 {
+
+                position: relative;
+                width: auto;
+                height: auto;
+                top: 7vh;
+                max-height: 95vh;
+                max-width: 90vw;
+                align-self: center;
+                z-index: 13;
+                margin: 1%;
                 z-index: 13;
             }
         }
 }
 
-@media only screen and (min-width: 915px){
+@media only screen and (min-width: 650px){
 
     @media only screen and (min-aspect-ratio: 16/9) {
         .left-col {
@@ -605,13 +617,12 @@ nav {
                 position: relative;
                 width: auto;
                 height: fit-content;
-                max-height: 90vh;
-                max-width: 30vw;
                 color: white;
                 text-align: left;
-                top: 3vh;
+                top: 7vh;
                 left: 2%;
                 padding: 1% 1% 1% 1%;
+                margin-right: 5%;
                 vertical-align: top;
                 z-index: 13;
             }
@@ -621,12 +632,11 @@ nav {
                 position: relative;
                 width: auto;
                 height: fit-content;
-                max-height: 90vh;
-                max-width: 20vw;
                 color: white;
                 text-align: left;
-                top: 3vh;
+                top: 7vh;
                 left: 2%;
+                margin-right: 5%;
                 padding: 1% 1% 1% 1%;
                 vertical-align: top;
                 z-index: 13;
@@ -640,9 +650,8 @@ nav {
                 top: 7vh;
                 max-height: 90vh;
                 max-width: 70vw;
-                z-index: 100;
-                padding-left: 2%;
                 z-index: 13;
+                padding-left: 2%;
             }
 
             .big-view2 {
@@ -651,11 +660,23 @@ nav {
                 width: auto;
                 height: auto;
                 top: 7vh;
-                max-height: 95vh;
-                max-width: 40vw;
-                z-index: 100;
-                padding-left: 2%;
+                max-height: 80vh;
+                align-self: center;
                 z-index: 13;
+                margin-left: 1%;
+            }
+
+            .big-view2-9 {
+            
+                position: relative;
+                width: auto;
+                height: auto;
+                top: 7vh;
+                max-height: 95vh;
+                width: 30vw;
+                align-self:baseline;
+                z-index: 13;
+                margin-left: 1%;
             }
         }
     }
@@ -760,19 +781,14 @@ nav {
             height: auto;
             top: 7vh;
             left: 2%;
-            max-height: 50vh;
-            max-width: 90vw;
             z-index: 14;
         }
     
         .big-view2 {
-            display: inline;
             position: relative;
             width: auto;
             height: auto;
             top: 7vh;
-            max-height: 85vh;
-            max-width: 45vw;
             z-index: 14;
         }
 

@@ -158,8 +158,8 @@ section {
   background-color: rgba(0, 0, 0, 0.25);
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  height: 100%;
+  width: 100%;
   z-index: 13;
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
@@ -189,9 +189,7 @@ section {
   background-color: rgba(150, 150, 150, 0.6352941176);
   position: absolute;
   width: auto;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  height: 100%;
   color: white;
   text-align: left;
   top: 7vh;
@@ -204,9 +202,7 @@ section {
   background-color: rgba(150, 150, 150, 0.6352941176);
   position: relative;
   width: auto;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  height: 100%;
   color: white;
   text-align: left;
   top: 7vh;
@@ -473,7 +469,7 @@ nav li a:hover {
   cursor: pointer;
 }
 
-@media only screen and (max-width: 915px) and (max-aspect-ratio: 9/16) {
+@media only screen and (max-width: 650px) and (max-aspect-ratio: 9/16) {
   .left-col .description-header {
     font-size: 4.5vh;
     margin: 1%;
@@ -490,7 +486,7 @@ nav li a:hover {
   }
   .left-col .background {
     flex-direction: column;
-    height: 100vh;
+    width: 100vw;
     overflow-y: auto;
   }
   .left-col .textbox-16-9 {
@@ -529,21 +525,32 @@ nav li a:hover {
     z-index: 13;
   }
   .left-col .big-view2 {
-    max-width: 45vw;
+    max-width: 95vw;
   }
   .left-col .big-view-16-9 {
     position: relative;
     width: auto;
     height: auto;
     top: 7vh;
-    max-height: 90vh;
     max-width: 95vw;
-    z-index: 100;
+    z-index: 13;
     padding-left: 2%;
     z-index: 13;
   }
+  .left-col .big-view2-9 {
+    position: relative;
+    width: auto;
+    height: auto;
+    top: 7vh;
+    max-height: 95vh;
+    max-width: 90vw;
+    align-self: center;
+    z-index: 13;
+    margin: 1%;
+    z-index: 13;
+  }
 }
-@media only screen and (min-width: 915px) and (min-aspect-ratio: 16/9) {
+@media only screen and (min-width: 650px) and (min-aspect-ratio: 16/9) {
   .left-col .description-header {
     font-size: 5vh;
   }
@@ -556,13 +563,12 @@ nav li a:hover {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
-    max-height: 90vh;
-    max-width: 30vw;
     color: white;
     text-align: left;
-    top: 3vh;
+    top: 7vh;
     left: 2%;
     padding: 1% 1% 1% 1%;
+    margin-right: 5%;
     vertical-align: top;
     z-index: 13;
   }
@@ -572,12 +578,11 @@ nav li a:hover {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
-    max-height: 90vh;
-    max-width: 20vw;
     color: white;
     text-align: left;
-    top: 3vh;
+    top: 7vh;
     left: 2%;
+    margin-right: 5%;
     padding: 1% 1% 1% 1%;
     vertical-align: top;
     z-index: 13;
@@ -589,34 +594,43 @@ nav li a:hover {
     top: 7vh;
     max-height: 90vh;
     max-width: 70vw;
-    z-index: 100;
-    padding-left: 2%;
     z-index: 13;
+    padding-left: 2%;
   }
   .left-col .big-view2 {
     position: relative;
     width: auto;
     height: auto;
     top: 7vh;
-    max-height: 95vh;
-    max-width: 40vw;
-    z-index: 100;
-    padding-left: 2%;
+    max-height: 80vh;
+    align-self: center;
     z-index: 13;
+    margin-left: 1%;
+  }
+  .left-col .big-view2-9 {
+    position: relative;
+    width: auto;
+    height: auto;
+    top: 7vh;
+    max-height: 95vh;
+    width: 30vw;
+    align-self: baseline;
+    z-index: 13;
+    margin-left: 1%;
   }
 }
-@media only screen and (min-width: 915px) {
+@media only screen and (min-width: 650px) {
   .mobile-menue, .mobile-menue-exit {
     display: none;
   }
 }
-@media only screen and (min-width: 915px) {
+@media only screen and (min-width: 650px) {
   .navbar .container {
     display: grid;
     grid-template-columns: 312px auto;
   }
 }
-@media only screen and (min-width: 915px) {
+@media only screen and (min-width: 650px) {
   .navbar nav {
     display: flex;
     justify-content: space-between;
@@ -652,19 +666,19 @@ nav li a:hover {
     color: white;
   }
 }
-@media only screen and (min-width: 915px) {
+@media only screen and (min-width: 650px) {
   .hero {
     margin: 0;
     background-size: 150% 110%;
   }
 }
-@media only screen and (min-width: 915px) {
+@media only screen and (min-width: 650px) {
   .eye-catcher {
     top: 4.5em;
     font-size: 2em;
   }
 }
-@media only screen and (min-width: 915px) {
+@media only screen and (min-width: 650px) {
   section.categories {
     height: auto;
   }
@@ -672,7 +686,7 @@ nav li a:hover {
     height: auto;
   }
 }
-@media only screen and (min-width: 915px) {
+@media only screen and (min-width: 650px) {
   .left-col {
     padding: 4rem 7.5vw;
   }
@@ -703,18 +717,13 @@ nav li a:hover {
     height: auto;
     top: 7vh;
     left: 2%;
-    max-height: 50vh;
-    max-width: 90vw;
     z-index: 14;
   }
   .left-col .big-view2 {
-    display: inline;
     position: relative;
     width: auto;
     height: auto;
     top: 7vh;
-    max-height: 85vh;
-    max-width: 45vw;
     z-index: 14;
   }
   .left-col .textbox {
@@ -755,7 +764,7 @@ nav li a:hover {
     font-size: 2em;
   }
 }
-@media only screen and (min-width: 915px) {
+@media only screen and (min-width: 650px) {
   section.impressum {
     height: -webkit-fit-content;
     height: -moz-fit-content;

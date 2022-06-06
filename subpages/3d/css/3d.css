@@ -364,7 +364,7 @@ nav {
   height: fit-content;
 }
 
-@media only screen and (min-width: 915px) {
+@media only screen and (min-width: 650px) {
   .categories-list a {
     padding: 0.75em 1em;
   }
@@ -421,7 +421,7 @@ nav {
   .left-col .schwert2 {
     height: 25vw;
     width: 40vw;
-    left: 52.5%;
+    left: 52%;
   }
   .left-col .schwert2 .schwert2-overlay {
     height: 25vw;
@@ -513,7 +513,7 @@ nav {
   .left-col .kürbis {
     height: 25vw;
     width: 40vw;
-    left: 52.5%;
+    left: 52%;
   }
   .left-col .kürbis .kürbis-overlay {
     height: 25vw;
@@ -605,7 +605,7 @@ nav {
   .left-col .planet {
     height: 25vw;
     width: 40vw;
-    left: 52.5%;
+    left: 52%;
   }
   .left-col .planet .planet-overlay {
     height: 25vw;
