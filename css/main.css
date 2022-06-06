@@ -180,14 +180,6 @@ section {
           backdrop-filter: blur(10px);
   overflow-y: auto;
 }
-.left-col .big-view {
-  position: relative;
-  width: auto;
-  height: auto;
-  top: 7vh;
-  left: 2%;
-  margin-bottom: 2%;
-}
 .left-col .big-view-16-9 {
   position: relative;
   width: auto;
@@ -195,14 +187,6 @@ section {
   max-height: 50vh;
   top: 7vh;
   padding-left: 2%;
-  margin-bottom: 2%;
-}
-.left-col .big-view2 {
-  position: relative;
-  width: auto;
-  height: auto;
-  top: 7vh;
-  padding: 0 0 2% 2%;
   margin-bottom: 2%;
 }
 .left-col .textbox {
@@ -736,14 +720,6 @@ nav li a:hover {
     color: white;
     cursor: pointer;
     z-index: 11;
-  }
-  .left-col .big-view {
-    position: relative;
-    width: auto;
-    height: auto;
-    top: 7vh;
-    left: 2%;
-    z-index: 14;
   }
   .left-col .big-view2 {
     z-index: 14;

@@ -184,14 +184,6 @@ section {
         overflow-y: auto;
     }
 
-    .big-view {
-        position: relative;
-        width: auto;
-        height: auto;
-        top: 7vh;
-        left: 2%;
-        margin-bottom: 2%;
-    }
 
     .big-view-16-9 {
 
@@ -204,15 +196,6 @@ section {
         margin-bottom: 2%;
     }
 
-    .big-view2 {
-
-        position: relative;
-        width: auto;
-        height: auto;
-        top: 7vh;
-        padding: 0 0 2% 2%;
-        margin-bottom: 2%;
-    }
 
     .textbox {
 
@@ -801,15 +784,6 @@ nav {
             color: white;
             cursor: pointer;
             z-index: 11;
-        }
-
-        .big-view {
-            position: relative;
-            width: auto;
-            height: auto;
-            top: 7vh;
-            left: 2%;
-            z-index: 14;
         }
     
         .big-view2 {
