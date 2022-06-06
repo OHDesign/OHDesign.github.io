@@ -157,6 +157,7 @@ section {
     }
 
     .background {
+        flex-direction: column;
         display: none;
         position: fixed;
         background-color: rgba(0, 0, 0, 0.25);
@@ -166,6 +167,21 @@ section {
         width: 100%;
         z-index: 13;
         backdrop-filter: blur(10px);
+        overflow-y: auto;
+    }
+
+    .background2 {
+        flex-direction: column;
+        display: none;
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.25);
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 13;
+        backdrop-filter: blur(10px);
+        overflow-y: auto;
     }
 
     .big-view {
@@ -181,6 +197,7 @@ section {
         position: relative;
         width: auto;
         height: auto;
+        max-height: 50vh;
         top: 7vh;
         padding-left: 2%;
     }
@@ -504,7 +521,7 @@ nav {
 }
 
 
-@media only screen and (max-width: 650px) and (max-aspect-ratio: 9/16) {
+@media only screen and (max-width: 650px){
 
         .left-col {
 
@@ -610,6 +627,14 @@ nav {
         
             .description {
                 font-size: 3vh;
+            }
+            
+            .background {
+                flex-direction: row;
+            }
+
+            .background2 {
+                flex-direction: column;
             }
 
             .textbox{
@@ -785,15 +810,32 @@ nav {
         }
     
         .big-view2 {
+            z-index: 14;
+            max-width: 95%;
+        }
+
+        .big-view-16-9 {
+            align-self: center;
             position: relative;
             width: auto;
             height: auto;
+            max-width: 70%;
             top: 7vh;
             z-index: 14;
         }
 
         .textbox {
             position: relative;
+            max-width: 93%;
+            left: 2%;
+            top: 8%;
+            z-index: 14;
+        }
+
+        .textbox-16-9 {
+            position: relative;
+            height: fit-content;
+            max-width: 95%;
             left: 2%;
             top: 8%;
             z-index: 14;

@@ -153,6 +153,7 @@ section {
   color: rgba(0, 0, 0, 0);
 }
 .left-col .background {
+  flex-direction: column;
   display: none;
   position: fixed;
   background-color: rgba(0, 0, 0, 0.25);
@@ -163,6 +164,21 @@ section {
   z-index: 13;
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
+  overflow-y: auto;
+}
+.left-col .background2 {
+  flex-direction: column;
+  display: none;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.25);
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 13;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  overflow-y: auto;
 }
 .left-col .big-view {
   position: relative;
@@ -175,6 +191,7 @@ section {
   position: relative;
   width: auto;
   height: auto;
+  max-height: 50vh;
   top: 7vh;
   padding-left: 2%;
 }
@@ -469,7 +486,7 @@ nav li a:hover {
   cursor: pointer;
 }
 
-@media only screen and (max-width: 650px) and (max-aspect-ratio: 9/16) {
+@media only screen and (max-width: 650px) {
   .left-col .description-header {
     font-size: 4.5vh;
     margin: 1%;
@@ -556,6 +573,12 @@ nav li a:hover {
   }
   .left-col .description {
     font-size: 3vh;
+  }
+  .left-col .background {
+    flex-direction: row;
+  }
+  .left-col .background2 {
+    flex-direction: column;
   }
   .left-col .textbox {
     position: relative;
@@ -720,14 +743,31 @@ nav li a:hover {
     z-index: 14;
   }
   .left-col .big-view2 {
+    z-index: 14;
+    max-width: 95%;
+  }
+  .left-col .big-view-16-9 {
+    align-self: center;
     position: relative;
     width: auto;
     height: auto;
+    max-width: 70%;
     top: 7vh;
     z-index: 14;
   }
   .left-col .textbox {
     position: relative;
+    max-width: 93%;
+    left: 2%;
+    top: 8%;
+    z-index: 14;
+  }
+  .left-col .textbox-16-9 {
+    position: relative;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    max-width: 95%;
     left: 2%;
     top: 8%;
     z-index: 14;
