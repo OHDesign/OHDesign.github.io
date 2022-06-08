@@ -170,7 +170,7 @@
             </div>
         </section>
 
-
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script>
 
             const mobileBtn = document.getElementById('mobile-cta')
@@ -183,11 +183,17 @@
             mobileBtnExit.addEventListener('click', () => {
                 nav.classList.remove('menue-btn');
             })
+            
+            
 
             //creativ funktionen
-
             function opencreativ() {
                 document.getElementById("creativ-close").style.display = "flex";
+                if(navigator.userAgent.indexOf("Firefox") != -1 ) {
+
+                    document.getElementById("creativ-close").style.background = "rgba(0, 0, 0, .9)";
+
+                }
             }
 
             function closecreativ() {
@@ -196,6 +202,11 @@
             //bockwurst funktionen
             function openbockwurst() {
                 document.getElementById("bockwurst-close").style.display = "flex";
+                if(navigator.userAgent.indexOf("Firefox") != -1 ) {
+
+                    document.getElementById("bockwurst-close").style.background = "rgba(0, 0, 0, .9)";
+
+                }
             }
 
             function closebockwurst() {
@@ -204,6 +215,9 @@
             //aurora funktionen
             function openaurora() {
                 document.getElementById("aurora-close").style.display = "flex";
+                if(navigator.userAgent.indexOf("Firefox") != -1 ) {
+                    document.getElementById("aurora-close").style.background = "rgba(0, 0, 0, .9)";
+                }
             }
 
             function closeaurora() {
@@ -212,6 +226,9 @@
             //shrine funktionen
             function openshrine() {
                 document.getElementById("shrine-close").style.display = "flex";
+                if(navigator.userAgent.indexOf("Firefox") != -1 ) {
+                    document.getElementById("shrine-close").style.background = "rgba(0, 0, 0, .9)";
+                }
             }
 
             function closeshrine() {

@@ -159,6 +159,9 @@
             //bat funktionen
             function openbat() {
                 document.getElementById("bat-close").style.display = "flex";
+                if(navigator.userAgent.indexOf("Firefox") != -1 ) {
+                    document.getElementById("bat-close").style.background = "rgba(0, 0, 0, .9)";
+                }
             }
 
             function closebat() {
@@ -167,6 +170,9 @@
             //knight funktionen
             function openknight() {
                 document.getElementById("knight-close").style.display = "flex";
+                if(navigator.userAgent.indexOf("Firefox") != -1 ) {
+                    document.getElementById("knight-close").style.background = "rgba(0, 0, 0, .9)";
+                }
             }
 
             function closeknight() {
@@ -175,6 +181,9 @@
             //wizard funktionen
             function openwizard() {
                 document.getElementById("wizard-close").style.display = "flex";
+                if(navigator.userAgent.indexOf("Firefox") != -1 ) {
+                    document.getElementById("wizard-close").style.background = "rgba(0, 0, 0, .9)";
+                }
             }
 
             function closewizard() {
