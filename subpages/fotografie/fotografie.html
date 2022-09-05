@@ -10,6 +10,8 @@
         <link rel="icon" href="../../images/Logo(weiß).svg">
     </head>
     <body id="disable-scroll">
+        <div class="loading-screen" style="background-color:black; height:100vh; font-size: 2em; color:white; text-align: center; padding-top:50vh;">
+            Bilder werden geladen...</div>
         <div class="navbar">
             <div class="container">
                 <div class="logo">
@@ -23,9 +25,9 @@
                     <ul class="primary-nav">
                         <li><a href="../../index.html">Home</a></li>
                         <li><a href="../creativ/galerie.html">Designs</a></li>
+                        <li class="current"><a href="#">Fotografie</a></li>
                         <li><a href="../3d/3d.html">3D</a></li>
                         <li><a href="../pixelart/pixelart.html">Pixelart</a></li>
-                        <li class="current"><a href="#">Fotografie</a></li>
                         <li><a href="../about/aboutMe.html">Über Mich</a></li>
                         <li><a href="../contact/contact.html">Kontakt</a></li>
                     </ul>
@@ -47,9 +49,9 @@
                 <div id="select" class="categories-list">
                     <ul class="c-list">
                         <li><a href="../creativ/galerie.html#select">Designs</a></li>
+                        <li class="current"><a href="#">Fotografie</a></li>
                         <li><a href="../3d/3d.html#select">3D</a></li>
                         <li><a href="../pixelart/pixelart.html#select">Pixelart</a></li>
-                        <li class="current"><a href="#">Fotografie</a></li>
                     </ul>
                 </div>
                 <div class="left-col">
@@ -75,51 +77,6 @@
                             </p>
                         </div>
                     </div>
-                    
-                    <div class="glass">
-                        <div class="glass-overlay">
-                            <div class="glass-cta">
-                                <h1 class="glass-text">Cola Glas</a></h1>
-                                <div>
-                                    <p id="glass-open" class="big-img" onclick="openglass();disable()">img</p>
-                                    <div class="nonclick">space</div>
-                                </div>
-                                <p class="subtext">Möchte jemand etwas trinken?</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="glass-close" class="background" onclick="closeglass();enable()">
-                        <img class="bigview-exit" src="../../images/icons/X.svg" alt="close">
-                        <img class="big-view-16-9" src="../../images/projects/Fotos/colaglas.jpg" alt="space" onclick="event.stopPropagation()">
-                        <div class="textbox-16-9" onclick="event.stopPropagation()">
-                            <h1 class="description-header">Cola Glas</h1>
-                            <p class="description">Hier habe ich ein Glas mit Mineralwasser fotografiert. Das ganze habe ich vor einem Monitor
-                                mit weißem Bild gemacht. Anschließend habe ich es noch etwas in Photoshop bearbeitet.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="chicken">
-                        <div class="chicken-overlay">
-                            <div class="chicken-cta">
-                                <h1 class="chicken-text">Huhn</h1>
-                                <div>
-                                    <p id="chicken-open" class="big-img" onclick="openchicken();disable()">img</p>
-                                    <div class="nonclick">space</div>
-                                </div>
-                                <p class="subtext">Ist es ein Vogel? ... Ja ist es.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="chicken-close" class="background" onclick="closechicken();enable()">
-                        <img class="bigview-exit" src="../../images/icons/X.svg" alt="close">
-                        <img class="big-view-16-9" src="../../images/projects/Fotos/chicken.jpg" alt="space" onclick="event.stopPropagation()">
-                        <div class="textbox-16-9" onclick="event.stopPropagation()">
-                            <h1 class="description-header">Huhn</h1>
-                            <p class="description">Dieses Bild war ein zufälliger Schnappschuss, denn normalerweise bleiben Hühner selten einfach
-                            stehen und lassen sich fotografieren.
-                            </p>
-                        </div>
-                    </div>
                     <div class="portrait">
                         <div class="portrait-overlay">
                             <div class="portrait-cta">
@@ -142,48 +99,48 @@
                             </p>
                         </div>
                     </div>
-                    <div class="deco">
-                        <div class="deco-overlay">
-                            <div class="deco-cta">
-                                <h1 class="deco-text">LED Decoglas</h1>
+                    
+                    <div class="chicken">
+                        <div class="chicken-overlay">
+                            <div class="chicken-cta">
+                                <h1 class="chicken-text">Huhn</h1>
                                 <div>
-                                    <p id="deco-open" class="big-img" onclick="opendeco();disable()">img</p>
+                                    <p id="chicken-open" class="big-img" onclick="openchicken();disable()">img</p>
                                     <div class="nonclick">space</div>
                                 </div>
-                                <p class="subtext">Ist das Deco oder kann das weg?</p>
+                                <p class="subtext">Ist es ein Vogel? ... Ja ist es.</p>
                             </div>
                         </div>
                     </div>
-                    <div id="deco-close" class="background" onclick="closedeco();enable()">
+                    <div id="chicken-close" class="background" onclick="closechicken();enable()">
                         <img class="bigview-exit" src="../../images/icons/X.svg" alt="close">
-                        <img class="big-view-16-9" src="../../images/projects/Fotos/decoglas.jpg" alt="space" onclick="event.stopPropagation()">
+                        <img class="big-view-16-9" src="../../images/projects/Fotos/chicken.jpg" alt="space" onclick="event.stopPropagation()">
                         <div class="textbox-16-9" onclick="event.stopPropagation()">
-                            <h1 class="description-header">LED Decoglas</h1>
-                            <p class="description">Dieses Foto ist eher zufällig entstanden. Ich fand es einfach sehr interessant, wie das Licht die ganzen feinen
-                            Details am Glas hervor hebt. 
+                            <h1 class="description-header">Huhn</h1>
+                            <p class="description">Dieses Bild war ein zufälliger Schnappschuss, denn normalerweise bleiben Hühner selten einfach
+                            stehen und lassen sich fotografieren.
                             </p>
                         </div>
                     </div>
-                    <div class="ds3cinematic">
-                        <div class="ds3cinematic-overlay">
-                            <div class="ds3cinematic-cta">
-                                <h1 class="ds3cinematic-text">Dark Souls III Cinematic</h1>
+                    <div class="glass">
+                        <div class="glass-overlay">
+                            <div class="glass-cta">
+                                <h1 class="glass-text">Cola Glas</a></h1>
                                 <div>
-                                    <p id="ds3cinematic-open" class="big-img" onclick="opends3cinematic();disable()">img</p>
+                                    <p id="glass-open" class="big-img" onclick="openglass();disable()">img</p>
                                     <div class="nonclick">space</div>
                                 </div>
-                                <p class="subtext">Ein bearbeiteter Screenshot aus Dark Souls III.</p>
+                                <p class="subtext">Möchte jemand etwas trinken?</p>
                             </div>
                         </div>
                     </div>
-                    <div id="ds3cinematic-close" class="background" onclick="closeds3cinematic();enable()">
+                    <div id="glass-close" class="background" onclick="closeglass();enable()">
                         <img class="bigview-exit" src="../../images/icons/X.svg" alt="close">
-                        <img class="big-view-16-9" src="../../images/projects/Fotos/ds3 Vollnir cinematic-4.png" alt="space" onclick="event.stopPropagation()">
+                        <img class="big-view-16-9" src="../../images/projects/Fotos/colaglas.jpg" alt="space" onclick="event.stopPropagation()">
                         <div class="textbox-16-9" onclick="event.stopPropagation()">
-                            <h1 class="description-header">Dark Souls III Cinematic</h1>
-                            <p class="description">Beim Spielen von "Dark Souls III" gefiel mir diese Szene sehr, weshalb ich einen Screenshot aufgenommen habe.
-                            Ich habe das Bild dann in Photoshop bearbeitet, um es mehr wie eine Standbild aus einem Film aussehen zu lassen. Dafür musste Ich
-                            unter anderem kleine Fehler in der Beleuchtung und den Texturen ausbessern.
+                            <h1 class="description-header">Cola Glas</h1>
+                            <p class="description">Hier habe ich ein Glas mit Mineralwasser fotografiert. Das ganze habe ich vor einem Monitor
+                                mit weißem Bild gemacht. Anschließend habe ich es noch etwas in Photoshop bearbeitet.
                             </p>
                         </div>
                     </div>
@@ -211,6 +168,30 @@
                             </p>
                         </div>
                     </div>
+                    <div class="ds3cinematic">
+                        <div class="ds3cinematic-overlay">
+                            <div class="ds3cinematic-cta">
+                                <h1 class="ds3cinematic-text">Dark Souls III Cinematic</h1>
+                                <div>
+                                    <p id="ds3cinematic-open" class="big-img" onclick="opends3cinematic();disable()">img</p>
+                                    <div class="nonclick">space</div>
+                                </div>
+                                <p class="subtext">Ein bearbeiteter Screenshot aus Dark Souls III.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="ds3cinematic-close" class="background" onclick="closeds3cinematic();enable()">
+                        <img class="bigview-exit" src="../../images/icons/X.svg" alt="close">
+                        <img class="big-view-16-9" src="../../images/projects/Fotos/ds3 Vollnir cinematic-4.png" alt="space" onclick="event.stopPropagation()">
+                        <div class="textbox-16-9" onclick="event.stopPropagation()">
+                            <h1 class="description-header">Dark Souls III Cinematic</h1>
+                            <p class="description">Beim Spielen von "Dark Souls III" gefiel mir diese Szene sehr, weshalb ich einen Screenshot aufgenommen habe.
+                            Ich habe das Bild dann in Photoshop bearbeitet, um es mehr wie eine Standbild aus einem Film aussehen zu lassen. Dafür musste Ich
+                            unter anderem kleine Fehler in der Beleuchtung und den Texturen ausbessern.
+                            </p>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
         </section>

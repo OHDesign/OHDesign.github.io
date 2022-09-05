@@ -14,7 +14,6 @@ body {
     height: fit-content;
 }
 
-
 .navbar {
     height: 40px;
     background: white;
@@ -829,7 +828,9 @@ nav {
         .creativ {
             width: 75%;
             margin-left: 12%;
-            
+            .creativ-overlay .creativ-cta .creativ-text {
+                font-size: 2em;
+            }
         }
         .threeD {
             width: 75%;

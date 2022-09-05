@@ -761,6 +761,9 @@ nav li a:hover {
     width: 75%;
     margin-left: 12%;
   }
+  .left-col .creativ .creativ-overlay .creativ-cta .creativ-text {
+    font-size: 2em;
+  }
   .left-col .threeD {
     width: 75%;
     margin-left: 12%;
