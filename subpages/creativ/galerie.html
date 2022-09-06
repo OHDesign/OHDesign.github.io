@@ -114,8 +114,12 @@
                     </div>
                     <div id="bockwurst-close" class="background" onclick="closebockwurst();enable()">
 
-                        <img class="big-view2" src="/../images/projects/Edits/Bockwurst Merch.png" alt="Bockwurst" onclick="event.stopPropagation()">
-                        <img class="big-view2" src="/../images/projects/Edits/Bockwurst Merch veggie.png" alt="Bockvurst" onclick="event.stopPropagation()">
+                        <img id="bw" class="big-view2" src="/../images/projects/Edits/Bockwurst Merch.png" alt="Bockwurst" onclick="event.stopPropagation()">
+                        <img id="bwv" class="big-view2" src="/../images/projects/Edits/Bockwurst Merch veggie.png" alt="Bockvurst" style="display:none;" onclick="event.stopPropagation()">
+                        <div id="bockwurst-switch" class="switch-button" onclick="event.stopPropagation();">
+                            <input class="switch-button-checkbox" type="checkbox" onclick="switchbockwurst(this)"></input>
+                            <label class="switch-button-label" for=""><span class="switch-button-label-span">Version 1</span></label>
+                          </div>
                         <img class="bigview-exit" src="../../images/icons/X.svg" alt="close">
                         <div class="textbox" onclick="event.stopPropagation()">
                                 <h1 class="description-header">Bockwurst</h1>
@@ -173,6 +177,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script>
 
+
             const mobileBtn = document.getElementById('mobile-cta')
                 nav = document.querySelector('nav')
                 mobileBtnExit = document.getElementById('mobile-exit');
@@ -212,6 +217,20 @@
             function closebockwurst() {
                 document.getElementById("bockwurst-close").style.display = "none";
             }
+            
+            //bockwurst switch
+            function switchbockwurst(checkbox) {
+                if(checkbox.checked) {
+                    document.getElementById("bw").style.display = "none";
+                    document.getElementById("bwv").style.display = "block";
+                }
+                else{
+                    document.getElementById("bw").style.display = "block";
+                    document.getElementById("bwv").style.display = "none";
+                }
+                
+            }
+
             //aurora funktionen
             function openaurora() {
                 document.getElementById("aurora-close").style.display = "flex";
