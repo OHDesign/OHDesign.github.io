@@ -54,6 +54,12 @@
     background-image: url("../../../images/projects/backdrop/aurora3.png");
 }
 
+.switch-button {
+    &:before{
+        content: "Version 2";
+    }
+}
+
 .left-col {
     padding: 7vw;
 
@@ -351,7 +357,7 @@ nav {
             .bockwurst-overlay {
                 height: 25vw;
                 width: 40vw;
-                left: -302.5%;
+                left: -299%;
                 .bockwurst-cta {
                     .bockwurst-text {
                         font-size: 3.5vw;
@@ -381,7 +387,7 @@ nav {
                     position: absolute;
                     top: 0;
                     left: 40vw;
-                    width: 14.25vw;
+                    width: 13.5vw;
                     height: 100%;
                     z-index: 12;
                     padding: auto;
@@ -396,10 +402,10 @@ nav {
         .aurora {
             height: 25vw;
             width: 40vw;
-            left: 0;
+            left: 53%;
             .aurora-overlay {
                 height: 25vw;
-                left: 110%;
+                left: -111%;
                 .aurora-cta {
                     .aurora-text{
                         font-size: 3.5vw;
@@ -417,8 +423,8 @@ nav {
                 .big-img {
                     background-color: rgba(0, 0, 255, 0);
                     color: rgba($color: #00000000, $alpha: 0);
-                    left: -110%;
-                    width: 84vw;
+                    left: 0;
+                    width: 84.5vw;
                     z-index: 11;
                 }
 
@@ -430,7 +436,7 @@ nav {
                     margin: 0;
                     position: absolute;
                     top: 0;
-                    left: -4vw;
+                    left: 40vw;
                     width: 4vw;
                     height: 100%;
                     z-index: 12;
@@ -446,11 +452,11 @@ nav {
         .shrine {
             height: 25vw;
             width: 18vw;
-            left: 64%;
+            left: 13%;
             .shrine-overlay {
                 height: 25vw;
                 width: 40vw;
-                left: -302.5%;
+                left: 184%;
                 .shrine-cta {
                     .shrine-text {
                         font-size: 3.5vw;
@@ -468,7 +474,8 @@ nav {
                 .big-img {
                     background-color: rgba(0, 0, 255, 0);
                     color: rgba($color: #00000000, $alpha: 0);
-                    width: 72.5vw;
+                    width: 73vw;
+                    left: -82.5%;
                     z-index: 11;
                 }
                 .nonclick {
@@ -479,8 +486,8 @@ nav {
                     margin: 0;
                     position: absolute;
                     top: 0;
-                    left: 40vw;
-                    width: 14.25vw;
+                    left: -15vw;
+                    width: 15vw;
                     height: 100%;
                     z-index: 12;
                     padding: auto;

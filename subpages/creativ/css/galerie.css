@@ -52,6 +52,10 @@
   background-image: url("../../../images/projects/backdrop/aurora3.png");
 }
 
+.switch-button:before {
+  content: "Version 2";
+}
+
 .left-col {
   padding: 7vw;
 }
@@ -267,7 +271,6 @@ nav {
   .categories-list a {
     padding: 0.75em 1em;
   }
-
   .left-col {
     padding: 7.5vw;
   }
@@ -325,7 +328,7 @@ nav {
   .left-col .bockwurst .bockwurst-overlay {
     height: 25vw;
     width: 40vw;
-    left: -302.5%;
+    left: -299%;
   }
   .left-col .bockwurst .bockwurst-overlay .bockwurst-cta .bockwurst-text {
     font-size: 3.5vw;
@@ -354,7 +357,7 @@ nav {
     position: absolute;
     top: 0;
     left: 40vw;
-    width: 14.25vw;
+    width: 13.5vw;
     height: 100%;
     z-index: 12;
     padding: auto;
@@ -367,11 +370,11 @@ nav {
   .left-col .aurora {
     height: 25vw;
     width: 40vw;
-    left: 0;
+    left: 53%;
   }
   .left-col .aurora .aurora-overlay {
     height: 25vw;
-    left: 110%;
+    left: -111%;
   }
   .left-col .aurora .aurora-overlay .aurora-cta .aurora-text {
     font-size: 3.5vw;
@@ -388,8 +391,8 @@ nav {
   .left-col .aurora .aurora-overlay .big-img {
     background-color: rgba(0, 0, 255, 0);
     color: rgba(0, 0, 0, 0);
-    left: -110%;
-    width: 84vw;
+    left: 0;
+    width: 84.5vw;
     z-index: 11;
   }
   .left-col .aurora .aurora-overlay .nonclick {
@@ -400,7 +403,7 @@ nav {
     margin: 0;
     position: absolute;
     top: 0;
-    left: -4vw;
+    left: 40vw;
     width: 4vw;
     height: 100%;
     z-index: 12;
@@ -414,12 +417,12 @@ nav {
   .left-col .shrine {
     height: 25vw;
     width: 18vw;
-    left: 64%;
+    left: 13%;
   }
   .left-col .shrine .shrine-overlay {
     height: 25vw;
     width: 40vw;
-    left: -302.5%;
+    left: 184%;
   }
   .left-col .shrine .shrine-overlay .shrine-cta .shrine-text {
     font-size: 3.5vw;
@@ -436,7 +439,8 @@ nav {
   .left-col .shrine .shrine-overlay .big-img {
     background-color: rgba(0, 0, 255, 0);
     color: rgba(0, 0, 0, 0);
-    width: 72.5vw;
+    width: 73vw;
+    left: -82.5%;
     z-index: 11;
   }
   .left-col .shrine .shrine-overlay .nonclick {
@@ -447,8 +451,8 @@ nav {
     margin: 0;
     position: absolute;
     top: 0;
-    left: 40vw;
-    width: 14.25vw;
+    left: -15vw;
+    width: 15vw;
     height: 100%;
     z-index: 12;
     padding: auto;

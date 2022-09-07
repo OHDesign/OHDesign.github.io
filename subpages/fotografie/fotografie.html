@@ -100,6 +100,72 @@
                         </div>
                     </div>
                     
+                    <div class="ds3montage">
+                        <div class="ds3montage-overlay">
+                            <div class="ds3montage-cta">
+                                <h1 class="ds3montage-text">Dark Souls III Bildmontage</h1>
+                                <div>
+                                    <p id="ds3montage-open" class="big-img" onclick="opends3montage();disable()">img</p>
+                                    <div class="nonclick">space</div>
+                                </div>
+                                <p class="subtext">Eine Bildmontage mit Screenshots aus Dark Souls III.</p>
+                                <p class="more" onclick="opends3montage();disable()">...mehr</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="ds3montage-close" class="background" onclick="closeds3montage();enable()">
+                        <div class="frame">
+                            <img id="ds3m" class="big-view-16-9" src="../../images/projects/Fotos/Irithil_x_ringedcity.png" alt="space" loading="lazy" onclick="event.stopPropagation()">
+                            <img id="ds3mo1" class="big-view-16-9" src="../../images/projects/Fotos/irithil-og.jpg" alt="space" style="display:none;" loading="lazy" onclick="event.stopPropagation()">
+                            <img id="ds3mo2" class="big-view-16-9" src="../../images/projects/Fotos/ringedcity-og.jpg" alt="space" style="display:none;" loading="lazy" onclick="event.stopPropagation()">
+                            <div id="ds3montage-switch" class="switch-button" onclick="event.stopPropagation();">
+                                <input class="switch-button-checkbox" type="checkbox" onclick="switchds3montage(this)"></input>
+                                <label class="switch-button-label" for=""><span class="switch-button-label-span">bearbeitet</span></label>
+                            </div>
+                        </div>
+                        <div class="textbox-16-9" onclick="event.stopPropagation()">
+                            <h1 class="description-header">Dark Souls III Bildmontage</h1>
+                            <p class="description">Hier hatte ich die Idee, zwei sehr eindrucksvolle Szenen aus "Dark Souls III" in einem Bild zu vereinen.
+                            Dafür habe ich in Photoshop eines der Bilder zur Hälfte freigestellt und bei dem anderen den Spielcharakter entfernt.
+                            Danach musste ich das zweite Bild nur noch entsprechend ausrichten. Zum Schluss habe ich in die Linke Hälfte noch einen
+                            Mond eingefügt. (Den Mond habe ich selbst fotografiert und dann entsprechen freigestellt.)
+                            </p>
+                        </div>
+                        <img class="bigview-exit" src="../../images/icons/X.svg" alt="close">
+                    </div>
+
+                    <div class="ds3cinematic">
+                        <div class="ds3cinematic-overlay">
+                            <div class="ds3cinematic-cta">
+                                <h1 class="ds3cinematic-text">Dark Souls III Cinematic</h1>
+                                <div>
+                                    <p id="ds3cinematic-open" class="big-img" onclick="opends3cinematic();disable()">img</p>
+                                    <div class="nonclick">space</div>
+                                </div>
+                                <p class="subtext">Ein bearbeiteter Screenshot aus Dark Souls III.</p>
+                                <p class="more" onclick="opends3cinematic();disable()">...mehr</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="ds3cinematic-close" class="background" onclick="closeds3cinematic();enable()">
+                        <img class="bigview-exit" src="../../images/icons/X.svg" alt="close">
+                        <div class="frame">
+                            <img id="ds3c" class="big-view-16-9" src="../../images/projects/Fotos/ds3 Vollnir cinematic-4.png" alt="space" loading="lazy" onclick="event.stopPropagation()">
+                            <img id="ds3co" class="big-view-16-9" src="../../images/projects/Fotos/ds3 Vollnir cinematic og.png" alt="space" style="display:none;" loading="lazy" onclick="event.stopPropagation()">
+                            <div id="ds3cinematic-switch" class="switch-button" onclick="event.stopPropagation();">
+                                <input class="switch-button-checkbox" type="checkbox" onclick="switchds3cinematic(this)"></input>
+                                <label class="switch-button-label" for=""><span class="switch-button-label-span">bearbeitet</span></label>
+                            </div>
+                        </div>
+                        <div class="textbox-16-9" onclick="event.stopPropagation()">
+                            <h1 class="description-header">Dark Souls III Cinematic</h1>
+                            <p class="description">Beim Spielen von "Dark Souls III" gefiel mir diese Szene sehr, weshalb ich einen Screenshot aufgenommen habe.
+                            Ich habe das Bild dann in Photoshop bearbeitet, um es mehr wie eine Standbild aus einem Film aussehen zu lassen. Dafür musste Ich
+                            unter anderem kleine Fehler in der Beleuchtung und den Texturen ausbessern.
+                            </p>
+                        </div>
+                    </div>
+                    
                     <div class="chicken">
                         <div class="chicken-overlay">
                             <div class="chicken-cta">
@@ -123,6 +189,7 @@
                             </p>
                         </div>
                     </div>
+                    
                     <div class="glass">
                         <div class="glass-overlay">
                             <div class="glass-cta">
@@ -146,56 +213,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="ds3montage">
-                        <div class="ds3montage-overlay">
-                            <div class="ds3montage-cta">
-                                <h1 class="ds3montage-text">Dark Souls III Bildmontage</h1>
-                                <div>
-                                    <p id="ds3montage-open" class="big-img" onclick="opends3montage();disable()">img</p>
-                                    <div class="nonclick">space</div>
-                                </div>
-                                <p class="subtext">Eine Bildmontage mit Screenshots aus Dark Souls III.</p>
-                                <p class="more" onclick="opends3montage();disable()">...mehr</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="ds3montage-close" class="background" onclick="closeds3montage();enable()">
-                        <img class="bigview-exit" src="../../images/icons/X.svg" alt="close">
-                        <img class="big-view-16-9" src="../../images/projects/Fotos/Irithil_x_ringedcity.png" alt="space" loading="lazy" onclick="event.stopPropagation()">
-                        <div class="textbox-16-9" onclick="event.stopPropagation()">
-                            <h1 class="description-header">Dark Souls III Bildmontage</h1>
-                            <p class="description">Hier hatte ich die Idee, zwei sehr eindrucksvolle Szenen aus "Dark Souls III" in einem Bild zu vereinen.
-                            Dafür habe ich in Photoshop eines der Bilder zur Hälfte freigestellt und bei dem anderen den Spielcharakter entfernt.
-                            Danach musste ich das zweite Bild nur noch entsprechend ausrichten. Zum Schluss habe ich in die Linke Hälfte noch einen
-                            Mond eingefügt. (Den Mond habe ich selbst fotografiert und dann entsprechen freigestellt.)
-                            </p>
-                        </div>
-                    </div>
-                    <div class="ds3cinematic">
-                        <div class="ds3cinematic-overlay">
-                            <div class="ds3cinematic-cta">
-                                <h1 class="ds3cinematic-text">Dark Souls III Cinematic</h1>
-                                <div>
-                                    <p id="ds3cinematic-open" class="big-img" onclick="opends3cinematic();disable()">img</p>
-                                    <div class="nonclick">space</div>
-                                </div>
-                                <p class="subtext">Ein bearbeiteter Screenshot aus Dark Souls III.</p>
-                                <p class="more" onclick="opends3cinematic();disable()">...mehr</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="ds3cinematic-close" class="background" onclick="closeds3cinematic();enable()">
-                        <img class="bigview-exit" src="../../images/icons/X.svg" alt="close">
-                        <img class="big-view-16-9" src="../../images/projects/Fotos/ds3 Vollnir cinematic-4.png" alt="space" loading="lazy" onclick="event.stopPropagation()">
-                        <div class="textbox-16-9" onclick="event.stopPropagation()">
-                            <h1 class="description-header">Dark Souls III Cinematic</h1>
-                            <p class="description">Beim Spielen von "Dark Souls III" gefiel mir diese Szene sehr, weshalb ich einen Screenshot aufgenommen habe.
-                            Ich habe das Bild dann in Photoshop bearbeitet, um es mehr wie eine Standbild aus einem Film aussehen zu lassen. Dafür musste Ich
-                            unter anderem kleine Fehler in der Beleuchtung und den Texturen ausbessern.
-                            </p>
-                        </div>
-                    </div>
-                    
+
                 </div>
             </div>
         </section>
@@ -275,18 +293,8 @@
             function closeportrait() {
                 document.getElementById("portrait-close").style.display = "none";
             }
-            //deco funktionen
-            function opendeco() {
-                document.getElementById("deco-close").style.display = "flex";
-                if(navigator.userAgent.indexOf("Firefox") != -1 ) {
-                    document.getElementById("deco-close").style.background = "rgba(0, 0, 0, .9)";
-                }
-            }
 
-            function closedeco() {
-                document.getElementById("deco-close").style.display = "none";
-            }
-            //deco funktionen
+            //cinematic funktionen
             function opends3cinematic() {
                 document.getElementById("ds3cinematic-close").style.display = "flex";
                 if(navigator.userAgent.indexOf("Firefox") != -1 ) {
@@ -307,6 +315,34 @@
 
             function closeds3montage() {
                 document.getElementById("ds3montage-close").style.display = "none";
+            }
+
+            //ds3montage switch
+            function switchds3montage(checkbox) {
+                if(checkbox.checked) {
+                    document.getElementById("ds3m").style.display = "none";
+                    document.getElementById("ds3mo1").style.display = "block";
+                    document.getElementById("ds3mo2").style.display = "block";
+                }
+                else{
+                    document.getElementById("ds3m").style.display = "block";
+                    document.getElementById("ds3mo1").style.display = "none";
+                    document.getElementById("ds3mo2").style.display = "none";
+                }
+                
+            }
+
+             //ds3cinematic switch
+             function switchds3cinematic(checkbox) {
+                if(checkbox.checked) {
+                    document.getElementById("ds3c").style.display = "none";
+                    document.getElementById("ds3co").style.display = "block";
+                }
+                else{
+                    document.getElementById("ds3c").style.display = "block";
+                    document.getElementById("ds3co").style.display = "none";
+                }
+                
             }
 
             function disable() {

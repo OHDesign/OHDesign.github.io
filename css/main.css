@@ -132,7 +132,6 @@ section {
   background: rgba(35, 201, 219, 0.4784313725);
   border-radius: 30px;
   width: 8em;
-  height: 4em;
   text-align: center;
   font-size: 1.5em;
   letter-spacing: 1px;
@@ -143,7 +142,7 @@ section {
   z-index: 14;
 }
 .switch-button:before {
-  content: "Version 2";
+  content: "Original";
   position: absolute;
   top: 0;
   bottom: 0;
@@ -205,8 +204,7 @@ section {
 }
 .left-col .bigview-exit {
   position: fixed;
-  top: 1vh;
-  right: 2vw;
+  right: 0;
   float: right;
   z-index: 14;
   padding: 1%;
@@ -223,6 +221,7 @@ section {
 .left-col .background {
   flex-direction: column;
   align-items: flex-start;
+  justify-content: space-between;
   display: none;
   position: fixed;
   background-color: rgba(0, 0, 0, 0.25);
@@ -249,13 +248,20 @@ section {
           backdrop-filter: blur(10px);
   overflow-y: auto;
 }
+.left-col .big-view2 {
+  position: relative;
+  top: 7vh;
+  max-width: 93vw;
+  margin-top: 2%;
+  margin-left: 2%;
+}
 .left-col .big-view-16-9 {
   position: relative;
   width: auto;
   height: auto;
   top: 7vh;
   padding-left: 2%;
-  margin-bottom: 2%;
+  margin-bottom: 5%;
 }
 .left-col .textbox {
   background-color: rgba(150, 150, 150, 0.6352941176);
@@ -580,7 +586,7 @@ nav li a:hover {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
-    max-width: 90vw;
+    max-width: 89vw;
     color: white;
     text-align: left;
     top: 7vh;
@@ -590,8 +596,20 @@ nav li a:hover {
     vertical-align: top;
     z-index: 13;
   }
+  .left-col .switch-button {
+    position: relative;
+    bottom: -2em;
+    width: 8em;
+    height: 2.8em;
+    margin-top: 1em;
+  }
+  .left-col .switch-button::before {
+    width: 8em;
+  }
   .left-col .big-view2 {
-    max-width: 85vw;
+    position: relative;
+    top: 7vh;
+    max-width: 93vw;
     margin-top: 2%;
     margin-left: 2%;
   }
@@ -618,96 +636,14 @@ nav li a:hover {
     z-index: 13;
   }
 }
-@media only screen and (min-width: 650px) and (min-aspect-ratio: 16/9) {
-  .switch-button {
-    position: fixed;
-    bottom: -2em;
-    width: 8em;
-    height: 2.8em;
-    margin-top: 1em;
-  }
-  .switch-button::before {
-    width: 8em;
-  }
-
-  .left-col .background {
-    flex-direction: row;
-  }
-  .left-col .background2 {
-    flex-direction: column;
-  }
-  .left-col .textbox {
-    position: relative;
-    width: auto;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-    color: white;
-    text-align: left;
-    top: 7vh;
-    left: 2%;
-    padding: 1% 1% 1% 1%;
-    margin-right: 5%;
-    vertical-align: top;
-    z-index: 13;
-  }
-  .left-col .textbox-16-9 {
-    position: relative;
-    width: auto;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-    color: white;
-    text-align: left;
-    top: 7vh;
-    left: 2%;
-    margin-right: 5%;
-    padding: 1% 1% 1% 1%;
-    vertical-align: top;
-    z-index: 13;
-  }
-  .left-col .big-view-16-9 {
-    position: relative;
-    width: auto;
-    height: auto;
-    top: 7vh;
-    max-height: 90vh;
-    max-width: 70vw;
-    z-index: 13;
-    padding-left: 2%;
-  }
-  .left-col .big-view2 {
-    width: auto;
-    height: auto;
-    max-height: 80vh;
-    align-self: center;
-    z-index: 13;
-    margin-left: 1%;
-  }
-  .left-col .big-view2-9 {
-    position: relative;
-    width: auto;
-    height: auto;
-    top: 7vh;
-    max-height: 95vh;
-    width: 30vw;
-    align-self: baseline;
-    z-index: 13;
-    margin-left: 1%;
-  }
-}
 @media only screen and (min-width: 650px) {
   .mobile-menue, .mobile-menue-exit {
     display: none;
   }
-}
-@media only screen and (min-width: 650px) {
   .navbar .container {
     display: grid;
     grid-template-columns: 312px auto;
   }
-}
-@media only screen and (min-width: 650px) {
   .navbar nav {
     display: flex;
     justify-content: space-between;
@@ -742,36 +678,26 @@ nav li a:hover {
     background: rgb(182, 182, 182);
     color: white;
   }
-}
-@media only screen and (min-width: 650px) {
   .hero {
     margin: 0;
     background-size: 150% 110%;
   }
-}
-@media only screen and (min-width: 650px) {
   .eye-catcher {
     top: 4.5em;
     font-size: 2em;
   }
-}
-@media only screen and (min-width: 650px) {
   section.categories {
     height: auto;
   }
   section.categories .overlay {
     height: auto;
   }
-}
-@media only screen and (min-width: 650px) {
   .left-col {
     padding: 4rem 7.5vw;
   }
   .left-col .bigview-exit {
     display: block;
     position: fixed;
-    top: 1em;
-    right: 1em;
     z-index: 15;
     cursor: pointer;
   }
@@ -790,16 +716,18 @@ nav li a:hover {
   }
   .left-col .big-view2 {
     z-index: 14;
-    max-width: 90%;
     margin-left: 2%;
   }
   .left-col .big-view-16-9 {
     position: relative;
     width: auto;
     height: auto;
-    max-width: 70%;
+    max-width: 97%;
     top: 7vh;
     z-index: 14;
+  }
+  .left-col .switch-button {
+    top: 7vh;
   }
   .left-col .textbox {
     position: relative;
@@ -851,11 +779,80 @@ nav li a:hover {
   .left-col .foto .foto-overlay .foto-cta .foto-text {
     font-size: 2em;
   }
-}
-@media only screen and (min-width: 650px) {
   section.impressum {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
+  }
+}
+@media only screen and (min-width: 650px) and (min-aspect-ratio: 16/9) {
+  .left-col .background {
+    flex-direction: row;
+  }
+  .left-col .background2 {
+    flex-direction: column;
+  }
+  .left-col .frame {
+    margin-left: 2%;
+    margin-bottom: 5%;
+  }
+  .left-col .textbox {
+    position: relative;
+    width: auto;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    color: white;
+    text-align: left;
+    left: 2%;
+    padding: 1% 1% 1% 1%;
+    margin-right: 5%;
+    vertical-align: top;
+    z-index: 13;
+  }
+  .left-col .textbox-16-9 {
+    position: relative;
+    width: auto;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    color: white;
+    text-align: left;
+    top: 7vh;
+    left: 2%;
+    margin-right: 5%;
+    padding: 1% 1% 1% 1%;
+    vertical-align: top;
+    z-index: 13;
+  }
+  .left-col .big-view-16-9 {
+    position: relative;
+    width: auto;
+    height: auto;
+    top: 7vh;
+    margin-top: 2%;
+    max-height: 90vh;
+    max-width: 60vw;
+    z-index: 13;
+    padding-left: 2%;
+  }
+  .left-col .big-view2 {
+    width: auto;
+    height: auto;
+    max-height: 80vh;
+    align-self: center;
+    z-index: 13;
+    margin-left: 1%;
+  }
+  .left-col .big-view2-9 {
+    position: relative;
+    width: auto;
+    height: auto;
+    top: 7vh;
+    max-height: 95vh;
+    width: 30vw;
+    align-self: baseline;
+    z-index: 13;
+    margin-left: 1%;
   }
 }/*# sourceMappingURL=main.css.map */

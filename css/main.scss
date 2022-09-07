@@ -134,7 +134,6 @@ section {
     background: #23c9db7a;
     border-radius: 30px;
     width: 8em;
-    height: 4em;
     text-align: center;
     font-size: 1.5em;
     letter-spacing: 1px;
@@ -145,7 +144,7 @@ section {
     z-index: 14;
   
     &:before {
-      content: "Version 2";
+      content: "Original";
       position: absolute;
       top: 0;
       bottom: 0;
@@ -210,8 +209,7 @@ section {
 
     .bigview-exit {
         position: fixed;
-        top: 1vh;
-        right: 2vw;
+        right: 0;
         float: right;
         z-index: 14;
         padding: 1%;
@@ -231,6 +229,7 @@ section {
     .background {
         flex-direction: column;
         align-items: flex-start;
+        justify-content: space-between;
         display: none;
         position: fixed;
         background-color: rgba(0, 0, 0, 0.25);
@@ -257,6 +256,13 @@ section {
         overflow-y: auto;
     }
 
+    .big-view2 {
+        position: relative;
+        top: 7vh;
+        max-width: 93vw;
+        margin-top: 2%;
+        margin-left: 2%;
+    }
 
     .big-view-16-9 {
 
@@ -265,7 +271,7 @@ section {
         height: auto;
         top: 7vh;
         padding-left: 2%;
-        margin-bottom: 2%;
+        margin-bottom: 5%;
     }
 
 
@@ -625,7 +631,7 @@ nav {
                 position: relative;
                 width: auto;
                 height: fit-content;
-                max-width: 90vw;
+                max-width: 89vw;
                 color: white;
                 text-align: left;
                 top: 7vh;
@@ -636,10 +642,24 @@ nav {
                 z-index: 13;
             }
 
+            .switch-button {
+                position: relative;
+                bottom: -2em;
+                width: 8em;
+                height: 2.8em;
+                margin-top: 1em;
+        
+                &::before{
+                    width: 8em;
+                }
+            }
+
             .big-view2 {
-                 max-width: 85vw;
-                 margin-top: 2%;
-                 margin-left: 2%;
+                position: relative;
+                top: 7vh;
+                max-width: 93vw;
+                margin-top: 2%;
+                margin-left: 2%;
             }
 
             .big-view-16-9 {
@@ -671,97 +691,6 @@ nav {
 
 @media only screen and (min-width: 650px){
 
-    @media only screen and (min-aspect-ratio: 16/9) {
-
-        .switch-button {
-            position: fixed;
-            bottom: -2em;
-            width: 8em;
-            height: 2.8em;
-            margin-top: 1em;
-    
-            &::before{
-                width: 8em;
-            }
-        }
-
-        .left-col {
-
-            
-            .background {
-                flex-direction: row;
-            }
-
-            .background2 {
-                flex-direction: column;
-            }
-
-            .textbox{
-
-                position: relative;
-                width: auto;
-                height: fit-content;
-                color: white;
-                text-align: left;
-                top: 7vh;
-                left: 2%;
-                padding: 1% 1% 1% 1%;
-                margin-right: 5%;
-                vertical-align: top;
-                z-index: 13;
-            }
-
-            .textbox-16-9 {
-
-                position: relative;
-                width: auto;
-                height: fit-content;
-                color: white;
-                text-align: left;
-                top: 7vh;
-                left: 2%;
-                margin-right: 5%;
-                padding: 1% 1% 1% 1%;
-                vertical-align: top;
-                z-index: 13;
-            }
-
-            .big-view-16-9 {
-
-                position: relative;
-                width: auto;
-                height: auto;
-                top: 7vh;
-                max-height: 90vh;
-                max-width: 70vw;
-                z-index: 13;
-                padding-left: 2%;
-            }
-
-            .big-view2 {
-
-                width: auto;
-                height: auto;
-                max-height: 80vh;
-                align-self: center;
-                z-index: 13;
-                margin-left: 1%;
-            }
-
-            .big-view2-9 {
-            
-                position: relative;
-                width: auto;
-                height: auto;
-                top: 7vh;
-                max-height: 95vh;
-                width: 30vw;
-                align-self:baseline;
-                z-index: 13;
-                margin-left: 1%;
-            }
-        }
-    }
 
     .mobile-menue, .mobile-menue-exit {
         display: none;
@@ -836,8 +765,6 @@ nav {
         .bigview-exit {
             display: block;
             position: fixed;
-            top: 1em;
-            right: 1em;
             z-index: 15;
             cursor: pointer;
         }
@@ -859,7 +786,6 @@ nav {
     
         .big-view2 {
             z-index: 14;
-            max-width: 90%;
             margin-left: 2%;
         }
 
@@ -867,9 +793,13 @@ nav {
             position: relative;
             width: auto;
             height: auto;
-            max-width: 70%;
+            max-width: 97%;
             top: 7vh;
             z-index: 14;
+        }
+
+        .switch-button {
+            top: 7vh;
         }
 
         .textbox {
@@ -928,5 +858,91 @@ nav {
 
     section.impressum {
         height: fit-content;;
+    }
+
+    @media only screen and (min-aspect-ratio: 16/9) {
+
+
+        .left-col {
+
+            
+            .background {
+                flex-direction: row;
+            }
+
+            .background2 {
+                flex-direction: column;
+            }
+
+            .frame {
+                margin-left: 2%;
+                margin-bottom: 5%;
+            }
+
+            .textbox{
+
+                position: relative;
+                width: auto;
+                height: fit-content;
+                color: white;
+                text-align: left;
+                left: 2%;
+                padding: 1% 1% 1% 1%;
+                margin-right: 5%;
+                vertical-align: top;
+                z-index: 13;
+            }
+
+            .textbox-16-9 {
+
+                position: relative;
+                width: auto;
+                height: fit-content;
+                color: white;
+                text-align: left;
+                top: 7vh;
+                left: 2%;
+                margin-right: 5%;
+                padding: 1% 1% 1% 1%;
+                vertical-align: top;
+                z-index: 13;
+            }
+
+            .big-view-16-9 {
+
+                position: relative;
+                width: auto;
+                height: auto;
+                top: 7vh;
+                margin-top: 2%;
+                max-height: 90vh;
+                max-width: 60vw;
+                z-index: 13;
+                padding-left: 2%;
+            }
+
+            .big-view2 {
+
+                width: auto;
+                height: auto;
+                max-height: 80vh;
+                align-self: center;
+                z-index: 13;
+                margin-left: 1%;
+            }
+
+            .big-view2-9 {
+            
+                position: relative;
+                width: auto;
+                height: auto;
+                top: 7vh;
+                max-height: 95vh;
+                width: 30vw;
+                align-self:baseline;
+                z-index: 13;
+                margin-left: 1%;
+            }
+        }
     }
 }

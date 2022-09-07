@@ -394,6 +394,9 @@
   padding: 15vw 2rem 5vw;
   margin: 0;
 }
+.left-col .frame {
+  margin-top: 0.85%;
+}
 
 nav {
   height: -webkit-fit-content;
@@ -405,7 +408,6 @@ nav {
   .categories-list a {
     padding: 0.75em 1em;
   }
-
   .left-col {
     padding: 7.5vw;
   }
