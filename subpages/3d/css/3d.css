@@ -372,6 +372,7 @@ nav {
   .left-col .schwert {
     height: 25vw;
     width: 40vw;
+    max-width: unset;
   }
   .left-col .schwert .schwert-overlay {
     height: 25vw;
@@ -418,6 +419,7 @@ nav {
   .left-col .schwert2 {
     height: 25vw;
     width: 40vw;
+    max-width: unset;
     left: 52%;
   }
   .left-col .schwert2 .schwert2-overlay {
@@ -464,6 +466,7 @@ nav {
   .left-col .Kristall {
     height: 25vw;
     width: 40vw;
+    max-width: unset;
   }
   .left-col .Kristall .Kristall-overlay {
     height: 25vw;
@@ -510,6 +513,7 @@ nav {
   .left-col .kürbis {
     height: 25vw;
     width: 40vw;
+    max-width: unset;
     left: 52%;
   }
   .left-col .kürbis .kürbis-overlay {
@@ -556,6 +560,7 @@ nav {
   .left-col .steine {
     height: 25vw;
     width: 40vw;
+    max-width: unset;
   }
   .left-col .steine .steine-overlay {
     height: 25vw;
@@ -602,6 +607,7 @@ nav {
   .left-col .planet {
     height: 25vw;
     width: 40vw;
+    max-width: unset;
     left: 52%;
   }
   .left-col .planet .planet-overlay {

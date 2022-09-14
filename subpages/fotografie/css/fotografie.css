@@ -375,6 +375,7 @@ nav {
   .left-col .glasssphere {
     height: 25vw;
     width: 40vw;
+    max-width: unset;
   }
   .left-col .glasssphere .glasssphere-overlay {
     height: 25vw;
@@ -421,6 +422,7 @@ nav {
   .left-col .glass {
     height: 25vw;
     width: 25vw;
+    max-width: unset;
     left: 61%;
   }
   .left-col .glass .glass-overlay {
@@ -468,6 +470,7 @@ nav {
   .left-col .chicken {
     height: 25vw;
     width: 40vw;
+    max-width: unset;
   }
   .left-col .chicken .chicken-overlay {
     height: 25vw;
@@ -514,6 +517,7 @@ nav {
   .left-col .portrait {
     height: 25vw;
     width: 25vw;
+    max-width: unset;
     left: 61%;
   }
   .left-col .portrait .portrait-overlay {
@@ -558,55 +562,10 @@ nav {
     z-index: unset;
     box-shadow: 1px 1px 10px gray;
   }
-  .left-col .deco {
-    height: 25vw;
-    width: 40vw;
-  }
-  .left-col .deco .deco-overlay {
-    height: 25vw;
-    left: 110%;
-  }
-  .left-col .deco .deco-overlay .deco-cta .deco-text {
-    font-size: 3.5vw;
-    padding: 2em 1em 2.5em 1em;
-    z-index: 10;
-  }
-  .left-col .deco .deco-overlay .subtext {
-    font-size: 1.5vw;
-    position: relative;
-    top: -4.5em;
-    padding: 0 2em 1em 1em;
-    z-index: 10;
-  }
-  .left-col .deco .deco-overlay .big-img {
-    background-color: rgba(0, 0, 255, 0);
-    color: rgba(0, 0, 0, 0);
-    left: -110%;
-    width: 84vw;
-    z-index: 11;
-  }
-  .left-col .deco .deco-overlay .nonclick {
-    display: block;
-    text-align: center;
-    background-color: rgba(128, 128, 128, 0);
-    color: rgba(0, 0, 0, 0);
-    margin: 0;
-    position: absolute;
-    top: 0;
-    left: -4vw;
-    width: 4vw;
-    height: 100%;
-    z-index: 12;
-    padding: auto;
-  }
-  .left-col .deco:hover {
-    transform: unset;
-    z-index: unset;
-    box-shadow: 1px 1px 10px gray;
-  }
   .left-col .ds3cinematic {
     height: 25vw;
     width: 40vw;
+    max-width: unset;
     left: 52%;
   }
   .left-col .ds3cinematic .ds3cinematic-overlay {
@@ -653,6 +612,7 @@ nav {
   .left-col .ds3montage {
     height: 25vw;
     width: 40vw;
+    max-width: unset;
   }
   .left-col .ds3montage .ds3montage-overlay {
     height: 25vw;

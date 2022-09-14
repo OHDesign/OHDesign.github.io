@@ -393,6 +393,7 @@ nav {
         .creativ {
             height: 25vw;
             width: 40vw;
+            max-width: unset;
             left: 0;
             .creativ-overlay {
                 height: 25vw;
@@ -441,6 +442,7 @@ nav {
         .bockwurst {
             height: 25vw;
             width: 18vw;
+            max-width: unset;
             left: 64%;
             .bockwurst-overlay {
                 height: 25vw;
@@ -490,6 +492,7 @@ nav {
         .aurora {
             height: 25vw;
             width: 40vw;
+            max-width: unset;
             left: 53%;
             .aurora-overlay {
                 height: 25vw;
@@ -540,6 +543,7 @@ nav {
         .shrine {
             height: 25vw;
             width: 18vw;
+            max-width: unset;
             left: 13%;
             .shrine-overlay {
                 height: 25vw;
@@ -591,6 +595,7 @@ nav {
         .market {
             height: 25vw;
             width: 25vw;
+            max-width: unset;
             left: 61%;
             .market-overlay {
                 width: 40vw;

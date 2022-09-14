@@ -402,6 +402,7 @@ nav {
         .glasssphere {
             height: 25vw;
             width: 40vw;
+            max-width: unset;
             .glasssphere-overlay {
                 height: 25vw;
                 left: 110%;
@@ -450,6 +451,7 @@ nav {
         .glass {
             height: 25vw;
             width: 25vw;
+            max-width: unset;
             left: 61%;
             .glass-overlay {
                 width: 40vw;
@@ -499,6 +501,7 @@ nav {
         .chicken {
             height: 25vw;
             width: 40vw;
+            max-width: unset;
             .chicken-overlay {
                 height: 25vw;
                 left: 110%;
@@ -547,6 +550,7 @@ nav {
         .portrait {
             height: 25vw;
             width: 25vw;
+            max-width: unset;
             left: 61%;
             .portrait-overlay {
                 width: 40vw;
@@ -593,57 +597,10 @@ nav {
                 box-shadow: 1px 1px 10px gray;
             }
         }
-        .deco {
-            height: 25vw;
-            width: 40vw;
-            .deco-overlay {
-                height: 25vw;
-                left: 110%;
-                .deco-cta {
-                    .deco-text{
-                        font-size: 3.5vw;
-                        padding: 2em 1em 2.5em 1em;
-                        z-index: 10;
-                    }
-                }
-                .subtext {
-                    font-size: 1.5vw;
-                    position: relative;
-                    top: -4.5em;
-                    padding: 0 2em 1em 1em;
-                    z-index: 10;
-                }
-                .big-img {
-                    background-color: rgba(0, 0, 255, 0);
-                    color: rgba($color: #00000000, $alpha: 0);
-                    left: -110%;
-                    width: 84vw;
-                    z-index: 11;
-                }
-                .nonclick {
-                    display: block;
-                    text-align: center;
-                    background-color: rgba(128, 128, 128, 0);
-                    color: rgba(0, 0, 0, 0);
-                    margin: 0;
-                    position: absolute;
-                    top: 0;
-                    left: -4vw;
-                    width: 4vw;
-                    height: 100%;
-                    z-index: 12;
-                    padding: auto;
-                }
-            }
-            &:hover {
-                transform: unset;
-                z-index: unset;
-                box-shadow: 1px 1px 10px gray;
-            }
-        }
         .ds3cinematic {
             height: 25vw;
             width: 40vw;
+            max-width: unset;
             left: 52%;
             .ds3cinematic-overlay {
                 height: 25vw;
@@ -692,6 +649,7 @@ nav {
         .ds3montage {
             height: 25vw;
             width: 40vw;
+            max-width: unset;
             .ds3montage-overlay {
                 height: 25vw;
                 left: 110%;
