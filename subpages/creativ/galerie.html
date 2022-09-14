@@ -51,6 +51,40 @@
                     </ul>
                 </div>
                 <div class="left-col">
+                    <div class="market">
+                        <div class="market-overlay">
+                            <div class="market-cta">
+                                <h1 class="market-text">Wochenmarkt WIZ</a></h1>
+                                <div>
+                                    <p id="market-open" class="big-img" onclick="openmarket();disable()">img</p>
+                                    <div class="nonclick">space</div>
+                                </div>
+                                <p class="subtext">Ein Logoentwurf für den Wochenmarkt Witzenhausen</p>
+                                <p class="more" onclick="openmarket();disable()">...mehr</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="market-close" class="background" onclick="closemarket();enable()">
+                        
+                        <div class="frame">
+                            <img id="m" class="big-view-16-9" src="/../images/projects/Edits/Markt-Logo+Hintergrund-eckig.svg" alt="img" onclick="event.stopPropagation()">
+                            <img id="m1" class="big-view-16-9" src="/../images/projects/Edits/Markt-Logo-Kirschen.svg" alt="img" style="display:none;" onclick="event.stopPropagation()">
+                            <div id="market-switch" class="switch-button" onclick="event.stopPropagation();">
+                                <input class="switch-button-checkbox" type="checkbox" onclick="switchmarket(this)"></input>
+                                <label class="switch-button-label" for=""><span class="switch-button-label-span">Version 1</span></label>
+                            </div>
+                        </div>
+                        <div class="textbox-16-9" onclick="event.stopPropagation()">
+                            <h1 class="description-header">Wochenmarkt WIZ</h1>
+                            <p class="description">Für diesen Logoentwurf für den Wochenmarkt Witzenhausen habe ich im Auftrag der Standbesitzer angefertigt.
+                            Orientiert habe ich mich hierbei am Logo der Stdt Witzenhausen, welches auch die Silhouette des Rathauses und die Werra abbildet.
+                            Bei Version 1 habe ich mich für ein stilisiertes Dach eines Marktstandes als Symbol für den Markt entschieden. Bei Version 2 hatte Ich
+                            mit den für Witzenhausen typischen Kirschen experimentiert. 
+                            </p>
+                        </div>
+                        <img class="bigview-exit" src="../../images/icons/X.svg" alt="close">
+                    </div>
+    
                     <div class="shrine">
                         <div class="shrine-overlay">
                             <div class="shrine-cta">
@@ -209,6 +243,33 @@
             function closecreativ() {
                 document.getElementById("creativ-close").style.display = "none";
             }
+
+            //market funktionen
+            function openmarket() {
+                document.getElementById("market-close").style.display = "flex";
+                if(navigator.userAgent.indexOf("Firefox") != -1 ) {
+
+                    document.getElementById("market-close").style.background = "rgba(0, 0, 0, .9)";
+
+                }
+            }
+
+            function closemarket() {
+                document.getElementById("market-close").style.display = "none";
+            }
+            //bmarket switch
+            function switchmarket(checkbox) {
+                if(checkbox.checked) {
+                    document.getElementById("m").style.display = "none";
+                    document.getElementById("m1").style.display = "block";
+                }
+                else{
+                    document.getElementById("m").style.display = "block";
+                    document.getElementById("m1").style.display = "none";
+                }
+                
+            }
+
             //bockwurst funktionen
             function openbockwurst() {
                 document.getElementById("bockwurst-close").style.display = "flex";
