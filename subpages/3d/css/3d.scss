@@ -51,6 +51,12 @@
     background-image: url("../../../images/projects/backdrop/aurora3_orange.png");
 }
 
+.switch-button {
+    &:before{
+        content: "Version 2";
+    }
+}
+
 .left-col {
     position: relative;
     height: fit-content;
@@ -86,8 +92,8 @@
         margin: 2em 0 3em 0;
         padding: 0;
         height: 15em;
-        width: 23em;
-        left: 5%;
+        width: auto;
+        max-width: 26em;
         position: relative;
         border-radius: 0.1em;
         outline: 3px solid white;
@@ -137,8 +143,8 @@
         margin: 3em 0 3em 0;
         padding: 0;
         height: 15em;
-        width: 23em;
-        left: 5%;
+        width: auto;
+        max-width: 26em;
         position: relative;
         border-radius: 0.1em;
         outline: 3px solid white;
@@ -185,8 +191,8 @@
         margin: 3em 0 0 0;
         padding: 0;
         height: 15em;
-        width: 23em;
-        left: 5%;
+        width: auto;
+        max-width: 26em;
         position: relative;
         border-radius: 0.1em;
         outline: 3px solid white;
@@ -234,8 +240,8 @@
         margin: 3em 0 0 0;
         padding: 0;
         height: 15em;
-        width: 23em;
-        left: 5%;
+        width: auto;
+        max-width: 26em;
         position: relative;
         border-radius: 0.1em;
         outline: 3px solid white;
@@ -283,8 +289,8 @@
         margin: 3em 0 0 0;
         padding: 0;
         height: 15em;
-        width: 23em;
-        left: 5%;
+        width: auto;
+        max-width: 26em;
         position: relative;
         border-radius: 0.1em;
         outline: 3px solid white;
@@ -332,8 +338,8 @@
         margin: 3em 0 0 0;
         padding: 0;
         height: 15em;
-        width: 23em;
-        left: 5%;
+        width: auto;
+        max-width: 26em;
         position: relative;
         border-radius: 0.1em;
         outline: 3px solid white;

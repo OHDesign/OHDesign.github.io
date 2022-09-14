@@ -541,7 +541,7 @@ nav li a:hover {
   cursor: pointer;
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 930px) {
   .left-col .description-header {
     font-size: 4em;
     margin: 1%;
@@ -636,7 +636,7 @@ nav li a:hover {
     z-index: 13;
   }
 }
-@media only screen and (min-width: 650px) {
+@media only screen and (min-width: 930px) {
   .mobile-menue, .mobile-menue-exit {
     display: none;
   }
@@ -785,7 +785,7 @@ nav li a:hover {
     height: fit-content;
   }
 }
-@media only screen and (min-width: 650px) and (min-aspect-ratio: 16/9) {
+@media only screen and (min-width: 930px) and (min-aspect-ratio: 16/9) {
   .left-col .background {
     flex-direction: row;
   }

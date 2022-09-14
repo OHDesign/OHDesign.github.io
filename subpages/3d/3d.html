@@ -93,8 +93,14 @@
                     </div>
                     <div id="schwert2-close" class="background2" onclick="closeschwert2();enable()">
                         <img class="bigview-exit" src="../../images/icons/X.svg" alt="close">
-                        <img class="big-view2" src="../../images/projects/3D/Schwert/version1.jpg" alt="space" loading="lazy" onclick="event.stopPropagation()">
-                        <img class="big-view2" src="../../images/projects/3D/Schwert/finishedv4.png" alt="space" loading="lazy" onclick="event.stopPropagation()">
+                        <div class="frame">
+                            <img id="ex" class="big-view-16-9" src="/../images/projects/3D/Schwert/version1.jpg" alt="img" onclick="event.stopPropagation()">
+                            <img id="ex1" class="big-view-16-9" src="/../images/projects/3D/Schwert/finishedv4.png" alt="img" style="display:none;" onclick="event.stopPropagation()">
+                            <div id="excalibur-switch" class="switch-button" onclick="event.stopPropagation();">
+                                <input class="switch-button-checkbox" type="checkbox" onclick="switchexcalibur(this)"></input>
+                                <label class="switch-button-label" for=""><span class="switch-button-label-span">Version 1</span></label>
+                            </div>
+                        </div>
                         <div class="textbox" onclick="event.stopPropagation()">
                             <h1 class="description-header">Excalibur</h1>
                             <p class="description">Mit diesem Projekt wollte ich zum Üben einmal eine komplette Szene modellieren und rendern.
@@ -261,6 +267,20 @@
             function closeschwert2() {
                 document.getElementById("schwert2-close").style.display = "none";
             }
+
+            //excalibur switch
+            function switchexcalibur(checkbox) {
+                if(checkbox.checked) {
+                    document.getElementById("ex").style.display = "none";
+                    document.getElementById("ex1").style.display = "block";
+                }
+                else{
+                    document.getElementById("ex").style.display = "block";
+                    document.getElementById("ex1").style.display = "none";
+                }
+                
+            }
+
             //Kristall funktionen
             function openKristall() {
                 document.getElementById("Kristall-close").style.display = "flex";

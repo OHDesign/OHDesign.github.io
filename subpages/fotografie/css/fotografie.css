@@ -89,8 +89,8 @@
   margin: 2em 0 3em 0;
   padding: 0;
   height: 15em;
-  width: 23em;
-  left: 5%;
+  width: auto;
+  max-width: 26em;
   position: relative;
   border-radius: 0.1em;
   outline: 3px solid white;
@@ -135,8 +135,8 @@
   margin: 3em 0 0 0;
   padding: 0;
   height: 15em;
-  width: 23em;
-  left: 5%;
+  width: auto;
+  max-width: 26em;
   position: relative;
   border-radius: 0.1em;
   outline: 3px solid white;
@@ -180,8 +180,8 @@
   margin: 3em 0 0 0;
   padding: 0;
   height: 15em;
-  width: 23em;
-  left: 5%;
+  width: auto;
+  max-width: 26em;
   position: relative;
   border-radius: 0.1em;
   outline: 3px solid white;
@@ -226,8 +226,8 @@
   margin: 3em 0 0 0;
   padding: 0;
   height: 15em;
-  width: 23em;
-  left: 5%;
+  width: auto;
+  max-width: 26em;
   position: relative;
   border-radius: 0.1em;
   outline: 3px solid white;
@@ -263,52 +263,6 @@
   padding: 30vw 2rem 5vw;
   margin: 0;
 }
-.left-col .deco {
-  background-image: url("../../../images/thumbnails/Fotos/decoglas.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-origin: border-box;
-  margin: 3em 0 0 0;
-  padding: 0;
-  height: 15em;
-  width: 23em;
-  left: 5%;
-  position: relative;
-  border-radius: 0.1em;
-  outline: 3px solid white;
-  box-shadow: 1px 1px 10px gray;
-  transition: transform 1s;
-}
-.left-col .deco:hover {
-  transform: scale(1.05);
-  z-index: 12;
-  box-shadow: 1px 1px 20px gray;
-}
-.left-col .deco .deco-overlay {
-  background: linear-gradient(rgba(150, 150, 150, 0.5), rgba(150, 150, 150, 0.5));
-  background-size: cover;
-  position: relative;
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  border-radius: 0.1em;
-  text-decoration: none;
-}
-.left-col .deco .deco-overlay .deco-cta {
-  padding: 0;
-  height: 100%;
-}
-.left-col .deco .deco-overlay .deco-cta .deco-text {
-  position: relative;
-  text-align: center;
-  font-size: 5vw;
-  color: white;
-  text-decoration: none;
-  display: block;
-  padding: 15vw 2rem 5vw;
-  margin: 0;
-}
 .left-col .ds3cinematic {
   background-image: url("../../../images/thumbnails/Fotos/ds3 Vollnir cinematic-4.png");
   background-size: cover;
@@ -318,8 +272,8 @@
   margin: 3em 0 0 0;
   padding: 0;
   height: 15em;
-  width: 23em;
-  left: 5%;
+  width: auto;
+  max-width: 26em;
   position: relative;
   border-radius: 0.1em;
   outline: 3px solid white;
@@ -364,8 +318,8 @@
   margin: 3em 0 0 0;
   padding: 0;
   height: 15em;
-  width: 23em;
-  left: 5%;
+  width: auto;
+  max-width: 26em;
   position: relative;
   border-radius: 0.1em;
   outline: 3px solid white;
