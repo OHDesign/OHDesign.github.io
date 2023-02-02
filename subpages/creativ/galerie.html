@@ -79,10 +79,62 @@
                             <p class="description">Diesen Logoentwurf für den Wochenmarkt Witzenhausen habe ich im Auftrag der Standbesitzer angefertigt.
                             Orientiert habe ich mich hierbei am Logo der Stdt Witzenhausen, welches auch die Silhouette des Rathauses und die Werra abbildet.
                             Bei Version 1 habe ich mich für ein stilisiertes Dach eines Marktstandes als Symbol für den Markt entschieden. Bei Version 2 hatte Ich
-                            mit den für Witzenhausen typischen Kirschen experimentiert. 
+                            mit den für Witzenhausen typischen Kirschen experimentiert.
+                            </br> - 2022
                             </p>
                         </div>
                         <img class="bigview-exit" src="../../images/icons/X.svg" alt="close">
+                    </div>
+                    <div class="fehtke">
+                        <div class="fehtke-overlay">
+                            <div class="fehtke-cta">
+                                <h1 class="fehtke-text">Gärtnerei Fehtke</a></h1>
+                                <div>
+                                    <p id="fehtke-open" class="big-img" onclick="openfehtke();disable()">img</p>
+                                    <div class="nonclick">space</div>
+                                </div>
+                                <p class="subtext">Ein Logoentwurf für die Gärtnerei Fehtke</p>
+                                <p class="more" onclick="openfehtke();disable()">...mehr</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="fehtke-close" class="background" onclick="closefehtke();enable()">
+                        
+                        <img class="big-view-16-9" src="../../images/projects/Edits/Gärtnerei_Fehtke_V1.png" alt="space" onclick="event.stopPropagation()">
+                        
+                        <div class="textbox-16-9" onclick="event.stopPropagation()">
+                            <h1 class="description-header">Gärtnerei Fehtke</h1>
+                            <p class="description">Dieses Logo habe ich für die Gärtnerei Fehtke entworfen, allerdings wurde die Umsetzung vorerst auf Eis gelegt.
+                            </br> - 2022
+                            </p>
+                        </div>
+                        <img class="bigview-exit" src="../../images/icons/X.svg" alt="close">
+                    </div>
+                    
+                    <div class="wrenergy">
+                        <div class="wrenergy-overlay">
+                            <div class="wrenergy-cta">
+                                <h1 class="wrenergy-text">White Rabbit Energy</h1>
+                                <div>
+                                    <p id="wrenergy-open" class="big-img" onclick="openwrenergy();disable()">img</p>
+                                    <div class="nonclick">space</div>
+                                </div>
+                                <p class="subtext">Eine fiktive Energy Marke</p>
+                                <p class="more" onclick="openwrenergy();disable()">...mehr</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="wrenergy-close" class="background" onclick="closewrenergy();enable()">
+                        <img class="big-view-16-9" src="../../images/projects/Edits/WR Energy.png" alt="space" onclick="event.stopPropagation()">
+                        <img class="bigview-exit" src="../../images/icons/X.svg" alt="close">
+                        <div class="textbox-16-9" onclick="event.stopPropagation()">
+                            <h1 class="description-header">White Rabbit Energy</h1>
+                            <p class="description">Hier habe ich mir einfach aus Spaß eine Energy Marke ausgedacht.
+                                Da Tiere ja beliebt zu sein scheinen, wie bei Red Bull oder Black Cat, habe ich mir überlegt welches Tier man noch mit einer Farbe kombinieren könnte.
+                                Und der white Rabbit, oder auch das weiße Kaninchen, ist ja aus "Allice im Wunderland" schon bekannt.
+                            </br> - 2023
+                            </p>
+                        </div>
                     </div>
     
                     <div class="shrine">
@@ -107,6 +159,7 @@
                             <p class="description">Die Inspiration hierfür kam aus einem Youtube Video. Es ging darum ein Retro Werbeposter von einem
                             fiktiven Ort, zum Beispiel aus einem Buch oder Videospiel, zu erstellen. Hierfür habe ich einen Screenshot aus dem Spiel
                             "Dark Souls III" genommen. Umgesetzt habe ich es mit dem Affinity Designer, da dieser Stil ja förmlich nach "Vektorgrafik" schreit.
+                            </br> - 2022
                             </p>
                         </div>
                         <img class="bigview-exit" src="../../images/icons/X.svg" alt="close">
@@ -140,7 +193,8 @@
                                 <p class="description">Hier habe ich mich einmal an einem Mockup versucht. Dafür habe ich zuerst das Design
                                  mit dem Affinity Designer erstellt. Anschließend habe 
                                 ich mit Photoshop und einer kostenlosen Mockup-Vorlage das Design auf das Shirt gebracht. </br> Da das 
-                                erste Design natürlich nicht jeden Menschen anspricht, habe ich es als Alternative etwas abgewandelt umgesetzt.</p>
+                                erste Design natürlich nicht jeden Menschen anspricht, habe ich es als Alternative etwas abgewandelt umgesetzt.
+                                </br> - 2022</p>
                         </div>
                     </div>
                     <div class="creativ">
@@ -189,6 +243,7 @@
                             <p class="description">Unter meinen von Youtube vorgeschlagenen Videos war ein Tutorial wie man mit Photoshop einen Aurora Effekt
                             erzeugt. Und da ich zu dem Zeitpunkt dabei war meine Seite zu designen und mir das Dynamische daran gefallen hat, entschied ich, dass
                             dies der Hintergrund für meine Seite werden soll.
+                            </br> - 2020
                             </p>
                         </div>
                     </div>
@@ -244,6 +299,34 @@
                 document.getElementById("creativ-close").style.display = "none";
             }
 
+            //wrenergy funktionen
+            function openwrenergy() {
+                document.getElementById("wrenergy-close").style.display = "flex";
+                if(navigator.userAgent.indexOf("Firefox") != -1 ) {
+
+                    document.getElementById("wrenergy-close").style.background = "rgba(0, 0, 0, .9)";
+
+                }
+            }
+
+            function closewrenergy() {
+                document.getElementById("wrenergy-close").style.display = "none";
+            }
+
+            //fehtke funktionen
+            function openfehtke() {
+                document.getElementById("fehtke-close").style.display = "flex";
+                if(navigator.userAgent.indexOf("Firefox") != -1 ) {
+
+                    document.getElementById("fehtke-close").style.background = "rgba(0, 0, 0, .9)";
+
+                }
+            }
+
+            function closefehtke() {
+                document.getElementById("fehtke-close").style.display = "none";
+            }
+
             //market funktionen
             function openmarket() {
                 document.getElementById("market-close").style.display = "flex";
@@ -257,7 +340,7 @@
             function closemarket() {
                 document.getElementById("market-close").style.display = "none";
             }
-            //bmarket switch
+            //market switch
             function switchmarket(checkbox) {
                 if(checkbox.checked) {
                     document.getElementById("m").style.display = "none";
