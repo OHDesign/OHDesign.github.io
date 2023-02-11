@@ -53,6 +53,62 @@
                     </ul>
                 </div>
                 <div class="left-col">
+                    <div class="WREnergy">
+                        <div class="WREnergy-overlay">
+                            <div class="WREnergy-cta">
+                                <h1 class="WREnergy-text">White Rabbit Energy</h1>
+                                <div>
+                                    <p id="WREnergy-open" class="big-img" onclick="openWREnergy();disable()">img</p>
+                                    <div class="nonclick">space</div>
+                                </div>
+                                <p class="subtext">Eine fiktive Energy Marke</p>
+                                <p class="more" onclick="openWREnergy();disable()">...mehr</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="WREnergy-close" class="background" onclick="reloadwre();enable()">
+                        <img class="bigview-exit" src="../../images/icons/X.svg" alt="close">
+                        <div class="player-frame">
+                            <iframe id="playerwre" class="youtubeplayer" src="https://www.youtube.com/embed/pqbUqFE5M8M" alt="space" loading="lazy" onclick="event.stopPropagation()">
+                            </iframe>
+                        </div>
+                        <div class="textbox-16-9" onclick="event.stopPropagation()">
+                            <h1 class="description-header">White Rabbit Energy</h1>
+                            <p class="description">Bei diesem Projekt habe ich das von mir erstellte Design für eine Energy Marke als 
+                                Werbung umgesetzt. Dazu habe ich zuerst eine Dose in Blender Modelliert, eine Textur aus meinem Design erstellt 
+                                und zum Schluss die Animation gebaut und gerendert.
+                            </br> - 2023
+                            </p>
+                        </div>
+                    </div>
+                    <div class="WREnergyog">
+                        <div class="WREnergyog-overlay">
+                            <div class="WREnergyog-cta">
+                                <h1 class="WREnergyog-text">White Rabbit Energy Original</h1>
+                                <div>
+                                    <p id="WREnergyog-open" class="big-img" onclick="openWREnergyog();disable()">img</p>
+                                    <div class="nonclick">space</div>
+                                </div>
+                                <p class="subtext">Eine fiktive Energy Marke</p>
+                                <p class="more" onclick="openWREnergyog();disable()">...mehr</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="WREnergyog-close" class="background" onclick="closeWREnergyog();enable()">
+                        <img class="bigview-exit" src="../../images/icons/X.svg" alt="close">
+                        <div class="player-frame">
+                            <iframe id="playerwreog" class="youtubeplayer" src="https://www.youtube.com/embed/-BIkMIbuuUw" alt="space" loading="lazy" onclick="event.stopPropagation()">
+                            </iframe>
+                        </div>
+                        <div class="textbox-16-9" onclick="event.stopPropagation()">
+                            <h1 class="description-header">White Rabbit Energy Original</h1>
+                            <p class="description">Bei diesem Projekt habe ich das von mir erstellte Design für eine Energy Marke als 
+                                Werbung umgesetzt. Dazu habe ich zuerst eine Dose in Blender Modelliert, eine Textur aus meinem Design erstellt 
+                                und zum Schluss die Animation gebaut und gerendert.
+                            </br> - 2023
+                            </p>
+                        </div>
+                    </div>
                     <div class="schwert">
                         <div class="schwert-overlay" >
                             <div class="schwert-cta">
@@ -231,6 +287,7 @@
             </div>
         </section>
 
+        <script src="https://www.youtube.com/iframe_api"></script>
 
         <script>
 
@@ -244,6 +301,36 @@
             mobileBtnExit.addEventListener('click', () => {
                 nav.classList.remove('menue-btn');
             })
+
+            //WREnergy funktionen
+
+            function reloadwre() {
+                document.getElementById('playerwre').src = document.getElementById('playerwre').src;
+                setTimeout(closeWREnergy, 100);
+            }
+
+            function openWREnergy() {
+                document.getElementById("WREnergy-close").style.display = "flex";
+                if(navigator.userAgent.indexOf("Firefox") != -1 ) {
+                    document.getElementById("WREnergy-close").style.background = "rgba(0, 0, 0, .9)";
+                }
+            }
+
+            function closeWREnergy() {
+                document.getElementById("WREnergy-close").style.display = "none";
+            }
+            
+            //WREnergyog funktionen
+            function openWREnergyog() {
+                document.getElementById("WREnergyog-close").style.display = "flex";
+                if(navigator.userAgent.indexOf("Firefox") != -1 ) {
+                    document.getElementById("WREnergyog-close").style.background = "rgba(0, 0, 0, .9)";
+                }
+            }
+
+            function closeWREnergyog() {
+                document.getElementById("WREnergyog-close").style.display = "none";
+            }
 
             //schwert funktionen
             function openschwert() {

@@ -274,6 +274,24 @@ section {
         margin-bottom: 5%;
     }
 
+    .player-frame{
+        position: relative;
+        overflow: hidden;
+        width: 97%;
+        top: 7vh;
+        padding-top: 54.9%; 
+        margin-left: 2%;
+    }
+
+    .youtubeplayer {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+    }
 
     .textbox {
 
@@ -783,6 +801,7 @@ nav {
             cursor: pointer;
             z-index: 11;
         }
+
     
         .big-view2 {
             z-index: 14;
@@ -906,6 +925,16 @@ nav {
                 padding: 1% 1% 1% 1%;
                 vertical-align: top;
                 z-index: 13;
+            }
+
+            .player-frame{
+                position: relative;
+                overflow: hidden;
+                width: 250%;
+                top: 7vh;
+                padding-top: 36.5%; 
+                margin-left: 2%;
+                margin-top: 2%;
             }
 
             .big-view-16-9 {

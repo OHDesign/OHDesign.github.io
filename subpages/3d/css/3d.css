@@ -75,10 +75,102 @@
 }
 .left-col .subtext {
   color: white;
-  font-size: 3.5vw;
+  font-size: 1.15em;
   text-align: center;
   margin: 0;
   padding: 0.1em 1em 10vw 1em;
+}
+.left-col .WREnergy {
+  background-image: url("../../../images/thumbnails/3D/WR Energy.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-origin: border-box;
+  margin: 3em 0 0 0;
+  padding: 0;
+  height: 15em;
+  width: auto;
+  max-width: 26em;
+  position: relative;
+  border-radius: 0.1em;
+  outline: 3px solid white;
+  box-shadow: 1px 1px 10px gray;
+  transition: transform 1s;
+}
+.left-col .WREnergy:hover {
+  transform: scale(1.05);
+  z-index: 12;
+  box-shadow: 1px 1px 20px gray;
+}
+.left-col .WREnergy .WREnergy-overlay {
+  background: linear-gradient(rgba(150, 150, 150, 0.5), rgba(150, 150, 150, 0.5));
+  background-size: cover;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  border-radius: 0.1em;
+  text-decoration: none;
+}
+.left-col .WREnergy .WREnergy-overlay .WREnergy-cta {
+  padding: 0;
+  height: 100%;
+}
+.left-col .WREnergy .WREnergy-overlay .WREnergy-cta .WREnergy-text {
+  position: relative;
+  text-align: center;
+  font-size: 1.5em;
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 15vw 2rem 5vw;
+  margin: 0;
+}
+.left-col .WREnergyog {
+  background-image: url("../../../images/thumbnails/3D/WREnergy_Original.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-origin: border-box;
+  margin: 3em 0 0 0;
+  padding: 0;
+  height: 15em;
+  width: auto;
+  max-width: 26em;
+  position: relative;
+  border-radius: 0.1em;
+  outline: 3px solid white;
+  box-shadow: 1px 1px 10px gray;
+  transition: transform 1s;
+}
+.left-col .WREnergyog:hover {
+  transform: scale(1.05);
+  z-index: 12;
+  box-shadow: 1px 1px 20px gray;
+}
+.left-col .WREnergyog .WREnergyog-overlay {
+  background: linear-gradient(rgba(150, 150, 150, 0.5), rgba(150, 150, 150, 0.5));
+  background-size: cover;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  border-radius: 0.1em;
+  text-decoration: none;
+}
+.left-col .WREnergyog .WREnergyog-overlay .WREnergyog-cta {
+  padding: 0;
+  height: 100%;
+}
+.left-col .WREnergyog .WREnergyog-overlay .WREnergyog-cta .WREnergyog-text {
+  position: relative;
+  text-align: center;
+  font-size: 1.5em;
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 15vw 2rem 5vw;
+  margin: 0;
 }
 .left-col .schwert {
   background-image: url("../../../images/thumbnails/3D/Schwert/preview2.png");
@@ -119,7 +211,7 @@
 .left-col .schwert .schwert-overlay .schwert-cta .schwert-text {
   position: relative;
   text-align: center;
-  font-size: 5vw;
+  font-size: 1.5em;
   color: white;
   text-decoration: none;
   display: block;
@@ -164,7 +256,7 @@
 .left-col .schwert2 .schwert2-overlay .schwert2-cta .schwert2-text {
   position: relative;
   text-align: center;
-  font-size: 5vw;
+  font-size: 1.5em;
   color: white;
   text-decoration: none;
   display: block;
@@ -210,7 +302,7 @@
 .left-col .Kristall .Kristall-overlay .Kristall-cta .Kristall-text {
   position: relative;
   text-align: center;
-  font-size: 5vw;
+  font-size: 1.5em;
   color: white;
   text-decoration: none;
   display: block;
@@ -256,7 +348,7 @@
 .left-col .kürbis .kürbis-overlay .kürbis-cta .kürbis-text {
   position: relative;
   text-align: center;
-  font-size: 5vw;
+  font-size: 1.5em;
   color: white;
   text-decoration: none;
   display: block;
@@ -302,7 +394,7 @@
 .left-col .steine .steine-overlay .steine-cta .steine-text {
   position: relative;
   text-align: center;
-  font-size: 5vw;
+  font-size: 1.5em;
   color: white;
   text-decoration: none;
   display: block;
@@ -348,7 +440,7 @@
 .left-col .planet .planet-overlay .planet-cta .planet-text {
   position: relative;
   text-align: center;
-  font-size: 5vw;
+  font-size: 1.5em;
   color: white;
   text-decoration: none;
   display: block;
@@ -368,6 +460,100 @@ nav {
   }
   .left-col {
     padding: 7.5vw;
+  }
+  .left-col .WREnergy {
+    height: 25vw;
+    width: 40vw;
+    max-width: unset;
+  }
+  .left-col .WREnergy .WREnergy-overlay {
+    height: 25vw;
+    left: 110%;
+  }
+  .left-col .WREnergy .WREnergy-overlay .WREnergy-cta .WREnergy-text {
+    font-size: 3.5vw;
+    padding: 2em 1em 2.5em 1em;
+    z-index: 10;
+  }
+  .left-col .WREnergy .WREnergy-overlay .subtext {
+    font-size: 1.5vw;
+    position: relative;
+    top: -4.5em;
+    padding: 0 2em 1em 1em;
+    z-index: 10;
+  }
+  .left-col .WREnergy .WREnergy-overlay .big-img {
+    background-color: rgba(0, 0, 255, 0);
+    color: rgba(0, 0, 0, 0);
+    left: -110%;
+    width: 84vw;
+    z-index: 11;
+  }
+  .left-col .WREnergy .WREnergy-overlay .nonclick {
+    display: block;
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0);
+    color: rgba(0, 0, 0, 0);
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: -4vw;
+    width: 4vw;
+    height: 100%;
+    z-index: 12;
+    padding: auto;
+  }
+  .left-col .WREnergy:hover {
+    transform: unset;
+    z-index: unset;
+    box-shadow: 1px 1px 10px gray;
+  }
+  .left-col .WREnergyog {
+    height: 25vw;
+    width: 40vw;
+    max-width: unset;
+    left: 52%;
+  }
+  .left-col .WREnergyog .WREnergyog-overlay {
+    height: 25vw;
+    left: -110.5%;
+  }
+  .left-col .WREnergyog .WREnergyog-overlay .WREnergyog-cta .WREnergyog-text {
+    font-size: 3.5vw;
+    padding: 2em 1em 2.5em 1em;
+    z-index: 10;
+  }
+  .left-col .WREnergyog .WREnergyog-overlay .subtext {
+    font-size: 1.5vw;
+    position: relative;
+    top: -4.5em;
+    padding: 0 2em 1em 1em;
+    z-index: 10;
+  }
+  .left-col .WREnergyog .WREnergyog-overlay .big-img {
+    background-color: rgba(0, 0, 255, 0);
+    color: rgba(0, 0, 0, 0);
+    width: 84vw;
+    z-index: 11;
+  }
+  .left-col .WREnergyog .WREnergyog-overlay .nonclick {
+    display: block;
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0);
+    color: rgba(0, 0, 0, 0);
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 40vw;
+    width: 4vw;
+    height: 100%;
+    z-index: 12;
+    padding: auto;
+  }
+  .left-col .WREnergyog:hover {
+    transform: unset;
+    z-index: unset;
+    box-shadow: 1px 1px 10px gray;
   }
   .left-col .schwert {
     height: 25vw;
