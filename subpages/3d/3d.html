@@ -94,7 +94,7 @@
                             </div>
                         </div>
                     </div>
-                    <div id="WREnergyog-close" class="background" onclick="closeWREnergyog();enable()">
+                    <div id="WREnergyog-close" class="background" onclick="reloadwreog();enable()">
                         <img class="bigview-exit" src="../../images/icons/X.svg" alt="close">
                         <div class="player-frame">
                             <iframe id="playerwreog" class="youtubeplayer" src="https://www.youtube.com/embed/-BIkMIbuuUw" alt="space" loading="lazy" onclick="event.stopPropagation()">
@@ -321,6 +321,12 @@
             }
             
             //WREnergyog funktionen
+
+            function reloadwreog() {
+                document.getElementById('playerwreog').src = document.getElementById('playerwreog').src;
+                setTimeout(closeWREnergyog, 100);
+            }
+
             function openWREnergyog() {
                 document.getElementById("WREnergyog-close").style.display = "flex";
                 if(navigator.userAgent.indexOf("Firefox") != -1 ) {
