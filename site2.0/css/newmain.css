@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 body {
   margin: 0;
-  background: #f6f6f6;
+  background: #050505;
+  color: #ffffff;
   font-family: "Poppins";
   height: 2000px;
 }
@@ -129,10 +130,16 @@ section {
   font-weight: lighter;
 }
 
+.box {
+  background-color: #0F0F0F;
+  padding: 1em 1em 0 1em;
+}
+
 .contact-overlay {
   height: 100%;
   margin: 0;
   padding: 1em;
+  text-align: center;
 }
 
 label {
@@ -143,21 +150,21 @@ label {
 }
 
 #name {
-  background-image: url("../../../images/icons/person.svg");
+  background-image: url("../../../images/icons-black/person.svg");
   background-position: 10px center;
   background-repeat: no-repeat;
   text-indent: 35px;
 }
 
 #email {
-  background-image: url("../../../images/icons/mail.svg");
+  background-image: url("../../../images/icons-black/mail.svg");
   background-position: 10px center;
   background-repeat: no-repeat;
   text-indent: 35px;
 }
 
 #message {
-  background-image: url("../../../images/icons/edit_black_24dp.svg");
+  background-image: url("../../../images/icons-black/edit_black_24dp.svg");
   background-position: 10px 10px;
   background-repeat: no-repeat;
   text-indent: 35px;
@@ -173,13 +180,11 @@ input, textarea {
 
 .send-message-cta {
   position: relative;
-  background-color: #0F0F0F;
-  color: white;
-  font-weight: bold;
-  font-size: 1em;
+  background-color: white;
+  color: black;
   border: none;
   width: unset;
-  padding: 1em 1.5em;
+  padding: 0.5em 1em;
   cursor: pointer;
 }
 
