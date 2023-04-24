@@ -1,17 +1,23 @@
 body {
     margin: 0;
-    background: #050505;
+    background: #f6f6f6;
     font-family: 'Poppins';
-    height: fit-content;
+    height: 2000px;
+}
+
+::-webkit-scrollbar{
+    display: none;
 }
 
 .navbar {
+    position: fixed;
     height: 40px;
+    width: 99%;
     background: #050505;
     padding: .5em;
 
     .logo {
-        width: 100px;
+        width: 60px;
     }
 
     .logo_gray {
@@ -22,9 +28,9 @@ body {
     }
 
     nav{
-       position: fixed;
-       left: 100%;
-       transition: left .5s ease-in-out;
+        display: none;
+        position: fixed;
+        transition: left .5s ease-in-out;
     }
 
     .container {
@@ -34,8 +40,8 @@ body {
 
     .mobile-menue {
         position: relative;
-        right: 8px;
-        bottom: 25px;
+        right: 15px;
+        bottom: 10px;
         cursor: pointer;
     }
 }
@@ -48,15 +54,15 @@ ul {
 
 nav.menue-btn {
     display: block;
-    left: 45%;
     transition: left .5s ease-in-out;
 }
 
 nav {
-    position: absolute;
+    position: relative;
+    float: right;
     z-index: 999;
-    width: 50vw;
-    height: 50vh;
+    width: 100%;
+    height: fit-content;
     right: 0;
     top: -0.75em;
     background: rgba(36, 36, 36, 0.95);
@@ -65,11 +71,7 @@ nav {
 
 
     ul.primary-nav {
-        margin-top: 5em;
-        
-        .current a{
-            background: var(--primary-color);
-        }
+        margin-top: 2em;
     }
 
     li {
@@ -86,7 +88,6 @@ nav {
 
             &:hover {
                 font-weight: bold;
-                background-color: var(--secondary-color);
             }
         }
     }
@@ -108,12 +109,22 @@ nav {
 
     .navbar .container {
         display: grid;
-        grid-template-columns: 312px auto;
+        grid-template-columns: 33% 33% 34%;
+        justify-content: start;
+    }
+
+    .old{
+        justify-self: end;
+        color: white;
+        font-size: 1em;
+        margin: .5em .3vw;
+        padding: .3em 1vw;
     }
 
     .navbar nav {
         display: flex;
-        justify-content: space-between;
+
+        justify-content: center;
         background: none;
         position: unset;
         height: 2.8em;
@@ -125,7 +136,6 @@ nav {
             display: flex;
         }
 
-        
 
         ul.primary-nav {
             margin: 0;
@@ -135,7 +145,7 @@ nav {
             font-weight: bold;
             background-color: unset;
         }
-
+        
         a {
             color: white;
             font-size: 1em;
