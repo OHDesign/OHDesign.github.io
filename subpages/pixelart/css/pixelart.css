@@ -13,7 +13,6 @@
   text-align: center;
   background: none;
   position: unset;
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   width: 92vw;
@@ -51,7 +50,6 @@
 
 .left-col {
   position: relative;
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   padding: 7vw;
@@ -211,7 +209,6 @@
 }
 
 nav {
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
 }

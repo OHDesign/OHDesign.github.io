@@ -22,13 +22,11 @@
 
 .left-col {
   position: relative;
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   padding: 1em;
 }
 .left-col .aboutMe-text {
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   background-color: rgba(128, 128, 128, 0.5);
@@ -38,7 +36,6 @@
 }
 
 nav {
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
 }

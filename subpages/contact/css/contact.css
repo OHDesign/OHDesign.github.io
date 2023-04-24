@@ -10,12 +10,6 @@
   color: var(--primary-color);
 }
 
-:-ms-input-placeholder {
-  font-size: 1.1em;
-  font-family: "Poppins";
-  color: var(--primary-color);
-}
-
 ::placeholder {
   font-size: 1.1em;
   font-family: "Poppins";
@@ -28,7 +22,6 @@ body {
 
 .hero {
   padding: 5em 2em 7.7em;
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   background-image: url("../../../images/projects/backdrop/aurora2.png");
@@ -110,7 +103,6 @@ input, textarea {
 }
 
 nav {
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
 }/*# sourceMappingURL=contact.css.map */

@@ -13,7 +13,6 @@
   text-align: center;
   background: none;
   position: unset;
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   width: 92vw;
@@ -400,7 +399,6 @@
 }
 
 nav {
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
 }
