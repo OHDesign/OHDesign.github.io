@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 body {
     margin: 0;
     background: #f6f6f6;
@@ -101,6 +103,16 @@ nav {
         cursor: pointer;
 }
 
+.old{
+    display: none;
+    text-decoration: none;
+}
+
+.old-menue{
+    display: block;
+    text-decoration: none;
+}
+
 
 @media only screen and (min-width: 930px){
     .mobile-menue, .mobile-menue-exit {
@@ -113,7 +125,12 @@ nav {
         justify-content: start;
     }
 
+    .old-menue{
+        display: none;
+    }
+
     .old{
+        display: block;
         justify-self: end;
         color: white;
         font-size: 1em;
