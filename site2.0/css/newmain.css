@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+  background: #050505;
+  font-family: "Poppins";
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.navbar {
+  height: 40px;
+  background: #050505;
+  padding: 0.5em;
+}
+.navbar .logo {
+  width: 100px;
+}
+.navbar .logo_gray {
+  width: 100%;
+  position: relative;
+  left: 10px;
+  top: 5px;
+}
+.navbar nav {
+  position: fixed;
+  left: 100%;
+  transition: left 0.5s ease-in-out;
+}
+.navbar .container {
+  display: flex;
+  place-content: space-between;
+}
+.navbar .mobile-menue {
+  position: relative;
+  right: 8px;
+  bottom: 25px;
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav.menue-btn {
+  display: block;
+  left: 45%;
+  transition: left 0.5s ease-in-out;
+}
+
+nav {
+  position: absolute;
+  z-index: 999;
+  width: 50vw;
+  height: 50vh;
+  right: 0;
+  top: -0.75em;
+  background: rgba(36, 36, 36, 0.95);
+  padding: 1em 1em;
+  margin: 0;
+}
+nav ul.primary-nav {
+  margin-top: 5em;
+}
+nav ul.primary-nav .current a {
+  background: var(--primary-color);
+}
+nav li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  margin: 0.5em 2em;
+  padding: 0.5em;
+  font-size: 1.3em;
+  text-align: center;
+  transition: background-color 1s linear;
+}
+nav li a:hover {
+  font-weight: bold;
+  background-color: var(--secondary-color);
+}
+
+.mobile-menue-exit {
+  width: 1.5em;
+  float: right;
+  margin: 0.5em;
+  padding-top: 0.5em;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 930px) {
+  .mobile-menue, .mobile-menue-exit {
+    display: none;
+  }
+  .navbar .container {
+    display: grid;
+    grid-template-columns: 312px auto;
+  }
+  .navbar nav {
+    display: flex;
+    justify-content: space-between;
+    background: none;
+    position: unset;
+    height: 2.8em;
+    width: 100%;
+    padding: 0;
+    z-index: 12;
+  }
+  .navbar nav ul {
+    display: flex;
+  }
+  .navbar nav ul.primary-nav {
+    margin: 0;
+  }
+  .navbar nav li.current a {
+    font-weight: bold;
+    background-color: unset;
+  }
+  .navbar nav a {
+    color: white;
+    font-size: 1em;
+    margin: 0.5em 0.3vw;
+    padding: 0.3em 1vw;
+  }
+}/*# sourceMappingURL=newmain.css.map */

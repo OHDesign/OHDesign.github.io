@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+    background: #050505;
+    font-family: 'Poppins';
+    height: fit-content;
+}
+
+.navbar {
+    height: 40px;
+    background: #050505;
+    padding: .5em;
+
+    .logo {
+        width: 100px;
+    }
+
+    .logo_gray {
+        width: 100%;
+        position: relative;
+        left: 10px;
+        top: 5px
+    }
+
+    nav{
+       position: fixed;
+       left: 100%;
+       transition: left .5s ease-in-out;
+    }
+
+    .container {
+        display: flex;
+        place-content: space-between;
+    }
+
+    .mobile-menue {
+        position: relative;
+        right: 8px;
+        bottom: 25px;
+        cursor: pointer;
+    }
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav.menue-btn {
+    display: block;
+    left: 45%;
+    transition: left .5s ease-in-out;
+}
+
+nav {
+    position: absolute;
+    z-index: 999;
+    width: 50vw;
+    height: 50vh;
+    right: 0;
+    top: -0.75em;
+    background: rgba(36, 36, 36, 0.95);
+    padding: 1em 1em;
+    margin: 0;
+
+
+    ul.primary-nav {
+        margin-top: 5em;
+        
+        .current a{
+            background: var(--primary-color);
+        }
+    }
+
+    li {
+
+        a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            margin: .5em 2em;
+            padding: .5em;
+            font-size: 1.3em;
+            text-align: center;
+            transition: background-color 1s linear;
+
+            &:hover {
+                font-weight: bold;
+                background-color: var(--secondary-color);
+            }
+        }
+    }
+}
+
+.mobile-menue-exit {
+        width: 	1.5em;
+        float: right;
+        margin: .5em;
+        padding-top: .5em;
+        cursor: pointer;
+}
+
+
+@media only screen and (min-width: 930px){
+    .mobile-menue, .mobile-menue-exit {
+        display: none;
+    }
+
+    .navbar .container {
+        display: grid;
+        grid-template-columns: 312px auto;
+    }
+
+    .navbar nav {
+        display: flex;
+        justify-content: space-between;
+        background: none;
+        position: unset;
+        height: 2.8em;
+        width: 100%;
+        padding: 0;
+        z-index: 12;
+
+        ul {
+            display: flex;
+        }
+
+        
+
+        ul.primary-nav {
+            margin: 0;
+        }
+
+        li.current a {
+            font-weight: bold;
+            background-color: unset;
+        }
+
+        a {
+            color: white;
+            font-size: 1em;
+            margin: .5em .3vw;
+            padding: .3em 1vw;
+        }
+    }
+
+}
