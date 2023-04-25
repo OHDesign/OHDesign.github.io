@@ -18,6 +18,7 @@ body {
     width: 99%;
     background: #050505;
     padding: .5em;
+    z-index: 99;
 
     .logo {
         width: 60px;
@@ -43,6 +44,7 @@ body {
 
     .mobile-menue {
         position: relative;
+        padding: .2em;
         right: 15px;
         bottom: 10px;
         cursor: pointer;
@@ -160,7 +162,7 @@ section {
 
 .image{
     position: relative;
-    width: 50%;
+    width: 60%;
     box-shadow: 0px 0px 100px 12px rgba(0, 0, 0, 0.5);
 }
 
