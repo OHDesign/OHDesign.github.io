@@ -21,7 +21,7 @@ body {
     z-index: 99;
 
     .logo {
-        width: 60px;
+        width: 70px;
     }
 
     .logo_gray {
@@ -158,11 +158,13 @@ section {
     display: flex;
     justify-content: center;
     width: 100%;
+    min-height: 300px;
 }
 
 .image{
+    object-fit: cover;
     position: relative;
-    width: 60%;
+    max-height: 300px;
     box-shadow: 0px 0px 100px 12px rgba(0, 0, 0, 0.5);
 }
 
@@ -187,6 +189,12 @@ section {
 
 #wr-energy{
     background-image: linear-gradient( #66AAF4,#892FF3);
+}
+
+#yt-player{
+    width: 100%;
+    max-width: 534px;
+    border: none;
 }
 
 //-----------------------contact---------------------
@@ -269,7 +277,7 @@ input, textarea {
 }
 
 //-----------------------------------------------------------PC---------------------------------------------------
-@media only screen and (min-width: 930px){
+@media only screen and (min-width: 720px){
 
     //-----------------------navbar---------------------
     .mobile-menue, .mobile-menue-exit {
@@ -278,7 +286,7 @@ input, textarea {
 
     .navbar .container {
         display: grid;
-        grid-template-columns: 33% 33% 34%;
+        grid-template-columns: 30% 37% 31%;
         justify-content: start;
     }
 
