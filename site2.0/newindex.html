@@ -9,6 +9,7 @@
     <link rel="icon" href="../images/Logo(grau).svg">
 </head>
 <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
     <div class="container">
         <div class="navbar">
             <div class="container">
@@ -21,9 +22,9 @@
                 <nav>
                     <img id="mobile-exit" class="mobile-menue-exit" src="../images/icons/X.svg" alt="Close Navigation">
                     <ul class="primary-nav">
-                        <li class="current"><a href="#">Über mich</a></li>
-                        <li><a href="#">Projekte</a></li>
-                        <li><a href="#">Kontakt</a></li>
+                        <li class="current" onclick="closenav()"><a href="#">Über mich</a></li>
+                        <li><a href="#projects" onclick="closenav()">Projekte</a></li>
+                        <li><a href="#contact" onclick="closenav()">Kontakt</a></li>
                         <li><a class="old-menue" href="../index.html">zur alten Seite</a></li>
                     </ul>
                 </nav>
@@ -59,7 +60,7 @@
         </div>
     </section>
 
-    <section class="projects">
+    <section id="projects" class="projects">
         <!-------------------Designs--------------------------------------------------------------------------------->
         <div class="header-projects">
             <h2>Designs</h2>
@@ -165,7 +166,7 @@
         <div class="header-projects">
             <h2>3D Render/Animation</h2>
         </div>
-        <!-------------------Website-------------------------------------->
+        <!-------------------White Rabbit Energy-------------------------------------->
         <div id="WRE" class="image-background">
             <img class="image" src="../images/projects/3D/WR Energy.png" alt="">
         </div>
@@ -209,9 +210,40 @@
                 </p>
             </div>
         </div>
+         <!-------------------Foto--------------------------------------------------------------------------------->
+         <div class="header-projects">
+            <h2>Fotografie/Bildbearbeitung</h2>
+        </div>
+        <!-------------------DS3 Bilder-------------------------------------->
+        <div id="ds3-result" class="image-background">
+            <img class="image" src="../images/projects/Fotos/Irithil_x_ringedcity.png" alt="">
+        </div>
+        <div id="ds3-o1" class="image-background">
+            <img class="image" src="../images/projects/Fotos/ringedcity-og.jpg" alt="">
+        </div>
+        <div id="ds3-o2" class="image-background">
+            <img class="image" src="../images/projects/Fotos/irithil-og.jpg" alt="">
+        </div>
+        <div class="description-background">
+            <div class="description">
+                <h3>
+                    Dark Souls III Bildmontage
+                </h3>
+                <p>
+                    Hier hatte ich die Idee, zwei sehr eindrucksvolle Szenen aus "Dark Souls III" in einem Bild zu vereinen.
+                     Dafür habe ich erst eines der Bilder zur Hälfte freigestellt und bei dem anderen den Spielcharakter entfernt.
+                      Danach musste ich das zweite Bild nur noch entsprechend ausrichten.
+                       Zum Schluss habe ich die Farben noch etwas angepasst und in die Linke Hälfte noch einen Mond eingefügt.
+                        (Den Mond habe ich selbst fotografiert und dann entsprechen freigestellt.)<br/><br/>
+                    - 2020<br/><br/>
+                    Verwendete Programme:<br/>
+                    Adobe Photoshop
+                </p>
+            </div>
+        </div>
     </section>
 
-    <section class="contact">
+    <section id="contact" class="contact">
         <div class="contact-overlay">
             <form action="https://formspree.io/f/mknyrewg" method="POST">
                 <div class="box">
@@ -234,7 +266,7 @@
 </section>
 
     <script>
-
+        //------------------------mobile menue----------------------------------------------
         const mobileBtn = document.getElementById('mobile-cta')
             nav = document.querySelector('nav')
             mobileBtnExit = document.getElementById('mobile-exit');
@@ -245,6 +277,32 @@
         mobileBtnExit.addEventListener('click', () => {
             nav.classList.remove('menue-btn');
         })
+        //------------------------mobile menue close by using-----------
+        function closenav() {
+            const nav = document.querySelector('nav');
+            nav.classList.remove('menue-btn');
+        }
+
+        //------------------------back to top button----------------------------------------
+        // Get the button:
+        let mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
     </script>
 
 </body>
