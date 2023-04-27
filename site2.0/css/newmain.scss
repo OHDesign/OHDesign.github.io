@@ -231,6 +231,22 @@ section {
     background-color: black;
 }
 
+#chicken {
+    background-image: linear-gradient(135deg, #415025,#657043);
+}
+
+#dark-knight{
+    background-image: linear-gradient(to right, #9B9686,#25454B);
+}
+
+#silver-knight{
+    background-image: linear-gradient(45deg,#070508,#564559,#070508);
+}
+
+#mage{
+    background-image: conic-gradient(#081B1D,#081B1D,#081B1D,#081B1D,#081B1D,#AD8851,#081B1D);
+}
+
 #yt-player{
     width: 100%;
     max-width: 534px;
@@ -314,6 +330,18 @@ input, textarea {
     width: unset;
     padding: .5em 1em;
     cursor: pointer;
+}
+
+.impressum{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li{
+        p{
+            margin: 0;
+            padding: 0;
+        }
+    }
 }
 
 //-----------------------------------------------------------PC---------------------------------------------------
