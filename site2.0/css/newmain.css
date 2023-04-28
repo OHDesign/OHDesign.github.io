@@ -231,10 +231,35 @@ section {
   background-image: conic-gradient(#081B1D, #081B1D, #081B1D, #081B1D, #081B1D, #AD8851, #081B1D);
 }
 
+#WRE {
+  background-color: #7c7a7a;
+}
+
+#WRE-og-space {
+  background-image: linear-gradient(45deg, #858384, #141414);
+}
+
 #yt-player {
   width: 100%;
-  max-width: 534px;
+  max-height: 300px;
+  max-width: 500px;
   border: none;
+}
+
+#kristall {
+  background-image: linear-gradient(260deg, #595858, #121212);
+}
+
+#ds3-result {
+  background-image: linear-gradient(90deg, #161c28, #e3c9a5);
+}
+
+#ds3-o1 {
+  background-image: linear-gradient(#352e19, #e3c9a5, #352e19);
+}
+
+#ds3-o2 {
+  background-image: linear-gradient(#0f1022, #c5d9f7, #0f1022);
 }
 
 ::-moz-placeholder {
