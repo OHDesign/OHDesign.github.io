@@ -10,6 +10,7 @@
         <link rel="icon" href="../../images/Logo(weiß).svg">
     </head>
     <body>
+        <a href="../../../newindex.html" id="myBtn" title="Go to top">zur neuen Seite</a>
         <div class="navbar">
             <div class="container">
                 <div class="logo">
@@ -71,6 +72,23 @@
 
 
         <script>
+               //------------------------back to top button----------------------------------------
+        // Get the button:
+        let mybutton = document.getElementById("myBtn");
+        let herobutton = document.getElementById("herobtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+        if (document.body.scrollTop > 550 || document.documentElement.scrollTop > 550) {
+            mybutton.style.display = "block";
+            herobutton.style.display ="none";
+        } else {
+            mybutton.style.display = "none";
+            herobutton.style.display ="unset";
+        }
+        }
 
             const mobileBtn = document.getElementById('mobile-cta')
                 nav = document.querySelector('nav')

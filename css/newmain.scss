@@ -454,17 +454,24 @@ input, textarea {
         grid-template-columns: 100%;
     }
 
+    .header-projects {
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+
     .blocks{
         display: grid;
         grid-template-columns: 50% 50%;
-        margin-bottom: 3px;
+        margin-bottom: 15px;
+        margin-top: 15px;
     }
 
     .blocks-r{
         display: grid;
         direction: rtl;
         grid-template-columns: 50% 50%;
-        margin-bottom: 3px;
+        margin-bottom: 15px;
+        margin-top: 15px;
     }
 
     .image-background{
@@ -481,6 +488,13 @@ input, textarea {
         max-height: 300px;
         max-width: 100%;
         box-shadow: 0px 0px 100px 12px rgba(0, 0, 0, 0.5);
+    }
+
+    #yt-player{
+        width: 100%;
+        max-height: 300px;
+        max-width: 100%;
+        border: none;
     }
 
     .description-background{
