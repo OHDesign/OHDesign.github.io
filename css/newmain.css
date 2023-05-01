@@ -164,7 +164,6 @@ section {
   display: block;
   margin: 1em 0 0 0;
   padding: 0;
-  justify-items: center;
 }
 
 .header-projects {
@@ -391,9 +390,7 @@ input, textarea {
     background: none;
     position: unset;
     height: 2.8em;
-    width: 100%;
     padding: 0;
-    z-index: 12;
   }
   .navbar nav ul {
     display: flex;
@@ -428,7 +425,8 @@ input, textarea {
   .projects {
     display: grid;
     grid-template-columns: 100%;
-    margin: 0 20px;
+    margin: 0 auto;
+    max-width: var(--max_width);
   }
   .header-projects {
     margin: 0;
@@ -437,29 +435,18 @@ input, textarea {
     display: grid;
     grid-template-columns: 50% 50%;
     margin: 10px 0;
-    max-width: var(--max_width);
   }
   .blocks-r {
     display: grid;
     direction: rtl;
     grid-template-columns: 50% 50%;
     margin: 10px 0;
-    max-width: var(--max_width);
   }
   .image-background {
-    display: flex;
-    direction: ltr;
-    justify-content: center;
-    width: 100%;
     max-height: var(--max_heigth);
   }
   .image {
-    -o-object-fit: cover;
-       object-fit: cover;
-    position: relative;
     max-height: var(--max_heigth);
-    max-width: 100%;
-    box-shadow: 0px 0px 100px 12px rgba(0, 0, 0, 0.5);
   }
   #WRE-yt {
     height: var(--max_heigth);
@@ -472,8 +459,18 @@ input, textarea {
   }
   .description-background {
     direction: ltr;
-    width: 100%;
     max-height: var(--max_heigth);
-    background-color: #191919;
+  }
+  .contact {
+    padding: 0;
+    margin: 2em auto;
+    max-width: var(--max_width);
+  }
+  .contact-overlay {
+    padding: 0;
+  }
+  .impressum {
+    margin: 2em auto;
+    max-width: var(--max_width);
   }
 }/*# sourceMappingURL=newmain.css.map */
