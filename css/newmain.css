@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+:root {
+  --max_heigth: 300px;
+  --max_width: 1250px;
+}
+
 /* outline all for debugging */
 /* * { outline: 3px solid rgb(221, 0, 255);} */
 #myBtn {
@@ -159,6 +164,7 @@ section {
   display: block;
   margin: 1em 0 0 0;
   padding: 0;
+  justify-items: center;
 }
 
 .header-projects {
@@ -248,7 +254,7 @@ section {
 
 #yt-player {
   width: 100%;
-  max-height: 300px;
+  max-height: --image_height;
   max-width: 500px;
   border: none;
 }
@@ -431,41 +437,43 @@ input, textarea {
     display: grid;
     grid-template-columns: 50% 50%;
     margin: 10px 0;
+    max-width: var(--max_width);
   }
   .blocks-r {
     display: grid;
     direction: rtl;
     grid-template-columns: 50% 50%;
     margin: 10px 0;
+    max-width: var(--max_width);
   }
   .image-background {
     display: flex;
     direction: ltr;
     justify-content: center;
     width: 100%;
-    max-height: 300px;
+    max-height: var(--max_heigth);
   }
   .image {
     -o-object-fit: cover;
        object-fit: cover;
     position: relative;
-    max-height: 300px;
+    max-height: var(--max_heigth);
     max-width: 100%;
     box-shadow: 0px 0px 100px 12px rgba(0, 0, 0, 0.5);
   }
   #WRE-yt {
-    height: 300px;
+    height: var(--max_heigth);
   }
   #yt-player {
     width: 100%;
-    max-height: 300px;
+    max-height: var(--max_heigth);
     max-width: 100%;
     border: none;
   }
   .description-background {
     direction: ltr;
     width: 100%;
-    max-height: 300px;
+    max-height: var(--max_heigth);
     background-color: #191919;
   }
 }/*# sourceMappingURL=newmain.css.map */
