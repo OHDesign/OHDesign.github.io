@@ -441,8 +441,6 @@ nav {
   .categories-list a {
     padding: 0.75em 1em;
   }
-}
-@media only screen and (min-width: 650px) {
   .left-col {
     padding: 7.5vw;
   }

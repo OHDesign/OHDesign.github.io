@@ -143,6 +143,7 @@ nav {
     text-decoration: none;
 }
 
+
 //-----------------------hero---------------------
 
 section {
@@ -445,6 +446,14 @@ input, textarea {
         justify-items: center;
     }
 
+    .hero_container{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        align-items: center;
+        justify-items: center;
+        width: 50vw;
+    }
+
     .foto-mobile{
         display: none;
     }
@@ -456,6 +465,13 @@ input, textarea {
     }
 
     //-----------------------projects---------------------
+
+    #projects{
+        margin: 0;
+        padding: 0;
+        height: 3em;
+    }
+
     .projects{
         display: grid;
         grid-template-columns: 100%;
@@ -504,9 +520,17 @@ input, textarea {
         max-height: var(--max_heigth);
     }
     //-----------------------contact---------------------
-    .contact {
+
+    #contact{
+        margin: 0;
         padding: 0;
-        margin: 2em auto;
+        height: 3em;
+    }
+
+    .contact {
+        height: 950px;
+        padding: 0;
+        margin: 0 auto;
         max-width: var(--max_width);
     }
 

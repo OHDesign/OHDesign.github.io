@@ -22,9 +22,9 @@
                 <nav>
                     <img id="mobile-exit" class="mobile-menue-exit" src="old site/images/icons/X.svg" alt="Close Navigation">
                     <ul class="primary-nav">
-                        <li class="current" onclick="closenav()"><a href="#">Über mich</a></li>
-                        <li><a href="#projects" onclick="closenav()">Projekte</a></li>
-                        <li><a href="#contact" onclick="closenav()">Kontakt</a></li>
+                        <li class="current"><a onclick="highlightabout(),closenav()" id="aboutbtn" href="#">Über mich</a></li>
+                        <li><a id="projectsbtn" href="#projects" onclick="highlightprojects(),closenav()">Projekte</a></li>
+                        <li><a id="contactbtn" href="#contact" onclick="highlightcontact(),closenav()">Kontakt</a></li>
                         <li><a class="old-menue" href="old site/index.html">zur alten Seite</a></li>
                     </ul>
                 </nav>
@@ -35,7 +35,7 @@
     </div>
 
     <section class="hero">
-        <div class="container">
+        <div class="hero_container">
             <div class="header">
                 <h1>Hi, <br/> ich bin Oli, 24 und das ist mein Portfolio</h1>
                 <img class="foto-mobile" src="old site/images/Foto.png" alt="logo">
@@ -60,8 +60,8 @@
             <img class="foto" src="old site/images/Foto.png" alt="Foto">
         </div>
     </section>
-
-    <section id="projects" class="projects">
+    <section id="projects" ></section>
+    <section class="projects">
         <!-------------------Designs--------------------------------------------------------------------------------->
         <div class="header-projects">
             <h2>Designs</h2>
@@ -304,8 +304,8 @@
             </div>
         </div>
     </section>
-
-    <section id="contact" class="contact">
+    <section id="contact"></section>
+    <section class="contact">
          <!-------------------Kontakt--------------------------------------------------------------------------------->
          <div class="header-projects">
             <h2>Kontakt</h2>
@@ -358,6 +358,30 @@
         function closenav() {
             const nav = document.querySelector('nav');
             nav.classList.remove('menue-btn');
+        }
+
+
+        //------------------------menue highlights---------------------------------------- 
+        let projects = document.getElementById("projectsbtn");
+        let about = document.getElementById("aboutbtn");
+        let contact = document.getElementById("contactbtn");
+
+        function highlightprojects() {
+            projects.style.fontWeight = "bold";
+            about.style.fontWeight = "normal";
+            contact.style.fontWeight = "normal";
+        }
+
+        function highlightcontact() {
+            projects.style.fontWeight = "normal";
+            about.style.fontWeight = "normal";
+            contact.style.fontWeight = "bold";
+        }
+
+        function highlightabout() {
+            projects.style.fontWeight = "normal";
+            about.style.fontWeight = "bold";
+            contact.style.fontWeight = "normal";
         }
 
         //------------------------back to top button----------------------------------------
