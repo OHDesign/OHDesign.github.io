@@ -275,7 +275,11 @@ section {
 }
 
 #html-form {
-  background-image: linear-gradient(#0f1022, #c5d9f7, #0f1022);
+  background-color: white;
+}
+
+#html-table {
+  background-color: white;
 }
 
 ::-moz-placeholder {
