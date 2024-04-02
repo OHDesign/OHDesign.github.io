@@ -1,0 +1,4 @@
+# robots.txt zu http://www.tabellenuebungen.com/
+
+User-agent: *
+Disallow: /
