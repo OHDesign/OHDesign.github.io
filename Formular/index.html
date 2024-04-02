@@ -1,0 +1,101 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0l  Transitional//EN"
+                             "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<title>Profil Formular</title>
+    <link rel="icon" type="image/x-icon" href="graphics/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/script.js"></script>
+</head>
+
+<body onclick="focusinput(0)">
+<div id="content">
+    <form id="myform" action="https://formspree.io/f/mknyrewg" method="POST" onreset="return confirm('Das Formular wird zur&uuml;ckgesetzt.')">
+        
+        <table>
+            <tr>
+                <td class="headerleft">
+                    <h1>Profil</h1>
+                </td>
+                <td class="headerright">
+                    <input id="reset" type="reset" value="zur&uuml;cksetzen">
+                </td>
+            </tr>
+            
+        
+            <tr><td class="subtitle" colspan="2"><h3>Pers&ouml;nliche Daten</h3></td></tr>
+            
+            <tr>
+                <td id="box1" class="box" colspan="2">
+                    <img class="icon" src="graphics/person.svg">
+                    <input id="name" type="text" name="name" placeholder="Vor-, Nachname" onclick="focusinput(1), event.stopPropagation()" maxlength="20" required>
+                </td>
+            </tr>
+            
+           
+            <tr><td class="spacer" colspan="2"></td></tr>
+            
+            <tr>
+                <td id="box2" class="box" colspan="2">
+                    <img class="icon" src="graphics/cake.svg">
+                    <input id="birthday" type="date" name="birthday" min="1950-01-01" max="2025-01-01" onChange="isDateSelected()" onclick="focusinput(2), event.stopPropagation()" required>
+                </td>
+            </tr>
+             
+            
+            <tr><td class="spacer" colspan="2"></td></tr>
+            
+            <tr>
+                <td id="box3" class="box" colspan="2">
+                    <img class="icon" src="graphics/mail.svg">
+                    <input id="email" type="text" name="e-mail" placeholder="E-Mail" onclick="focusinput(3), event.stopPropagation()" maxlength="30" required>
+                    
+                </td>
+            </tr>
+            
+            <tr><td class="spacer" colspan="2"></td></tr>
+            
+            <tr><td class="subtitle" colspan="2"><h3>Hobbys</h3></td></tr>
+            
+            <tr>
+                <td class="hobbys">
+                    <img class="hobby" src="graphics/gaming.svg"> <input type="checkbox" name="gaming">Gaming<br>
+                    <img class="hobby" src="graphics/tennis.svg"> <input type="checkbox" name="tennis">Tennis<br>
+                    <img class="hobby" src="graphics/dance.svg"> <input type="checkbox" name="dance">Tanzen<br>
+                    <img class="hobby" src="graphics/inliner.svg"> <input type="checkbox" name="inliner">Inliner<br>
+                    <img class="hobby" src="graphics/ice-skating.svg"> <input type="checkbox" name="iceskating">Eislaufen<br>
+                    <img class="hobby" src="graphics/swim.svg"> <input type="checkbox" name="swim">Schwimmen<br>
+                    <img class="hobby" src="graphics/other.svg"> <input class="other" type="text" name="other" placeholder="Anderes">
+                </td>
+                 <td class="hobbys">
+                    <img class="hobby" src="graphics/football.svg"> <input type="checkbox" name="football">Fussball<br>
+                    <img class="hobby" src="graphics/basketball.svg"> <input type="checkbox" name="basketball">Basketball<br>
+                    <img class="hobby" src="graphics/golf.svg"> <input type="checkbox" name="golf">Golf<br>
+                    <img class="hobby" src="graphics/gym.svg"> <input type="checkbox" name="gym">GYM<br>
+                    <img class="hobby" src="graphics/cook.svg"> <input type="checkbox" name="cook">Kochen<br>
+                    <img class="hobby" src="graphics/baking.svg"> <input type="checkbox" name="bake">Backen<br>
+                    <br>
+                </td>
+            </tr>
+            
+            <tr><td class="spacer" colspan="2"></td></tr>
+            
+            <tr><td class="subtitle" colspan="2"><h3>Wie beschreiben deine Freunde dich?</h3></td></tr>
+            
+            <tr>
+                <td id="box4" class="box" colspan="2">
+                    <textarea id="feedback" type="text" name="myfriendssay" placeholder="Meine Freunde sagen..." onclick="focusinput(4), event.stopPropagation()" maxlength="250" required></textarea>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <div class="buttons">
+        <button id="send" onclick="validateform()">Senden</button>
+        <div id="rocketbackground"><img id="rocket" src="graphics/rocket.svg"></div>
+    </div>
+</div>
+</body>
+</html>
