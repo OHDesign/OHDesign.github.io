@@ -1,0 +1,206 @@
+:root{
+    --color0: #000000;
+    --color1: #FFFFFF;
+    --color2: #FFFFFF;
+    --color3: #E9D749;
+    --color4: #FFFFFF;
+    --color5: #FFFFFF;
+    --color6: #FB0C0D;
+    --color7: #E9D749;
+    --color8: #FFFFFF;
+    --color9: #FFFFFF;
+    --color10: #FFFFFF;
+    --color11: #FFFFFF;
+    --color12: #000000;
+    --color13: #FFFFFF;
+    --color14: #FFFFFF;
+    --color15: #E9D749;
+    --color16: #FFFFFF;
+    --color17: #1D2469;
+    --color18: #E4573B;
+    --color19: #FFFFFF;
+    
+    --color21: #FFFFFF;
+    --randomcolor: #FFFFFF;
+}
+
+*{
+    transition: all 1.5s linear;
+}
+
+body{
+    background-color: #FFFFFF;
+}
+
+table{
+    font-size: 0px;
+    padding: 5px;
+    border: 1px solid var(--color0);
+    background-color: var(--color0);
+    margin: 2em auto;
+    width: 670px;
+    height: 950px;
+}
+
+.box{
+    border: 5px solid var(--color0);
+    text-align: center;
+}
+
+#box1{
+    background-color: var(--color1);
+    &:hover{
+        background-color: var(--randomcolor);
+    }
+}
+
+#box2{
+    background-color: var(--color2);
+    &:hover{
+        background-color: var(--randomcolor);
+    }
+}
+
+#box3{
+    background-color: var(--color3);
+    &:hover{
+        background-color: var(--randomcolor);
+    }
+}
+
+#box4{
+    background-color: var(--color4);
+    width: 45px;
+    height: 230px;
+    &:hover{
+        background-color: var(--randomcolor);
+    }
+}
+
+#box5{
+    background-color:  var(--color5);
+    width: 80px;
+    height: 140px;
+    &:hover{
+        background-color: var(--randomcolor);
+    }
+}
+
+#box6{
+    background-color: var(--color6);
+    &:hover{
+        background-color: var(--randomcolor);
+    }
+}
+
+#box7{
+    background-color: var(--color7);
+    &:hover{
+        background-color: var(--randomcolor);
+    }
+}
+
+#box8{
+    background-color: var(--color8);
+    &:hover{
+        background-color: var(--randomcolor);
+    }
+}
+
+#box9{
+    background-color: var(--color9);
+    &:hover{
+        background-color: var(--randomcolor);
+    }
+}
+
+#box10{
+    background-color: var(--color10);
+    height: 150px;
+    width: 80px;
+    &:hover{
+        background-color: var(--randomcolor);
+    }
+}
+
+#box11{
+    background-color: var(--color11);
+    height: 150px;
+    width: 80px;
+    &:hover{
+        background-color: var(--randomcolor);
+    }
+}
+
+#box12{
+    background-color: var(--color12);
+    &:hover{
+        background-color: var(--randomcolor);
+    }
+}
+
+#box13{
+    background-color: var(--color13);
+    height: 60px;
+    &:hover{
+        background-color: var(--randomcolor);
+    }
+}
+
+#box14{
+    background-color: var(--color14);
+    &:hover{
+        background-color: var(--randomcolor);
+    }
+}
+
+#box15{
+    background-color: var(--color15);
+    &:hover{
+        background-color: var(--randomcolor);
+    }
+}
+
+#box16{
+    background-color: var(--color16);
+    height: 60px;
+    &:hover{
+        background-color: var(--randomcolor);
+    }
+}
+
+#box17{
+    background-color: var(--color17);
+    &:hover{
+        background-color: var(--randomcolor);
+    }
+}
+
+#box18{
+    background-color: var(--color18);
+    &:hover{
+        background-color: var(--randomcolor);
+    }
+}
+
+#box19{
+    background-color: var(--color19);
+    &:hover{
+        background-color: var(--randomcolor);
+    }
+}
+
+#box20{
+    background-color: var(--color0);
+    height: 20px;
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+#box21{
+    background-color: var(--color21);
+    &:hover{
+        background-color: var(--randomcolor);
+    }
+}
