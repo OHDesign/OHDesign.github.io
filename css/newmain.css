@@ -274,6 +274,10 @@ section {
   background-image: linear-gradient(#0f1022, #c5d9f7, #0f1022);
 }
 
+#html-form {
+  background-image: linear-gradient(#0f1022, #c5d9f7, #0f1022);
+}
+
 ::-moz-placeholder {
   font-size: 1.1em;
   font-family: "Poppins";
