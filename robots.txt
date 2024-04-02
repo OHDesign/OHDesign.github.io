@@ -1,1 +1,4 @@
+# robots.txt zu https://github.com/OHDesign/OHDesign.github.io/
 
+User-agent: *
+Disallow: /
