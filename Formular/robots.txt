@@ -1,0 +1,4 @@
+# robots.txt zu http://www.lieblingslinks.com/
+
+User-agent: *
+Disallow: /
