@@ -429,6 +429,19 @@
             contact.style.fontWeight = "normal";
         }
 
+        //ajust depending on page-scroll
+        window.onscroll = function() {scrollFunction();};
+        
+        function scrollFunction() {
+            if(document.body.scrollTop > 7600 || document.documentElement.scrollTop > 7600) {
+                highlightcontact();
+            }else if(document.body.scrollTop > 700 || document.documentElement.scrollTop > 700){
+                highlightprojects();
+            }else{
+                highlightabout();
+            }
+        }
+
         //------------------------back to top button----------------------------------------
         // Get the button:
         let mybutton = document.getElementById("myBtn");
