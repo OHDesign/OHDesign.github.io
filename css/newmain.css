@@ -189,8 +189,9 @@ section {
 }
 
 #lightbox {
+    backdrop-filter: blur(5px);
     display: none;
-    background-color: rgba(56, 56, 56, 0.75);
+    background-color: rgba(0, 0, 0, 0.45);
     width: 100vw;
     height: 100vh;
     position: fixed;
