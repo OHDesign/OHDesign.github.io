@@ -7,6 +7,9 @@
     <title>OH-Design</title>
     <link rel="stylesheet" href="css/newmain.css">
     <link rel="icon" href="old site/images/logo.svg">
+     <script src= 
+        "https://code.jquery.com/jquery-3.4.1.min.js"> 
+    </script>
 </head>
 <body>
     <button onclick="topFunction()" id="myBtn" title="Go to top">&#129093</button>
@@ -443,11 +446,11 @@
             mybutton.style.display = "none";
         }
         }
+        
 
         // When the user clicks on the button, scroll to the top of the document
         function topFunction() {
-        document.body.scrollTop = 0; // For Safari
-        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        $("html, body").animate({ scrollTop: "0" }, 1500); 
         highlightabout(); // resets the top menue highlights
         }
     </script>
