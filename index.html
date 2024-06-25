@@ -12,6 +12,9 @@
     </script>
 </head>
 <body>
+    <section onclick="closelightbox()" id="lightbox">
+        <div><img id="bigImg" src="old site/css/" alt="bigImgView"></div>
+    </section>
     <button onclick="topFunction()" id="myBtn" title="Go to top">&#129093</button>
     <div class="container">
         <div class="navbar">
@@ -72,7 +75,7 @@
         </div>
         <!-------------------Gärtnerei Fehtke-------------------------------------->
         <div class="blocks-r">
-            <div id="cards" class="image-background">
+            <div onclick="lightbox(1)" id="cards" class="image-background">
                 <img class="image" src="old site/images/projects/Edits/Kartensammlung.png" alt="">
             </div>
             <div class="description-background">
@@ -81,7 +84,7 @@
                         Demonic Playing Cards
                     </h3>
                     <p>
-                        Bei diesem Projekt habe ich mich einmal darn versucht ein Design fü ein Deck 
+                        Bei diesem Projekt habe ich mich einmal darn versucht ein Design für ein Deck 
                         Spielkarten zu erstellen<br/>
                         - 2024<br/><br/>
                         Verwendete Programme:<br/>
@@ -93,8 +96,8 @@
         </div>
         <!-------------------White Rabbit Energy-------------------------------------->
         <div class="blocks">
-            <div id="wr-energy" class="image-background">
-                <img class="image" src="old site/images/projects/Edits/WR Energy.png" alt="">
+            <div onclick="lightbox(2)" id="wr-energy" class="image-background">
+                <img class="image" src="old site/images/projects/Edits/WR_Energy.png" alt="">
             </div>
             <div class="description-background">
                 <div class="description">
@@ -114,7 +117,7 @@
         </div>
         <!-------------------Gärtnerei Fehtke-------------------------------------->
         <div class="blocks-r">
-            <div id="fehtke" class="image-background">
+            <div onclick="lightbox(3)" id="fehtke" class="image-background">
                 <img class="image" src="old site/images/projects/Edits/Gärtnerei_Fehtke_V1.png" alt="">
             </div>
             <div class="description-background">
@@ -134,7 +137,7 @@
         </div>
         <!-------------------Firelink Shrine-------------------------------------->
         <div class="blocks">
-            <div id="firelink" class="image-background">
+            <div onclick="lightbox(4)" id="firelink" class="image-background">
                 <img class="image" src="old site/images/projects/Edits/Firelink-Shrine.svg" alt="">
             </div>
             <div class="description-background">
@@ -155,8 +158,8 @@
         </div>
         <!-------------------Bockwurst-------------------------------------->
         <div class="blocks-r">
-            <div id="bockwurst" class="image-background">
-                <img class="image" src="old site/images/projects/Edits/Bockwurst Merch new.png" alt="">
+            <div onclick="lightbox(5)" id="bockwurst" class="image-background">
+                <img class="image" src="old site/images/projects/Edits/Bockwurst_Merch_new.png" alt="">
             </div>
             <div class="description-background">
                 <div class="description">
@@ -177,7 +180,7 @@
         </div>
         <!-------------------Website-------------------------------------->
         <div class="blocks">
-            <div id="website" class="image-background">
+            <div onclick="lightbox(6)" id="website" class="image-background">
                 <img class="image" src="old site/images/projects/Edits/website-mockup.svg" alt="">
             </div>
             <div class="description-background">
@@ -202,13 +205,13 @@
         </div>
         <!-------------------White Rabbit Energy-------------------------------------->
         <div class="blocks-r">
-            <div id="WRE" class="image-background">
-                <img class="image" src="old site/images/projects/3D/WR Energy.png" alt="">
+            <div onclick="lightbox(7)" id="WRE" class="image-background">
+                <img class="image" src="old site/images/projects/3D/WR_Energy.png" alt="">
             </div>
-            <div id="WRE-og-space" class="image-background">
-                <img class="image" src="old site/images/projects/3D/WR Energy-og-space.png" alt="">
+            <div onclick="lightbox(8)" id="WRE-og-space" class="image-background">
+                <img class="image" src="old site/images/projects/3D/WR_Energy-og-space.png" alt="">
             </div>
-            <div id="WRE-yt" class="image-background">
+            <div  id="WRE-yt" class="image-background">
                 <iframe id="yt-player" class="image" src="https://www.youtube.com/embed/watch?v=pqbUqFE5M8M&list=PLDkVXP9gSVLImb-BuDD6sXl81tw13kQBb" alt="space" loading="lazy" onclick="event.stopPropagation()">
                 </iframe>
             </div>
@@ -229,7 +232,7 @@
         </div>
         <!-------------------Kristall-------------------------------------->
         <div class="blocks">
-            <div id="kristall" class="image-background">
+            <div onclick="lightbox(9)" id="kristall" class="image-background">
                 <img class="image" src="old site/images/projects/3D/cristall/fhd_render.png" alt="">
             </div>
             <div class="description-background">
@@ -254,13 +257,13 @@
         </div>
         <!-------------------DS3 Bilder-------------------------------------->
         <div class="blocks">
-            <div id="ds3-result" class="image-background">
+            <div onclick="lightbox(10)" id="ds3-result" class="image-background">
                 <img class="image" src="old site/images/projects/Fotos/Irithil_x_ringedcity.png" alt="">
             </div>
-            <div id="ds3-o1" class="image-background">
+            <div onclick="lightbox(11)" id="ds3-o1" class="image-background">
                 <img class="image" src="old site/images/projects/Fotos/ringedcity-og.jpg" alt="">
             </div>
-            <div id="ds3-o2" class="image-background">
+            <div onclick="lightbox(12)" id="ds3-o2" class="image-background">
                 <img class="image" src="old site/images/projects/Fotos/irithil-og.jpg" alt="">
             </div>
             <div class="description-background">
@@ -279,7 +282,7 @@
         </div>
         <!-------------------Huhn-------------------------------------->
         <div class="blocks-r">
-            <div id="chicken" class="image-background">
+            <div onclick="lightbox(13)" id="chicken" class="image-background">
                 <img class="image" src="old site/images/projects/Fotos/chicken.jpg" alt="">
             </div>
             <div class="description-background">
@@ -303,13 +306,13 @@
         </div>
         <!-------------------Pixelart-------------------------------------->
         <div class="blocks">
-            <div id="dark-knight" class="image-background">
+            <div onclick="lightbox(14)" id="dark-knight" class="image-background">
                 <img class="image" src="old site/images/projects/pixelart/Dark-Knight.png" alt="">
             </div>
-            <div id="silver-knight" class="image-background">
+            <div onclick="lightbox(15)" id="silver-knight" class="image-background">
                 <img class="image" src="old site/images/projects/pixelart/Knight2.0.png" alt="">
             </div>
-            <div id="mage" class="image-background">
+            <div onclick="lightbox(16)" id="mage" class="image-background">
                 <img class="image" src="old site/images/projects/pixelart/Wizard2.0.png" alt="">
             </div>
             <div class="description-background">
@@ -428,6 +431,63 @@
             const nav = document.querySelector('nav');
             nav.classList.remove('menue-btn');
         }
+        
+        
+        //------------------------lightbox-----------
+        function lightbox(x) {
+            let lightbox = document.getElementById("lightbox");
+            let image = document.getElementById("bigImg");
+            
+            if(x == 1){
+                image.src = "old site/images/projects/Edits/Kartensammlung.png";
+            }else if(x == 2){
+                image.src = "old site/images/projects/Edits/WR_Energy.png";
+            }else if(x == 3){
+                image.src = "old site/images/projects/Edits/Gärtnerei_Fehtke_V1.png";
+            }else if(x == 4){
+                image.src = "old site/images/projects/Edits/Firelink-Shrine.svg";
+            }else if(x == 5){
+                image.src = "old site/images/projects/Edits/Bockwurst_Merch_new.png";
+            }else if(x == 6){
+                image.src = "old site/images/projects/Edits/website-mockup.png";
+            }else if(x == 7){
+                image.src = "old site/images/projects/3D/WR_Energy.png";
+            }else if(x == 8){
+                image.src = "old site/images/projects/3D/WR_Energy-og-space.png";
+            }else if(x == 9){
+                image.src = "old site/images/projects/3D/cristall/fhd_render.png";
+            }else if(x == 10){
+                image.src = "old site/images/projects/Fotos/Irithil_x_ringedcity.png";
+            }else if(x == 11){
+                image.src = "old site/images/projects/Fotos/ringedcity-og.jpg";
+            }else if(x == 12){
+                image.src = "old site/images/projects/Fotos/irithil-og.jpg";
+            }else if(x == 13){
+                image.src = "old site/images/projects/Fotos/chicken.jpg";
+            }else if(x == 14){
+                image.src = "old site/images/projects/pixelart/Dark-Knight.png";
+            }else if(x == 15){
+                image.src = "old site/images/projects/pixelart/Knight2.0.png";
+            }else if(x == 16){
+                image.src = "old site/images/projects/pixelart/Wizard2.0.png";
+            }
+            
+            
+            
+            
+            
+            
+            lightbox.style.display = "block";
+            document.body.style.overflow = "hidden";
+        }
+        
+        function closelightbox() {
+            let lightbox = document.getElementById("lightbox");
+            let image = document.getElementById("bigImg");
+            
+            lightbox.style.display = "none";
+            document.body.style.overflow = "visible";
+        }
 
 
         //------------------------menue highlights---------------------------------------- 
@@ -461,11 +521,11 @@
         window.onscroll = function() {scrollFunction()};
 
         function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            mybutton.style.display = "block";
-        } else {
-            mybutton.style.display = "none";
-        }
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
         }
         
 
