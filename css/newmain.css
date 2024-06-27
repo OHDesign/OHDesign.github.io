@@ -197,7 +197,7 @@ section {
     position: fixed;
     z-index: 100;
     text-align: center;
-    padding: 5em 0;
+    padding: 3em 0;
     margin: 0;
 }
 
@@ -205,6 +205,12 @@ section {
     max-width: 90%;
     max-height: 85vh;
     z-index: 101;
+}
+
+#subtext {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1em 0;
+    margin: 1em 3em;
 }
 
 .description-background {
