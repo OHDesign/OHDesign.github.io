@@ -13,7 +13,11 @@
 </head>
 <body>
     <section onclick="closelightbox()" id="lightbox">
-        <div><img id="bigImg" src="old site/css/" alt="bigImgView"></div>
+        <div>
+            <img id="bigImg" src="old site/css/" alt="bigImgView">
+            <p id="subtext">
+            </p>
+        </div>
     </section>
     <button onclick="topFunction()" id="myBtn" title="Go to top">&#129093</button>
     <div class="container">
@@ -73,7 +77,7 @@
         <div class="header-projects">
             <h2>Designs</h2>
         </div>
-        <!-------------------Gärtnerei Fehtke-------------------------------------->
+        <!-------------------Playing cards-------------------------------------->
         <div class="blocks-r">
             <div onclick="lightbox(1)" id="cards" class="image-background">
                 <img class="image" src="old site/images/projects/Edits/Kartensammlung.png" alt="">
@@ -87,6 +91,7 @@
                         Bei diesem Projekt habe ich mich einmal daran versucht, ein Design für ein Deck 
                         Spielkarten zu erstellen<br/>
                         - 2024<br/><br/>
+                        
                         Verwendete Programme:<br/>
                         Adobe Illustrator<br/>
                         Adobe Photoshop
@@ -218,8 +223,7 @@
                         - 2024<br/><br/>
                         
                         Verwendete Programme:<br/>
-                        Adobe Dimension<br/>
-                        Adobe Photoshop
+                        Adobe Dimension/Photoshop
                     </p>
                 </div>
             </div>
@@ -458,41 +462,64 @@
         function lightbox(x) {
             let lightbox = document.getElementById("lightbox");
             let image = document.getElementById("bigImg");
+            let text = document.getElementById("subtext");
             
             if(x == 1){
                 image.src = "old site/images/projects/Edits/Kartensammlung.png";
+                text.style.display = "none";
             }else if(x == 2){
                 image.src = "old site/images/projects/Edits/WR_Energy.png";
+                text.style.display = "none";
             }else if(x == 3){
                 image.src = "old site/images/projects/Edits/Gärtnerei_Fehtke_V1.png";
+                text.style.display = "none";
             }else if(x == 4){
                 image.src = "old site/images/projects/Edits/Firelink-Shrine.svg";
+                text.style.display = "none";
             }else if(x == 5){
                 image.src = "old site/images/projects/Edits/Bockwurst_Merch_new.png";
+                text.style.display = "block";
+                text.innerHTML = 'Mockup-Vorlage von "mockups-design.com"';
             }else if(x == 6){
                 image.src = "old site/images/projects/Edits/website-mockup.png";
+                text.style.display = "none";
             }else if(x == 7){
                 image.src = "old site/images/projects/3D/Box+Cards_mockup.png";
+                text.innerHTML = '3D Modell für den Render:<br/> "3rd — CARDS (week 1: Toys & Games)" (https://skfb.ly/6XPuS) by Kostroman is licensed under Creative Commons Attribution  (http://creativecommons.org/licenses/by/4.0/).<br/>';
+                text.style.display = "block";
             }else if(x == 8){
                 image.src = "old site/images/projects/3D/WR_Energy.png";
+                text.innerHTML = "3D Modell für den Render selbst mit Blender erstellt";
+                text.style.display = "block";
             }else if(x == 9){
                 image.src = "old site/images/projects/3D/WR_Energy-og-space.png";
+                text.innerHTML = "3D Modell für den Render selbst mit Blender erstellt";
+                text.style.display = "block";
             }else if(x == 10){
                 image.src = "old site/images/projects/3D/cristall/fhd_render.png";
+                text.innerHTML = "3D Modell für den Render selbst mit Blender erstellt";
+                text.style.display = "block";
             }else if(x == 11){
                 image.src = "old site/images/projects/Fotos/Irithil_x_ringedcity.png";
+                text.style.display = "none";
             }else if(x == 12){
                 image.src = "old site/images/projects/Fotos/ringedcity-og.jpg";
+                text.style.display = "none";
             }else if(x == 13){
                 image.src = "old site/images/projects/Fotos/irithil-og.jpg";
+                text.style.display = "none";
             }else if(x == 14){
                 image.src = "old site/images/projects/Fotos/chicken.jpg";
+                text.style.display = "none";
             }else if(x == 15){
                 image.src = "old site/images/projects/pixelart/Dark-Knight.png";
+                text.style.display = "none";
             }else if(x == 16){
                 image.src = "old site/images/projects/pixelart/Knight2.0.png";
+                text.style.display = "none";
             }else if(x == 17){
                 image.src = "old site/images/projects/pixelart/Wizard2.0.png";
+                text.style.display = "none";
             }
             
             
