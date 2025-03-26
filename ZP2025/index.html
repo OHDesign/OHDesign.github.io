@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html id="top">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Planetarium Fritzlar</title>
+        <link rel="stylesheet" href="styles/style.css">
+		<link rel="icon" href="graphics/logo.svg">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="scripts/script.js"></script>
+        
+    </head>
+    
+    <body id="body">
+		
+    	<header>
+			<a role="button" id="logo-button" href="#">
+				<img id="logo" src="graphics/logo.svg" alt="logo">
+			</a>
+			<div id="mobileNav" onclick="menuestatus(1)">
+				<svg role="button" id="menue" width="50" height="50" xmlns="http://www.w3.org/2000/svg" alt="hamburgermenue button">
+					<rect id="line1" class="hamburger" width="40" height="5" x="5" y="10" transform="rotate(0)" fill="white"/>
+					<rect id="line2" class="hamburger" width="40" height="5" x="5" y="21" transform="rotate(0)" fill="white"/>
+					<rect id="line3" class="hamburger" width="40" height="5" x="5" y="32" transform="rotate(0)" fill="white"/>
+				</svg>
+			</div>
+			<nav id="nav">
+				<a role="button" id="home" class="nav-button current" onClick="menuestatus(0)" href="#start">Start</a>
+				<a role="button" id="about" class="nav-button" onClick="menuestatus(0)" href="#program">Programm</a>
+				<a role="button" id="contact" class="nav-button" onClick="menuestatus(0)" href="#visite">Ihr Besuch</a>
+			</nav>
+		</header> 
+		
+		<main>
+			<section id="start">
+					<h1>Planetarium Fritzlar</h1>
+					<h2>Wir entführen Sie ins Weltall</h2>
+					<br>
+					<p class="images">
+						<span class="imgText">6-Meter-Kuppel</span>
+						<img src="pics/pic1.jpg" alt="Bild von 6-Meter-Kuppel">
+					</p>
+					
+					<p class="images">	
+						<span class="imgText">360-Grad-Fulldome-Technik</span>
+						<img src="pics/pic2.jpg" alt="Bild von 360-Grad-Fulldome-Technik">
+					</p>
+					<br>
+					<h2>Neue Location</h2>
+					<p>
+						Die Sternfreunde Fritzlar sind in die Gießener Straße 77 in Fritzlar umgezogen. Besuchen Sie uns in unserem hochmodernen, nagelneuen Planetarium.
+					</p>
+					<p>
+						Auf unserer sechs Meter großen Kuppel präsentieren wir Ihnen ab sofort mithilfe unserer 360-Grad-Fulldome-Technik den Weltraum, wie Sie ihn noch nicht erlebt haben. Reisen Sie mit uns zum Mond und zu fremden Planeten, wandeln Sie durch die Milchstraße und gehen Sie mit uns den großen Fragen nach: Gibt es unbekanntes Leben im Universum? 
+					</p>
+					<br>
+					<h2>Technische Ausstattung</h2>
+					<p>
+						Das Planetarium Fritzlar verfügt über neueste Technik und ein computergesteuertes Projektionssystem, das Sterne in erstaunlicher Schärfe zeigen und kosmische Weiten ganz nah heranholen kann. Wir bieten 30 Plätze unter unserer sechs Meter großen Kuppel.
+					</p>
+			</section>
+			<section id="program">
+					<h2>Expedition in die Milchstraße</h2>
+					<p class="images">
+						<img src="pics/milky_way.jpg" alt="Bild der Milchstraße"><br>
+						Häufig ist das leuchtend helle Band der Milchstraße sogar mit dem bloßen Auge zu erkennen: Was wir da sehen, ist unsere eigene Galaxie. In diesem Vortrag zoomen wir so nah heran, dass sich Milliarden Einzelsterne zeigen, aus der die Milchstraße besteht.<br>
+						<em>Samstags, 15 Uhr</em>
+					</p>
+				
+					<h2>Schwarze Löcher</h2>
+					<p>
+						Was einem Schwarzen Loch zu nahe kommt, verschwindet für immer. Sogar Licht! In diesem Vortrag wagen wir uns dennoch ganz nah an die größten Geheimnisse des Weltalls heran.<br>
+						<em>Sonntags, 15 Uhr</em>
+					</p>
+				
+					<h2>Auf der Suche nach Leben</h2>
+					<p>
+						Sind wir allein? Generationen von Wissenschaftlern stellten sich bereits diese Frage. In diesem Vortrag besuchen wir nicht nur den Mars, auf dem bereits Wasser entdeckt wurde, sondern auch Meteoriten, die als Transportmittel für biochemische Moleküle dienen können.<br>
+						<em>Termine nach Vereinbarung</em>
+					</p>
+			</section>
+			<section id="visite">
+				<h3>Adresse</h3>
+				<p>
+					Planetarium Fritzlar<br>
+					Gießener Straße 77<br>
+					34560 Fritzlar<br>
+					Fon: 05622 9118896660<br>
+					E-Mail: info@planetarium-fritzlar.de
+				</p>
+				<h3>Öffnungszeiten</h3>
+				<p>
+					Mittwoch–Freitag: 12 bis 17 Uhr<br>
+					Samstag–Sonntag: 12 bis 20 Uhr
+				</p>
+				<h3>Eintritt</h3>
+				<p>
+					Erwachsene: 6 Euro<br>
+					Ermäßigt: 4 Euro<br>
+					Kinder bis 18 Jahre: 2 Euro
+				</p>
+			</section>
+		</main>
+		
+		<footer>
+			<!-- Scroll to top button -->
+			<a role="button" id="scrollToTopBtn" href="#top" alt="Zum Anfang der Seite scrollen">
+				&#129093
+			</a>
+			<!-------------------------->
+			<a id="imprint" href="#imprint">Impressum – Datenschutz</a>
+			<p>
+				Kontakt<br>
+				Fon: 05622 9118896660<br>
+				E-Mail: info@planetarium-fritzlar.de
+			</p>
+			<p>
+				Öffnungszeiten<br>
+				Mittwoch–Freitag: 12 bis 17 Uhr<br>
+				Samstag–Sonntag: 12 bis 20 Uhr
+			</p>
+		</footer>
+    </body>
+</html>
