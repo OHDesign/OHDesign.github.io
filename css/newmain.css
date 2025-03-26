@@ -25,6 +25,9 @@
 #myBtn:hover {
   background-color: #555; /* Add a dark-grey background on hover */
 }
+html{
+		scroll-behavior: smooth;
+	}
 
 body {
   margin: 0;
@@ -247,8 +250,24 @@ section {
   background-image: linear-gradient(#997968, #FCF1CE, #FCF1CE, #997968);
 }
 
+#hogwarts {
+  background-image: linear-gradient(#0D0C20, #504D97,  #0D0C20);
+}
+
+#majula {
+  background-image: linear-gradient(-25deg, #7C6254, #BAB49F, #DCD2A0);
+}
+
 #bockwurst {
   background-color: white;
+}
+
+#tg1861 {
+  background-color: white;
+}
+
+#zp2025p {
+  background-image: linear-gradient(-30deg, #000000, #FFFFFF, #FFFFFF, #000000);;
 }
 
 #website {
@@ -312,6 +331,10 @@ section {
 
 #html-table {
   background-color: white;
+}
+
+#zp2025d {
+  background-image: linear-gradient(0deg, #5B1227, #4B1D7E);
 }
 
 ::-moz-placeholder {
